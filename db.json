@@ -1,56 +1,1762 @@
 {
-  "trips": [
+  "flights": [
     {
       "id": 1,
-      "title": "BT01",
-      "description": "San Francisco World Trade Center on new Server/IOT/Client ",
-      "startTrip": [2021, 2, 13, 0, 0],
-      "endTrip": [2021, 2, 15, 16, 56],
-      "meetings": [
-        {
-          "id": 1,
-          "title": "One Conference",
-          "description": "Key Note on One Conference"
-        },
-        {
-          "id": 2,
-          "title": "Zero Conference",
-          "description": "Workshop Zero on One Conference"
-        }
-      ]
+      "from": "Zurich",
+      "to": "Paris",
+      "departure": "2024-09-10T10:00:00Z",
+      "arrival": "2024-09-10T11:30:00Z",
+      "price": 130,
+      "airline": {
+        "name": "Air France",
+        "logo": "https://example.com/air-france-logo.png"
+      }
     },
     {
       "id": 2,
-      "title": "BT02",
-      "description": "Santa Clara Halley on new Server/IOT/Client",
-      "startTrip": [2021, 6, 23, 9, 0],
-      "endTrip": [2021, 6, 27, 16, 56],
-      "meetings": [
-        {
-          "id": 3,
-          "title": "One Conference",
-          "description": "HandsOn on One Conference"
-        },
-        {
-          "id": 4,
-          "title": "One Conference",
-          "description": "Key Note on One Conference"
-        }
-      ]
+      "from": "Zurich",
+      "to": "London",
+      "departure": "2024-09-11T08:00:00Z",
+      "arrival": "2024-09-11T09:00:00Z",
+      "price": 120,
+      "airline": {
+        "name": "British Airways",
+        "logo": "https://example.com/british-airways-logo.png"
+      }
     },
     {
       "id": 3,
-      "title": "BT03",
-      "description": "San Cose City Halley on Docker/IOT/Client",
-      "startTrip": [2021, 12, 13, 9, 0],
-      "endTrip": [2021, 12, 15, 16, 56],
-      "meetings": [
-        {
-          "id": 5,
-          "title": "One Conference",
-          "description": "Key Note on One Conference"
-        }
-      ]
+      "from": "Zurich",
+      "to": "New York",
+      "departure": "2024-09-12T07:00:00Z",
+      "arrival": "2024-09-12T13:00:00Z",
+      "price": 400,
+      "airline": {
+        "name": "Swiss Air",
+        "logo": "https://example.com/swiss-air-logo.png"
+      }
+    },
+    {
+      "id": 4,
+      "from": "Zurich",
+      "to": "Dubai",
+      "departure": "2024-09-13T09:00:00Z",
+      "arrival": "2024-09-13T17:00:00Z",
+      "price": 250,
+      "airline": {
+        "name": "Emirates",
+        "logo": "https://example.com/emirates-logo.png"
+      }
+    },
+    {
+      "id": 5,
+      "from": "Zurich",
+      "to": "Singapore",
+      "departure": "2024-09-14T10:00:00Z",
+      "arrival": "2024-09-15T10:00:00Z",
+      "price": 300,
+      "airline": {
+        "name": "Singapore Airlines",
+        "logo": "https://example.com/singapore-airlines-logo.png"
+      }
+    },
+    {
+      "id": 6,
+      "from": "Zurich",
+      "to": "Tokyo",
+      "departure": "2024-09-15T08:00:00Z",
+      "arrival": "2024-09-15T20:00:00Z",
+      "price": 500,
+      "airline": {
+        "name": "Japan Airlines",
+        "logo": "https://example.com/japan-airlines-logo.png"
+      }
+    },
+    {
+      "id": 7,
+      "from": "Zurich",
+      "to": "Sydney",
+      "departure": "2024-09-16T09:00:00Z",
+      "arrival": "2024-09-17T07:00:00Z",
+      "price": 600,
+      "airline": {
+        "name": "Qantas",
+        "logo": "https://example.com/qantas-logo.png"
+      }
+    },
+    {
+      "id": 8,
+      "from": "Zurich",
+      "to": "Rome",
+      "departure": "2024-09-17T12:00:00Z",
+      "arrival": "2024-09-17T14:00:00Z",
+      "price": 150,
+      "airline": {
+        "name": "Alitalia",
+        "logo": "https://example.com/alitalia-logo.png"
+      }
+    },
+    {
+      "id": 9,
+      "from": "Zurich",
+      "to": "Barcelona",
+      "departure": "2024-09-18T11:00:00Z",
+      "arrival": "2024-09-18T13:00:00Z",
+      "price": 200,
+      "airline": {
+        "name": "Iberia",
+        "logo": "https://example.com/iberia-logo.png"
+      }
+    },
+    {
+      "id": 10,
+      "from": "Zurich",
+      "to": "Istanbul",
+      "departure": "2024-09-19T10:00:00Z",
+      "arrival": "2024-09-19T14:00:00Z",
+      "price": 180,
+      "airline": {
+        "name": "Turkish Airlines",
+        "logo": "https://example.com/turkish-airlines-logo.png"
+      }
+    },
+    {
+      "id": 11,
+      "from": "Zurich",
+      "to": "Bangkok",
+      "departure": "2024-09-20T09:00:00Z",
+      "arrival": "2024-09-20T18:00:00Z",
+      "price": 400,
+      "airline": {
+        "name": "Thai Airways",
+        "logo": "https://example.com/thai-airways-logo.png"
+      }
+    },
+    {
+      "id": 12,
+      "from": "Zurich",
+      "to": "Hong Kong",
+      "departure": "2024-09-21T08:00:00Z",
+      "arrival": "2024-09-21T18:00:00Z",
+      "price": 450,
+      "airline": {
+        "name": "Cathay Pacific",
+        "logo": "https://example.com/cathay-pacific-logo.png"
+      }
+    },
+    {
+      "id": 13,
+      "from": "Zurich",
+      "to": "Los Angeles",
+      "departure": "2024-09-22T07:00:00Z",
+      "arrival": "2024-09-22T17:00:00Z",
+      "price": 500,
+      "airline": {
+        "name": "United Airlines",
+        "logo": "https://example.com/united-airlines-logo.png"
+      }
+    },
+    {
+      "id": 14,
+      "from": "Zurich",
+      "to": "Toronto",
+      "departure": "2024-09-23T08:00:00Z",
+      "arrival": "2024-09-23T16:00:00Z",
+      "price": 450,
+      "airline": {
+        "name": "Air Canada",
+        "logo": "https://example.com/air-canada-logo.png"
+      }
+    },
+    {
+      "id": 15,
+      "from": "Zurich",
+      "to": "Paris",
+      "departure": "2024-09-24T10:00:00Z",
+      "arrival": "2024-09-24T11:30:00Z",
+      "price": 130,
+      "airline": {
+        "name": "Air France",
+        "logo": "https://example.com/air-france-logo.png"
+      }
+    },
+    {
+      "id": 16,
+      "from": "Zurich",
+      "to": "London",
+      "departure": "2024-09-25T08:00:00Z",
+      "arrival": "2024-09-25T09:00:00Z",
+      "price": 120,
+      "airline": {
+        "name": "British Airways",
+        "logo": "https://example.com/british-airways-logo.png"
+      }
+    },
+    {
+      "id": 17,
+      "from": "Zurich",
+      "to": "New York",
+      "departure": "2024-09-26T07:00:00Z",
+      "arrival": "2024-09-26T13:00:00Z",
+      "price": 400,
+      "airline": {
+        "name": "Swiss Air",
+        "logo": "https://example.com/swiss-air-logo.png"
+      }
+    },
+    {
+      "id": 18,
+      "from": "Zurich",
+      "to": "Dubai",
+      "departure": "2024-09-27T09:00:00Z",
+      "arrival": "2024-09-27T17:00:00Z",
+      "price": 250,
+      "airline": {
+        "name": "Emirates",
+        "logo": "https://example.com/emirates-logo.png"
+      }
+    },
+    {
+      "id": 19,
+      "from": "Zurich",
+      "to": "Singapore",
+      "departure": "2024-09-28T10:00:00Z",
+      "arrival": "2024-09-29T10:00:00Z",
+      "price": 300,
+      "airline": {
+        "name": "Singapore Airlines",
+        "logo": "https://example.com/singapore-airlines-logo.png"
+      }
+    },
+    {
+      "id": 20,
+      "from": "Zurich",
+      "to": "Tokyo",
+      "departure": "2024-09-29T08:00:00Z",
+      "arrival": "2024-09-29T20:00:00Z",
+      "price": 500,
+      "airline": {
+        "name": "Japan Airlines",
+        "logo": "https://example.com/japan-airlines-logo.png"
+      }
+    },
+    {
+      "id": 21,
+      "from": "Zurich",
+      "to": "Sydney",
+      "departure": "2024-09-30T09:00:00Z",
+      "arrival": "2024-10-01T07:00:00Z",
+      "price": 600,
+      "airline": {
+        "name": "Qantas",
+        "logo": "https://example.com/qantas-logo.png"
+      }
+    },
+    {
+      "id": 22,
+      "from": "Zurich",
+      "to": "Rome",
+      "departure": "2024-10-01T12:00:00Z",
+      "arrival": "2024-10-01T14:00:00Z",
+      "price": 150,
+      "airline": {
+        "name": "Alitalia",
+        "logo": "https://example.com/alitalia-logo.png"
+      }
+    },
+    {
+      "id": 23,
+      "from": "Zurich",
+      "to": "Barcelona",
+      "departure": "2024-10-02T11:00:00Z",
+      "arrival": "2024-10-02T13:00:00Z",
+      "price": 200,
+      "airline": {
+        "name": "Iberia",
+        "logo": "https://example.com/iberia-logo.png"
+      }
+    },
+    {
+      "id": 24,
+      "from": "Zurich",
+      "to": "Istanbul",
+      "departure": "2024-10-03T10:00:00Z",
+      "arrival": "2024-10-03T14:00:00Z",
+      "price": 180,
+      "airline": {
+        "name": "Turkish Airlines",
+        "logo": "https://example.com/turkish-airlines-logo.png"
+      }
+    },
+    {
+      "id": 25,
+      "from": "Zurich",
+      "to": "Bangkok",
+      "departure": "2024-10-04T09:00:00Z",
+      "arrival": "2024-10-04T18:00:00Z",
+      "price": 400,
+      "airline": {
+        "name": "Thai Airways",
+        "logo": "https://example.com/thai-airways-logo.png"
+      }
+    },
+    {
+      "id": 26,
+      "from": "Zurich",
+      "to": "Hong Kong",
+      "departure": "2024-10-05T08:00:00Z",
+      "arrival": "2024-10-05T18:00:00Z",
+      "price": 450,
+      "airline": {
+        "name": "Cathay Pacific",
+        "logo": "https://example.com/cathay-pacific-logo.png"
+      }
+    },
+    {
+      "id": 27,
+      "from": "Zurich",
+      "to": "Los Angeles",
+      "departure": "2024-10-06T07:00:00Z",
+      "arrival": "2024-10-06T17:00:00Z",
+      "price": 500,
+      "airline": {
+        "name": "United Airlines",
+        "logo": "https://example.com/united-airlines-logo.png"
+      }
+    },
+    {
+      "id": 28,
+      "from": "Zurich",
+      "to": "Toronto",
+      "departure": "2024-10-07T08:00:00Z",
+      "arrival": "2024-10-07T16:00:00Z",
+      "price": 450,
+      "airline": {
+        "name": "Air Canada",
+        "logo": "https://example.com/air-canada-logo.png"
+      }
+    },
+    {
+      "id": 29,
+      "from": "Zurich",
+      "to": "Paris",
+      "departure": "2024-10-08T10:00:00Z",
+      "arrival": "2024-10-08T11:30:00Z",
+      "price": 130,
+      "airline": {
+        "name": "Air France",
+        "logo": "https://example.com/air-france-logo.png"
+      }
+    },
+    {
+      "id": 30,
+      "from": "Zurich",
+      "to": "London",
+      "departure": "2024-10-09T08:00:00Z",
+      "arrival": "2024-10-09T09:00:00Z",
+      "price": 120,
+      "airline": {
+        "name": "British Airways",
+        "logo": "https://example.com/british-airways-logo.png"
+      }
+    },
+    {
+      "id": 31,
+      "from": "Zurich",
+      "to": "New York",
+      "departure": "2024-10-10T07:00:00Z",
+      "arrival": "2024-10-10T13:00:00Z",
+      "price": 400,
+      "airline": {
+        "name": "Swiss Air",
+        "logo": "https://example.com/swiss-air-logo.png"
+      }
+    },
+    {
+      "id": 32,
+      "from": "Zurich",
+      "to": "Dubai",
+      "departure": "2024-10-11T09:00:00Z",
+      "arrival": "2024-10-11T17:00:00Z",
+      "price": 250,
+      "airline": {
+        "name": "Emirates",
+        "logo": "https://example.com/emirates-logo.png"
+      }
+    },
+    {
+      "id": 33,
+      "from": "Zurich",
+      "to": "Singapore",
+      "departure": "2024-10-12T10:00:00Z",
+      "arrival": "2024-10-13T10:00:00Z",
+      "price": 300,
+      "airline": {
+        "name": "Singapore Airlines",
+        "logo": "https://example.com/singapore-airlines-logo.png"
+      }
+    },
+    {
+      "id": 34,
+      "from": "Zurich",
+      "to": "Tokyo",
+      "departure": "2024-10-13T08:00:00Z",
+      "arrival": "2024-10-13T20:00:00Z",
+      "price": 500,
+      "airline": {
+        "name": "Japan Airlines",
+        "logo": "https://example.com/japan-airlines-logo.png"
+      }
+    },
+    {
+      "id": 35,
+      "from": "Zurich",
+      "to": "Sydney",
+      "departure": "2024-10-14T09:00:00Z",
+      "arrival": "2024-10-15T07:00:00Z",
+      "price": 600,
+      "airline": {
+        "name": "Qantas",
+        "logo": "https://example.com/qantas-logo.png"
+      }
+    },
+    {
+      "id": 36,
+      "from": "Zurich",
+      "to": "Rome",
+      "departure": "2024-10-15T12:00:00Z",
+      "arrival": "2024-10-15T14:00:00Z",
+      "price": 150,
+      "airline": {
+        "name": "Alitalia",
+        "logo": "https://example.com/alitalia-logo.png"
+      }
+    },
+    {
+      "id": 37,
+      "from": "Zurich",
+      "to": "Barcelona",
+      "departure": "2024-10-16T11:00:00Z",
+      "arrival": "2024-10-16T13:00:00Z",
+      "price": 200,
+      "airline": {
+        "name": "Iberia",
+        "logo": "https://example.com/iberia-logo.png"
+      }
+    },
+    {
+      "id": 38,
+      "from": "Zurich",
+      "to": "Istanbul",
+      "departure": "2024-10-17T10:00:00Z",
+      "arrival": "2024-10-17T14:00:00Z",
+      "price": 180,
+      "airline": {
+        "name": "Turkish Airlines",
+        "logo": "https://example.com/turkish-airlines-logo.png"
+      }
+    },
+    {
+      "id": 39,
+      "from": "Zurich",
+      "to": "Bangkok",
+      "departure": "2024-10-18T09:00:00Z",
+      "arrival": "2024-10-18T18:00:00Z",
+      "price": 400,
+      "airline": {
+        "name": "Thai Airways",
+        "logo": "https://example.com/thai-airways-logo.png"
+      }
+    },
+    {
+      "id": 40,
+      "from": "Zurich",
+      "to": "Hong Kong",
+      "departure": "2024-10-19T08:00:00Z",
+      "arrival": "2024-10-19T18:00:00Z",
+      "price": 450,
+      "airline": {
+        "name": "Cathay Pacific",
+        "logo": "https://example.com/cathay-pacific-logo.png"
+      }
+    },
+    {
+      "id": 41,
+      "from": "Zurich",
+      "to": "Los Angeles",
+      "departure": "2024-10-20T07:00:00Z",
+      "arrival": "2024-10-20T17:00:00Z",
+      "price": 500,
+      "airline": {
+        "name": "United Airlines",
+        "logo": "https://example.com/united-airlines-logo.png"
+      }
+    },
+    {
+      "id": 42,
+      "from": "Zurich",
+      "to": "Toronto",
+      "departure": "2024-10-21T08:00:00Z",
+      "arrival": "2024-10-21T16:00:00Z",
+      "price": 450,
+      "airline": {
+        "name": "Air Canada",
+        "logo": "https://example.com/air-canada-logo.png"
+      }
+    },
+    {
+      "id": 43,
+      "from": "Zurich",
+      "to": "Paris",
+      "departure": "2024-10-22T10:00:00Z",
+      "arrival": "2024-10-22T11:30:00Z",
+      "price": 130,
+      "airline": {
+        "name": "Air France",
+        "logo": "https://example.com/air-france-logo.png"
+      }
+    },
+    {
+      "id": 44,
+      "from": "Zurich",
+      "to": "London",
+      "departure": "2024-10-23T08:00:00Z",
+      "arrival": "2024-10-23T09:00:00Z",
+      "price": 120,
+      "airline": {
+        "name": "British Airways",
+        "logo": "https://example.com/british-airways-logo.png"
+      }
+    },
+    {
+      "id": 45,
+      "from": "Zurich",
+      "to": "New York",
+      "departure": "2024-10-24T07:00:00Z",
+      "arrival": "2024-10-24T13:00:00Z",
+      "price": 400,
+      "airline": {
+        "name": "Swiss Air",
+        "logo": "https://example.com/swiss-air-logo.png"
+      }
+    },
+    {
+      "id": 46,
+      "from": "Zurich",
+      "to": "Dubai",
+      "departure": "2024-10-25T09:00:00Z",
+      "arrival": "2024-10-25T17:00:00Z",
+      "price": 250,
+      "airline": {
+        "name": "Emirates",
+        "logo": "https://example.com/emirates-logo.png"
+      }
+    },
+    {
+      "id": 47,
+      "from": "Zurich",
+      "to": "Singapore",
+      "departure": "2024-10-26T10:00:00Z",
+      "arrival": "2024-10-27T10:00:00Z",
+      "price": 300,
+      "airline": {
+        "name": "Singapore Airlines",
+        "logo": "https://example.com/singapore-airlines-logo.png"
+      }
+    },
+    {
+      "id": 48,
+      "from": "Zurich",
+      "to": "Tokyo",
+      "departure": "2024-10-27T08:00:00Z",
+      "arrival": "2024-10-27T20:00:00Z",
+      "price": 500,
+      "airline": {
+        "name": "Japan Airlines",
+        "logo": "https://example.com/japan-airlines-logo.png"
+      }
+    },
+    {
+      "id": 49,
+      "from": "Zurich",
+      "to": "Sydney",
+      "departure": "2024-10-28T09:00:00Z",
+      "arrival": "2024-10-29T07:00:00Z",
+      "price": 600,
+      "airline": {
+        "name": "Qantas",
+        "logo": "https://example.com/qantas-logo.png"
+      }
+    },
+    {
+      "id": 50,
+      "from": "Zurich",
+      "to": "Rome",
+      "departure": "2024-10-29T12:00:00Z",
+      "arrival": "2024-10-29T14:00:00Z",
+      "price": 150,
+      "airline": {
+        "name": "Alitalia",
+        "logo": "https://example.com/alitalia-logo.png"
+      }
+    },
+    {
+      "id": 51,
+      "from": "Zurich",
+      "to": "Barcelona",
+      "departure": "2024-10-30T11:00:00Z",
+      "arrival": "2024-10-30T13:00:00Z",
+      "price": 200,
+      "airline": {
+        "name": "Iberia",
+        "logo": "https://example.com/iberia-logo.png"
+      }
+    },
+    {
+      "id": 52,
+      "from": "Zurich",
+      "to": "Istanbul",
+      "departure": "2024-10-31T10:00:00Z",
+      "arrival": "2024-10-31T14:00:00Z",
+      "price": 180,
+      "airline": {
+        "name": "Turkish Airlines",
+        "logo": "https://example.com/turkish-airlines-logo.png"
+      }
+    },
+    {
+      "id": 53,
+      "from": "Zurich",
+      "to": "Bangkok",
+      "departure": "2024-11-01T09:00:00Z",
+      "arrival": "2024-11-01T18:00:00Z",
+      "price": 400,
+      "airline": {
+        "name": "Thai Airways",
+        "logo": "https://example.com/thai-airways-logo.png"
+      }
+    },
+    {
+      "id": 54,
+      "from": "Zurich",
+      "to": "Hong Kong",
+      "departure": "2024-11-02T08:00:00Z",
+      "arrival": "2024-11-02T18:00:00Z",
+      "price": 450,
+      "airline": {
+        "name": "Cathay Pacific",
+        "logo": "https://example.com/cathay-pacific-logo.png"
+      }
+    },
+    {
+      "id": 55,
+      "from": "Zurich",
+      "to": "Los Angeles",
+      "departure": "2024-11-03T07:00:00Z",
+      "arrival": "2024-11-03T17:00:00Z",
+      "price": 500,
+      "airline": {
+        "name": "United Airlines",
+        "logo": "https://example.com/united-airlines-logo.png"
+      }
+    },
+    {
+      "id": 56,
+      "from": "Zurich",
+      "to": "Toronto",
+      "departure": "2024-11-04T08:00:00Z",
+      "arrival": "2024-11-04T16:00:00Z",
+      "price": 450,
+      "airline": {
+        "name": "Air Canada",
+        "logo": "https://example.com/air-canada-logo.png"
+      }
+    },
+    {
+      "id": 57,
+      "from": "Zurich",
+      "to": "Paris",
+      "departure": "2024-11-05T10:00:00Z",
+      "arrival": "2024-11-05T11:30:00Z",
+      "price": 130,
+      "airline": {
+        "name": "Air France",
+        "logo": "https://example.com/air-france-logo.png"
+      }
+    },
+    {
+      "id": 58,
+      "from": "Zurich",
+      "to": "London",
+      "departure": "2024-11-06T08:00:00Z",
+      "arrival": "2024-11-06T09:00:00Z",
+      "price": 120,
+      "airline": {
+        "name": "British Airways",
+        "logo": "https://example.com/british-airways-logo.png"
+      }
+    },
+    {
+      "id": 59,
+      "from": "Zurich",
+      "to": "New York",
+      "departure": "2024-11-07T07:00:00Z",
+      "arrival": "2024-11-07T13:00:00Z",
+      "price": 400,
+      "airline": {
+        "name": "Swiss Air",
+        "logo": "https://example.com/swiss-air-logo.png"
+      }
+    },
+    {
+      "id": 60,
+      "from": "Zurich",
+      "to": "Dubai",
+      "departure": "2024-11-08T09:00:00Z",
+      "arrival": "2024-11-08T17:00:00Z",
+      "price": 250,
+      "airline": {
+        "name": "Emirates",
+        "logo": "https://example.com/emirates-logo.png"
+      }
+    },
+    {
+      "id": 61,
+      "from": "Zurich",
+      "to": "Singapore",
+      "departure": "2024-11-09T10:00:00Z",
+      "arrival": "2024-11-10T10:00:00Z",
+      "price": 300,
+      "airline": {
+        "name": "Singapore Airlines",
+        "logo": "https://example.com/singapore-airlines-logo.png"
+      }
+    },
+    {
+      "id": 62,
+      "from": "Zurich",
+      "to": "Tokyo",
+      "departure": "2024-11-10T08:00:00Z",
+      "arrival": "2024-11-10T20:00:00Z",
+      "price": 500,
+      "airline": {
+        "name": "Japan Airlines",
+        "logo": "https://example.com/japan-airlines-logo.png"
+      }
+    },
+    {
+      "id": 63,
+      "from": "Zurich",
+      "to": "Sydney",
+      "departure": "2024-11-11T09:00:00Z",
+      "arrival": "2024-11-12T07:00:00Z",
+      "price": 600,
+      "airline": {
+        "name": "Qantas",
+        "logo": "https://example.com/qantas-logo.png"
+      }
+    },
+    {
+      "id": 64,
+      "from": "Zurich",
+      "to": "Rome",
+      "departure": "2024-11-12T12:00:00Z",
+      "arrival": "2024-11-12T14:00:00Z",
+      "price": 150,
+      "airline": {
+        "name": "Alitalia",
+        "logo": "https://example.com/alitalia-logo.png"
+      }
+    },
+    {
+      "id": 65,
+      "from": "Zurich",
+      "to": "Barcelona",
+      "departure": "2024-11-13T11:00:00Z",
+      "arrival": "2024-11-13T13:00:00Z",
+      "price": 200,
+      "airline": {
+        "name": "Iberia",
+        "logo": "https://example.com/iberia-logo.png"
+      }
+    },
+    {
+      "id": 66,
+      "from": "Zurich",
+      "to": "Istanbul",
+      "departure": "2024-11-14T10:00:00Z",
+      "arrival": "2024-11-14T14:00:00Z",
+      "price": 180,
+      "airline": {
+        "name": "Turkish Airlines",
+        "logo": "https://example.com/turkish-airlines-logo.png"
+      }
+    },
+    {
+      "id": 67,
+      "from": "Zurich",
+      "to": "Bangkok",
+      "departure": "2024-11-15T09:00:00Z",
+      "arrival": "2024-11-15T18:00:00Z",
+      "price": 400,
+      "airline": {
+        "name": "Thai Airways",
+        "logo": "https://example.com/thai-airways-logo.png"
+      }
+    },
+    {
+      "id": 68,
+      "from": "Zurich",
+      "to": "Hong Kong",
+      "departure": "2024-11-16T08:00:00Z",
+      "arrival": "2024-11-16T18:00:00Z",
+      "price": 450,
+      "airline": {
+        "name": "Cathay Pacific",
+        "logo": "https://example.com/cathay-pacific-logo.png"
+      }
+    },
+    {
+      "id": 69,
+      "from": "Zurich",
+      "to": "Los Angeles",
+      "departure": "2024-11-17T07:00:00Z",
+      "arrival": "2024-11-17T17:00:00Z",
+      "price": 500,
+      "airline": {
+        "name": "United Airlines",
+        "logo": "https://example.com/united-airlines-logo.png"
+      }
+    },
+    {
+      "id": 70,
+      "from": "Zurich",
+      "to": "Toronto",
+      "departure": "2024-11-18T08:00:00Z",
+      "arrival": "2024-11-18T16:00:00Z",
+      "price": 450,
+      "airline": {
+        "name": "Air Canada",
+        "logo": "https://example.com/air-canada-logo.png"
+      }
+    },
+    {
+      "id": 71,
+      "from": "Zurich",
+      "to": "Paris",
+      "departure": "2024-11-19T10:00:00Z",
+      "arrival": "2024-11-19T11:30:00Z",
+      "price": 130,
+      "airline": {
+        "name": "Air France",
+        "logo": "https://example.com/air-france-logo.png"
+      }
+    },
+    {
+      "id": 72,
+      "from": "Zurich",
+      "to": "London",
+      "departure": "2024-11-20T08:00:00Z",
+      "arrival": "2024-11-20T09:00:00Z",
+      "price": 120,
+      "airline": {
+        "name": "British Airways",
+        "logo": "https://example.com/british-airways-logo.png"
+      }
+    },
+    {
+      "id": 73,
+      "from": "Zurich",
+      "to": "New York",
+      "departure": "2024-11-21T07:00:00Z",
+      "arrival": "2024-11-21T13:00:00Z",
+      "price": 400,
+      "airline": {
+        "name": "Swiss Air",
+        "logo": "https://example.com/swiss-air-logo.png"
+      }
+    },
+    {
+      "id": 74,
+      "from": "Zurich",
+      "to": "Dubai",
+      "departure": "2024-11-22T09:00:00Z",
+      "arrival": "2024-11-22T17:00:00Z",
+      "price": 250,
+      "airline": {
+        "name": "Emirates",
+        "logo": "https://example.com/emirates-logo.png"
+      }
+    },
+    {
+      "id": 75,
+      "from": "Zurich",
+      "to": "Singapore",
+      "departure": "2024-11-23T10:00:00Z",
+      "arrival": "2024-11-24T10:00:00Z",
+      "price": 300,
+      "airline": {
+        "name": "Singapore Airlines",
+        "logo": "https://example.com/singapore-airlines-logo.png"
+      }
+    },
+    {
+      "id": 76,
+      "from": "Zurich",
+      "to": "Tokyo",
+      "departure": "2024-11-24T08:00:00Z",
+      "arrival": "2024-11-24T20:00:00Z",
+      "price": 500,
+      "airline": {
+        "name": "Japan Airlines",
+        "logo": "https://example.com/japan-airlines-logo.png"
+      }
+    },
+    {
+      "id": 77,
+      "from": "Zurich",
+      "to": "Sydney",
+      "departure": "2024-11-25T09:00:00Z",
+      "arrival": "2024-11-26T07:00:00Z",
+      "price": 600,
+      "airline": {
+        "name": "Qantas",
+        "logo": "https://example.com/qantas-logo.png"
+      }
+    },
+    {
+      "id": 78,
+      "from": "Zurich",
+      "to": "Rome",
+      "departure": "2024-11-26T12:00:00Z",
+      "arrival": "2024-11-26T14:00:00Z",
+      "price": 150,
+      "airline": {
+        "name": "Alitalia",
+        "logo": "https://example.com/alitalia-logo.png"
+      }
+    },
+    {
+      "id": 79,
+      "from": "Zurich",
+      "to": "Barcelona",
+      "departure": "2024-11-27T11:00:00Z",
+      "arrival": "2024-11-27T13:00:00Z",
+      "price": 200,
+      "airline": {
+        "name": "Iberia",
+        "logo": "https://example.com/iberia-logo.png"
+      }
+    },
+    {
+      "id": 80,
+      "from": "Zurich",
+      "to": "Istanbul",
+      "departure": "2024-11-28T10:00:00Z",
+      "arrival": "2024-11-28T14:00:00Z",
+      "price": 180,
+      "airline": {
+        "name": "Turkish Airlines",
+        "logo": "https://example.com/turkish-airlines-logo.png"
+      }
+    },
+    {
+      "id": 81,
+      "from": "Zurich",
+      "to": "Bangkok",
+      "departure": "2024-11-29T09:00:00Z",
+      "arrival": "2024-11-29T18:00:00Z",
+      "price": 400,
+      "airline": {
+        "name": "Thai Airways",
+        "logo": "https://example.com/thai-airways-logo.png"
+      }
+    },
+    {
+      "id": 82,
+      "from": "Zurich",
+      "to": "Hong Kong",
+      "departure": "2024-11-30T08:00:00Z",
+      "arrival": "2024-11-30T18:00:00Z",
+      "price": 450,
+      "airline": {
+        "name": "Cathay Pacific",
+        "logo": "https://example.com/cathay-pacific-logo.png"
+      }
+    },
+    {
+      "id": 83,
+      "from": "Zurich",
+      "to": "Los Angeles",
+      "departure": "2024-12-01T07:00:00Z",
+      "arrival": "2024-12-01T17:00:00Z",
+      "price": 500,
+      "airline": {
+        "name": "United Airlines",
+        "logo": "https://example.com/united-airlines-logo.png"
+      }
+    },
+    {
+      "id": 84,
+      "from": "Zurich",
+      "to": "Toronto",
+      "departure": "2024-12-02T08:00:00Z",
+      "arrival": "2024-12-02T16:00:00Z",
+      "price": 450,
+      "airline": {
+        "name": "Air Canada",
+        "logo": "https://example.com/air-canada-logo.png"
+      }
+    },
+    {
+      "id": 85,
+      "from": "Zurich",
+      "to": "Paris",
+      "departure": "2024-12-03T10:00:00Z",
+      "arrival": "2024-12-03T11:30:00Z",
+      "price": 130,
+      "airline": {
+        "name": "Air France",
+        "logo": "https://example.com/air-france-logo.png"
+      }
+    },
+    {
+      "id": 86,
+      "from": "Zurich",
+      "to": "London",
+      "departure": "2024-12-04T08:00:00Z",
+      "arrival": "2024-12-04T09:00:00Z",
+      "price": 120,
+      "airline": {
+        "name": "British Airways",
+        "logo": "https://example.com/british-airways-logo.png"
+      }
+    },
+    {
+      "id": 87,
+      "from": "Zurich",
+      "to": "New York",
+      "departure": "2024-12-05T07:00:00Z",
+      "arrival": "2024-12-05T13:00:00Z",
+      "price": 400,
+      "airline": {
+        "name": "Swiss Air",
+        "logo": "https://example.com/swiss-air-logo.png"
+      }
+    },
+    {
+      "id": 88,
+      "from": "Zurich",
+      "to": "Dubai",
+      "departure": "2024-12-06T09:00:00Z",
+      "arrival": "2024-12-06T17:00:00Z",
+      "price": 250,
+      "airline": {
+        "name": "Emirates",
+        "logo": "https://example.com/emirates-logo.png"
+      }
     }
-  ]
+],
+"hotels": [
+  {
+    "id": 1,
+    "name": "Le Meurice",
+    "location": "Paris",
+    "price_per_night": 450,
+    "image": "https://example.com/le-meurice.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Shangri-La Hotel",
+    "location": "Paris",
+    "price_per_night": 500,
+    "image": "https://example.com/shangri-la-paris.jpg"
+  },
+  {
+    "id": 3,
+    "name": "The Ritz London",
+    "location": "London",
+    "price_per_night": 600,
+    "image": "https://example.com/the-ritz-london.jpg"
+  },
+  {
+    "id": 4,
+    "name": "The Savoy",
+    "location": "London",
+    "price_per_night": 550,
+    "image": "https://example.com/the-savoy.jpg"
+  },
+  {
+    "id": 5,
+    "name": "The Plaza",
+    "location": "New York",
+    "price_per_night": 700,
+    "image": "https://example.com/the-plaza.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Mandarin Oriental",
+    "location": "New York",
+    "price_per_night": 750,
+    "image": "https://example.com/mandarin-oriental-ny.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Burj Al Arab",
+    "location": "Dubai",
+    "price_per_night": 1200,
+    "image": "https://example.com/burj-al-arab.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Atlantis The Palm",
+    "location": "Dubai",
+    "price_per_night": 1000,
+    "image": "https://example.com/atlantis-the-palm.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Marina Bay Sands",
+    "location": "Singapore",
+    "price_per_night": 800,
+    "image": "https://example.com/marina-bay-sands.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Raffles Hotel",
+    "location": "Singapore",
+    "price_per_night": 850,
+    "image": "https://example.com/raffles-hotel.jpg"
+  },
+  {
+    "id": 11,
+    "name": "The Peninsula",
+    "location": "Tokyo",
+    "price_per_night": 900,
+    "image": "https://example.com/the-peninsula-tokyo.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Park Hyatt",
+    "location": "Tokyo",
+    "price_per_night": 950,
+    "image": "https://example.com/park-hyatt-tokyo.jpg"
+  },
+  {
+    "id": 13,
+    "name": "Four Seasons Hotel",
+    "location": "Sydney",
+    "price_per_night": 700,
+    "image": "https://example.com/four-seasons-sydney.jpg"
+  },
+  {
+    "id": 14,
+    "name": "Shangri-La Hotel",
+    "location": "Sydney",
+    "price_per_night": 750,
+    "image": "https://example.com/shangri-la-sydney.jpg"
+  },
+  {
+    "id": 15,
+    "name": "Hotel de Russie",
+    "location": "Rome",
+    "price_per_night": 650,
+    "image": "https://example.com/hotel-de-russie.jpg"
+  },
+  {
+    "id": 16,
+    "name": "The St. Regis Rome",
+    "location": "Rome",
+    "price_per_night": 700,
+    "image": "https://example.com/st-regis-rome.jpg"
+  },
+  {
+    "id": 17,
+    "name": "Hotel Arts",
+    "location": "Barcelona",
+    "price_per_night": 600,
+    "image": "https://example.com/hotel-arts-barcelona.jpg"
+  },
+  {
+    "id": 18,
+    "name": "W Barcelona",
+    "location": "Barcelona",
+    "price_per_night": 650,
+    "image": "https://example.com/w-barcelona.jpg"
+  },
+  {
+    "id": 19,
+    "name": "Ciragan Palace Kempinski",
+    "location": "Istanbul",
+    "price_per_night": 800,
+    "image": "https://example.com/ciragan-palace.jpg"
+  },
+  {
+    "id": 20,
+    "name": "Four Seasons Hotel Istanbul",
+    "location": "Istanbul",
+    "price_per_night": 850,
+    "image": "https://example.com/four-seasons-istanbul.jpg"
+  },
+  {
+    "id": 21,
+    "name": "Mandarin Oriental",
+    "location": "Bangkok",
+    "price_per_night": 700,
+    "image": "https://example.com/mandarin-oriental-bangkok.jpg"
+  },
+  {
+    "id": 22,
+    "name": "The Siam",
+    "location": "Bangkok",
+    "price_per_night": 750,
+    "image": "https://example.com/the-siam.jpg"
+  },
+  {
+    "id": 23,
+    "name": "The Ritz-Carlton",
+    "location": "Hong Kong",
+    "price_per_night": 900,
+    "image": "https://example.com/ritz-carlton-hk.jpg"
+  },
+  {
+    "id": 24,
+    "name": "Four Seasons Hotel",
+    "location": "Hong Kong",
+    "price_per_night": 950,
+    "image": "https://example.com/four-seasons-hk.jpg"
+  },
+  {
+    "id": 25,
+    "name": "The Beverly Hills Hotel",
+    "location": "Los Angeles",
+    "price_per_night": 700,
+    "image": "https://example.com/beverly-hills-hotel.jpg"
+  },
+  {
+    "id": 26,
+    "name": "The Peninsula Beverly Hills",
+    "location": "Los Angeles",
+    "price_per_night": 750,
+    "image": "https://example.com/peninsula-beverly-hills.jpg"
+  },
+  {
+    "id": 27,
+    "name": "Fairmont Royal York",
+    "location": "Toronto",
+    "price_per_night": 600,
+    "image": "https://example.com/fairmont-royal-york.jpg"
+  },
+  {
+    "id": 28,
+    "name": "The Ritz-Carlton Toronto",
+    "location": "Toronto",
+    "price_per_night": 650,
+    "image": "https://example.com/ritz-carlton-toronto.jpg"
+  },
+  {
+    "id": 29,
+    "name": "Le Meurice",
+    "location": "Paris",
+    "price_per_night": 450,
+    "image": "https://example.com/le-meurice.jpg"
+  },
+  {
+    "id": 30,
+    "name": "Shangri-La Hotel",
+    "location": "Paris",
+    "price_per_night": 500,
+    "image": "https://example.com/shangri-la-paris.jpg"
+  },
+  {
+    "id": 31,
+    "name": "The Ritz London",
+    "location": "London",
+    "price_per_night": 600,
+    "image": "https://example.com/the-ritz-london.jpg"
+  },
+  {
+    "id": 32,
+    "name": "The Savoy",
+    "location": "London",
+    "price_per_night": 550,
+    "image": "https://example.com/the-savoy.jpg"
+  },
+  {
+    "id": 33,
+    "name": "The Plaza",
+    "location": "New York",
+    "price_per_night": 700,
+    "image": "https://example.com/the-plaza.jpg"
+  },
+  {
+    "id": 34,
+    "name": "Mandarin Oriental",
+    "location": "New York",
+    "price_per_night": 750,
+    "image": "https://example.com/mandarin-oriental-ny.jpg"
+  },
+  {
+    "id": 35,
+    "name": "Burj Al Arab",
+    "location": "Dubai",
+    "price_per_night": 1200,
+    "image": "https://example.com/burj-al-arab.jpg"
+  },
+  {
+    "id": 36,
+    "name": "Atlantis The Palm",
+    "location": "Dubai",
+    "price_per_night": 1000,
+    "image": "https://example.com/atlantis-the-palm.jpg"
+  },
+  {
+    "id": 37,
+    "name": "Marina Bay Sands",
+    "location": "Singapore",
+    "price_per_night": 800,
+    "image": "https://example.com/marina-bay-sands.jpg"
+  },
+  {
+    "id": 38,
+    "name": "Raffles Hotel",
+    "location": "Singapore",
+    "price_per_night": 850,
+    "image": "https://example.com/raffles-hotel.jpg"
+  },
+  {
+    "id": 39,
+    "name": "The Peninsula",
+    "location": "Tokyo",
+    "price_per_night": 900,
+    "image": "https://example.com/the-peninsula-tokyo.jpg"
+  },
+  {
+    "id": 40,
+    "name": "Park Hyatt",
+    "location": "Tokyo",
+    "price_per_night": 950,
+    "image": "https://example.com/park-hyatt-tokyo.jpg"
+  },
+  {
+    "id": 41,
+    "name": "Four Seasons Hotel",
+    "location": "Sydney",
+    "price_per_night": 700,
+    "image": "https://example.com/four-seasons-sydney.jpg"
+  },
+  {
+    "id": 42,
+    "name": "Shangri-La Hotel",
+    "location": "Sydney",
+    "price_per_night": 750,
+    "image": "https://example.com/shangri-la-sydney.jpg"
+  },
+  {
+    "id": 43,
+    "name": "Hotel de Russie",
+    "location": "Rome",
+    "price_per_night": 650,
+    "image": "https://example.com/hotel-de-russie.jpg"
+  },
+  {
+    "id": 44,
+    "name": "The St. Regis Rome",
+    "location": "Rome",
+    "price_per_night": 700,
+    "image": "https://example.com/st-regis-rome.jpg"
+  },
+  {
+    "id": 45,
+    "name": "Hotel Arts",
+    "location": "Barcelona",
+    "price_per_night": 600,
+    "image": "https://example.com/hotel-arts-barcelona.jpg"
+  },
+  {
+    "id": 46,
+    "name": "W Barcelona",
+    "location": "Barcelona",
+    "price_per_night": 650,
+    "image": "https://example.com/w-barcelona.jpg"
+  },
+  {
+    "id": 47,
+    "name": "Ciragan Palace Kempinski",
+    "location": "Istanbul",
+    "price_per_night": 800,
+    "image": "https://example.com/ciragan-palace.jpg"
+  },
+  {
+    "id": 48,
+    "name": "Four Seasons Hotel Istanbul",
+    "location": "Istanbul",
+    "price_per_night": 850,
+    "image": "https://example.com/four-seasons-istanbul.jpg"
+  },
+  {
+    "id": 49,
+    "name": "Mandarin Oriental",
+    "location": "Bangkok",
+    "price_per_night": 700,
+    "image": "https://example.com/mandarin-oriental-bangkok.jpg"
+  },
+  {
+    "id": 50,
+    "name": "The Siam",
+    "location": "Bangkok",
+    "price_per_night": 750,
+    "image": "https://example.com/the-siam.jpg"
+  },
+  {
+    "id": 51,
+    "name": "The Ritz-Carlton",
+    "location": "Hong Kong",
+    "price_per_night": 900,
+    "image": "https://example.com/ritz-carlton-hk.jpg"
+  },
+  {
+    "id": 52,
+    "name": "Four Seasons Hotel",
+    "location": "Hong Kong",
+    "price_per_night": 950,
+    "image": "https://example.com/four-seasons-hk.jpg"
+  },
+  {
+    "id": 53,
+    "name": "The Beverly Hills Hotel",
+    "location": "Los Angeles",
+    "price_per_night": 700,
+    "image": "https://example.com/beverly-hills-hotel.jpg"
+  },
+  {
+    "id": 54,
+    "name": "The Peninsula Beverly Hills",
+    "location": "Los Angeles",
+    "price_per_night": 750,
+    "image": "https://example.com/peninsula-beverly-hills.jpg"
+  },
+  {
+    "id": 55,
+    "name": "Fairmont Royal York",
+    "location": "Toronto",
+    "price_per_night": 600,
+    "image": "https://example.com/fairmont-royal-york.jpg"
+  },
+  {
+    "id": 56,
+    "name": "The Ritz-Carlton Toronto",
+    "location": "Toronto",
+    "price_per_night": 650,
+    "image": "https://example.com/ritz-carlton-toronto.jpg"
+  },
+  {
+    "id": 57,
+    "name": "Le Meurice",
+    "location": "Paris",
+    "price_per_night": 450,
+    "image": "https://example.com/le-meurice.jpg"
+  },
+  {
+    "id": 58,
+    "name": "Shangri-La Hotel",
+    "location": "Paris",
+    "price_per_night": 500,
+    "image": "https://example.com/shangri-la-paris.jpg"
+  },
+  {
+    "id": 59,
+    "name": "The Ritz London",
+    "location": "London",
+    "price_per_night": 600,
+    "image": "https://example.com/the-ritz-london.jpg"
+  },
+  {
+    "id": 60,
+    "name": "The Savoy",
+    "location": "London",
+    "price_per_night": 550,
+    "image": "https://example.com/the-savoy.jpg"
+  },
+  {
+    "id": 61,
+    "name": "The Plaza",
+    "location": "New York",
+    "price_per_night": 700,
+    "image": "https://example.com/the-plaza.jpg"
+  },
+  {
+    "id": 62,
+    "name": "Mandarin Oriental",
+    "location": "New York",
+    "price_per_night": 750,
+    "image": "https://example.com/mandarin-oriental-ny.jpg"
+  },
+  {
+    "id": 63,
+    "name": "Burj Al Arab",
+    "location": "Dubai",
+    "price_per_night": 1200,
+    "image": "https://example.com/burj-al-arab.jpg"
+  },
+  {
+    "id": 64,
+    "name": "Atlantis The Palm",
+    "location": "Dubai",
+    "price_per_night": 1000,
+    "image": "https://example.com/atlantis-the-palm.jpg"
+  },
+  {
+    "id": 65,
+    "name": "Marina Bay Sands",
+    "location": "Singapore",
+    "price_per_night": 800,
+    "image": "https://example.com/marina-bay-sands.jpg"
+  },
+  {
+    "id": 66,
+    "name": "Raffles Hotel",
+    "location": "Singapore",
+    "price_per_night": 850,
+    "image": "https://example.com/raffles-hotel.jpg"
+  },
+  {
+    "id": 67,
+    "name": "The Peninsula",
+    "location": "Tokyo",
+    "price_per_night": 900,
+    "image": "https://example.com/the-peninsula-tokyo.jpg"
+  },
+  {
+    "id": 68,
+    "name": "Park Hyatt",
+    "location": "Tokyo",
+    "price_per_night": 950,
+    "image": "https://example.com/park-hyatt-tokyo.jpg"
+  },
+  {
+    "id": 69,
+    "name": "Four Seasons Hotel",
+    "location": "Sydney",
+    "price_per_night": 700,
+    "image": "https://example.com/four-seasons-sydney.jpg"
+  },
+  {
+    "id": 70,
+    "name": "Shangri-La Hotel",
+    "location": "Sydney",
+    "price_per_night": 750,
+    "image": "https://example.com/shangri-la-sydney.jpg"
+  },
+  {
+    "id": 71,
+    "name": "Hotel de Russie",
+    "location": "Rome",
+    "price_per_night": 650,
+    "image": "https://example.com/hotel-de-russie.jpg"
+  },
+  {
+    "id": 72,
+    "name": "The St. Regis Rome",
+    "location": "Rome",
+    "price_per_night": 700,
+    "image": "https://example.com/st-regis-rome.jpg"
+  },
+  {
+    "id": 73,
+    "name": "Hotel Arts",
+    "location": "Barcelona",
+    "price_per_night": 600,
+    "image": "https://example.com/hotel-arts-barcelona.jpg"
+  },
+  {
+    "id": 74,
+    "name": "W Barcelona",
+    "location": "Barcelona",
+    "price_per_night": 650,
+    "image": "https://example.com/w-barcelona.jpg"
+  },
+  {
+    "id": 75,
+    "name": "Ciragan Palace Kempinski",
+    "location": "Istanbul",
+    "price_per_night": 800,
+    "image": "https://example.com/ciragan-palace.jpg"
+  },
+  {
+    "id": 76,
+    "name": "Four Seasons Hotel Istanbul",
+    "location": "Istanbul",
+    "price_per_night": 850,
+    "image": "https://example.com/four-seasons-istanbul.jpg"
+  },
+  {
+    "id": 77,
+    "name": "Mandarin Oriental",
+    "location": "Bangkok",
+    "price_per_night": 700,
+    "image": "https://example.com/mandarin-oriental-bangkok.jpg"
+  },
+  {
+    "id": 78,
+    "name": "The Siam",
+    "location": "Bangkok",
+    "price_per_night": 750,
+    "image": "https://example.com/the-siam.jpg"
+  },
+  {
+    "id": 79,
+    "name": "The Ritz-Carlton",
+    "location": "Hong Kong",
+    "price_per_night": 900,
+    "image": "https://example.com/ritz-carlton-hk.jpg"
+  },
+  {
+    "id": 80,
+    "name": "Four Seasons Hotel",
+    "location": "Hong Kong",
+    "price_per_night": 950,
+    "image": "https://example.com/four-seasons-hk.jpg"
+  },
+  {
+    "id": 81,
+    "name": "The Beverly Hills Hotel",
+    "location": "Los Angeles",
+    "price_per_night": 700,
+    "image": "https://example.com/beverly-hills-hotel.jpg"
+  },
+  {
+    "id": 82,
+    "name": "The Peninsula Beverly Hills",
+    "location": "Los Angeles",
+    "price_per_night": 750,
+    "image": "https://example.com/peninsula-beverly-hills.jpg"
+  },
+  {
+    "id": 83,
+    "name": "Fairmont Royal York",
+    "location": "Toronto",
+    "price_per_night": 600,
+    "image": "https://example.com/fairmont-royal-york.jpg"
+  },
+  {
+    "id": 84,
+    "name": "The Ritz-Carlton Toronto",
+    "location": "Toronto",
+    "price_per_night": 650,
+    "image": "https://example.com/ritz-carlton-toronto.jpg"
+  },
+  {
+    "id": 85,
+    "name": "Le Meurice",
+    "location": "Paris",
+    "price_per_night": 450,
+    "image": "https://example.com/le-meurice.jpg"
+  },
+  {
+    "id": 86,
+    "name": "Shangri-La Hotel",
+    "location": "Paris",
+    "price_per_night": 500,
+    "image": "https://example.com/shangri-la-paris.jpg"
+  },
+  {
+    "id": 87,
+    "name": "The Ritz London",
+    "location": "London",
+    "price_per_night": 600,
+    "image": "https://example.com/the-ritz-london.jpg"
+  },
+  {
+    "id": 88,
+    "name": "The Savoy",
+    "location": "London",
+    "price_per_night": 550,
+    "image": "https://example.com/the-savoy.jpg"
+  },
+  {
+    "id": 89,
+    "name": "The Plaza",
+    "location": "New York",
+    "price_per_night": 700,
+    "image": "https://example.com/the-plaza.jpg"
+  },
+  {
+    "id": 90,
+    "name": "Mandarin Oriental",
+    "location": "New York",
+    "price_per_night": 750,
+    "image": "https://example.com/mandarin-oriental-ny.jpg"
+  },
+  {
+    "id": 91,
+    "name": "Burj Al Arab",
+    "location": "Dubai",
+    "price_per_night": 1200,
+    "image": "https://example.com/burj-al-arab.jpg"
+  },
+  {
+    "id": 92,
+    "name": "Atlantis The Palm",
+    "location": "Dubai",
+    "price_per_night": 1000,
+    "image": "https://example.com/atlantis-the-palm.jpg"
+  },
+  {
+    "id": 93,
+    "name": "Marina Bay Sands",
+    "location": "Singapore",
+    "price_per_night": 800,
+    "image": "https://example.com/marina-bay-sands.jpg"
+  },
+  {
+    "id": 94,
+    "name": "Raffles Hotel",
+    "location": "Singapore",
+    "price_per_night": 850,
+    "image": "https://example.com/raffles-hotel.jpg"
+  },
+  {
+    "id": 95,
+    "name": "The Peninsula",
+    "location": "Tokyo",
+    "price_per_night": 900,
+    "image": "https://example.com/the-peninsula-tokyo.jpg"
+  },
+  {
+    "id": 96,
+    "name": "Park Hyatt",
+    "location": "Tokyo",
+    "price_per_night": 950,
+    "image": "https://example.com/park-hyatt-tokyo.jpg"
+  },
+  {
+    "id": 97,
+    "name": "Four Seasons Hotel",
+    "location": "Sydney",
+    "price_per_night": 700,
+    "image": "https://example.com/four-seasons-sydney.jpg"
+  },
+  {
+    "id": 98,
+    "name": "Shangri-La Hotel",
+    "location": "Sydney",
+    "price_per_night": 750,
+    "image": "https://example.com/shangri-la-sydney.jpg"
+  },
+  {
+    "id": 99,
+    "name": "Hotel de Russie",
+    "location": "Rome",
+    "price_per_night": 650,
+    "image": "https://example.com/hotel-de-russie.jpg"
+  },
+  {
+    "id": 100,
+    "name": "The St. Regis Rome",
+    "location": "Rome",
+    "price_per_night": 700,
+    "image": "https://example.com/st-regis-rome.jpg"
+  }
+]
 }
