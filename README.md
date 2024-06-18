@@ -4,12 +4,10 @@ Run the following commands:
 
 ```
 npm install
-npm install react react-dom @mui/material @emotion/react @emotion/styled @mui/x-date-pickers @mui/x-date-pickers/AdapterDateFns axios json-server
+
+npm install react react-dom @mui/material @emotion/react @emotion/styled @mui/x-date-pickers @mui/x-date-pickers/AdapterDateFns axios json-server date-fns
+
 npm start
-
-
-npm install date-fns
-
 ```
 
 This will install dependencies, then start the app and mock API.
