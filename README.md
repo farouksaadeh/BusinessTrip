@@ -4,8 +4,9 @@ Run the following commands:
 
 ```
 npm install
+npm install react react-dom @mui/material @emotion/react @emotion/styled @mui/x-date-pickers @mui/x-date-pickers/AdapterDateFns axios json-server
 npm start
-npm install @mui/material@5.11.0 @mui/icons-material@5.11.0 @mui/lab@5.0.0-alpha.93 @mui/x-date-pickers@5.0.0-alpha.0 date-fns
+
 
 npm install date-fns
 
