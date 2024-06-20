@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Container } from '@mui/material';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import SearchForm from './components/SearchForm';
 import Results from './components/Results';
+import Header from './components/Header';
+import Login from './components/Login';
 
 const App = () => {
   const [results, setResults] = useState({ flights: [], hotels: [] });
@@ -52,10 +55,20 @@ const App = () => {
   }, [searchParams]);
 
   return (
-    <Container>
-      <SearchForm onSearch={handleSearch} />
-      <Results results={results} searchParams={searchParams} />
-    </Container>
+    <Router>
+      <Container>
+        <Header />
+        <Routes>
+          <Route path="/login" element={<Login />} />
+          <Route path="/" element={
+            <>
+              <SearchForm onSearch={handleSearch} />
+              <Results results={results} searchParams={searchParams} />
+            </>
+          } />
+        </Routes>
+      </Container>
+    </Router>
   );
 };
 

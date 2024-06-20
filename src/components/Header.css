@@ -1,0 +1,25 @@
+/* src/Header.css */
+.App-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #282c34;
+    color: white;
+  }
+  
+  .login-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #282c34;
+    background-color: #61dafb;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .login-button:hover {
+    background-color: #21a1f1;
+  }
+  
