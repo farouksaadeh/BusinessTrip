@@ -5,6 +5,7 @@ import { DatePicker } from '@mui/x-date-pickers/DatePicker';
 import { AdapterDateFns } from '@mui/x-date-pickers/AdapterDateFns';
 import Autocomplete from '@mui/material/Autocomplete';
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom'; // Import useNavigate for navigation
 
 const SearchForm = ({ onSearch }) => {
   const [type, setType] = useState('flight');
@@ -16,6 +17,7 @@ const SearchForm = ({ onSearch }) => {
   const [hotels, setHotels] = useState([]);
   const [flights, setFlights] = useState([]);
   const [destinations, setDestinations] = useState([]);
+  const navigate = useNavigate(); // Initialize useNavigate
 
   useEffect(() => {
     const fetchHotelsAndFlights = async () => {
@@ -43,6 +45,7 @@ const SearchForm = ({ onSearch }) => {
       results.push(...matchingHotels);
     }
     onSearch({ type, destination, guests, nights, results });
+    navigate('/results'); // Navigate to results page
   };
 
   return (

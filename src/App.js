@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Container } from '@mui/material';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import SearchForm from './components/SearchForm';
 import Results from './components/Results';
+import DetailView from './components/DetailView'; // New import for the detail view
 
 const App = () => {
   const [results, setResults] = useState({ flights: [], hotels: [] });
@@ -27,15 +29,20 @@ const App = () => {
 
         if (searchParams.type === 'flight' || searchParams.type === 'hotel+flight') {
           flightsResponse = await axios.get('http://localhost:3001/flights');
+          console.log('Fetched Flights:', flightsResponse.data);
         }
         if (searchParams.type === 'hotel' || searchParams.type === 'hotel+flight') {
           hotelsResponse = await axios.get('http://localhost:3001/hotels');
+          console.log('Fetched Hotels:', hotelsResponse.data);
         }
 
         const filteredFlights = flightsResponse ? flightsResponse.data.filter(flight =>
           flight.to.toLowerCase().includes(searchParams.destination.toLowerCase())) : [];
         const filteredHotels = hotelsResponse ? hotelsResponse.data.filter(hotel =>
           hotel.location.toLowerCase().includes(searchParams.destination.toLowerCase())) : [];
+
+        console.log('Filtered Flights:', filteredFlights);
+        console.log('Filtered Hotels:', filteredHotels);
 
         setResults({
           flights: filteredFlights,
@@ -52,10 +59,15 @@ const App = () => {
   }, [searchParams]);
 
   return (
-    <Container>
-      <SearchForm onSearch={handleSearch} />
-      <Results results={results} searchParams={searchParams} />
-    </Container>
+    <Router>
+      <Container>
+        <Routes>
+          <Route path="/" element={<SearchForm onSearch={handleSearch} />} />
+          <Route path="/results" element={<Results results={results} searchParams={searchParams} />} />
+          <Route path="/details" element={<DetailView />} />
+        </Routes>
+      </Container>
+    </Router>
   );
 };
 
