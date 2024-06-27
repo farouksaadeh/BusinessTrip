@@ -1,9 +1,13 @@
-import React from 'react';
-import { Card, CardContent, CardMedia, Typography } from '@mui/material';
+// components/Results.js
+import React, { useState } from 'react';
+import { Card, CardContent, CardMedia, Typography, Box, Button } from '@mui/material';
 import { Link } from 'react-router-dom';
+import GoogleMapEmbed from './GoogleMapEmbed';
+import './Results.css';
 
 const Results = ({ results, searchParams }) => {
-  const { type, guests } = searchParams;
+  const [hoveredLocation, setHoveredLocation] = useState(null);
+  const { type, destination, guests } = searchParams;
 
   const calculateTotalPrice = (flight, hotel, guests) => {
     const hotelPrice = hotel.price_per_night * guests;
@@ -14,51 +18,84 @@ const Results = ({ results, searchParams }) => {
   const filteredHotels = Array.isArray(results.hotels) ? results.hotels : [];
 
   return (
-    <div>
-      {type === 'flight' && filteredFlights.map((flight) => (
-        <Card key={flight.id} style={{ margin: '1em' }}>
-          <CardContent>
-            <Typography variant="h5">{flight.to}</Typography>
-            <Typography>Departure: {new Date(flight.departure).toLocaleString()}</Typography>
-            <Typography>Arrival: {new Date(flight.arrival).toLocaleString()}</Typography>
-            <Typography>Price: ${flight.price}</Typography>
-            <Link to={`/details?id=${flight.id}`}>Details</Link>
-          </CardContent>
-        </Card>
-      ))}
-      {type === 'hotel' && filteredHotels.map((hotel) => (
-        <Card key={hotel.id} style={{ margin: '1em' }}>
-          <CardMedia
-            component="img"
-            alt={hotel.name}
-            height="140"
-            image={hotel.image}
-          />
-          <CardContent>
-            <Typography variant="h5">{hotel.name}</Typography>
-            <Typography>Location: {hotel.location}</Typography>
-            <Typography>Price per night: ${hotel.price_per_night}</Typography>
-            <Link to={`/details?id=${hotel.id}`}>Details</Link>
-          </CardContent>
-        </Card>
-      ))}
-      {type === 'hotel+flight' && filteredFlights.map((flight) => {
-        const matchingHotel = filteredHotels.find(hotel => hotel.location === flight.to);
-        return matchingHotel ? (
-          <Card key={flight.id} style={{ margin: '1em' }}>
-            <CardContent>
-              <Typography variant="h5">{flight.to}</Typography>
-              <Typography>Departure: {new Date(flight.departure).toLocaleString()}</Typography>
-              <Typography>Arrival: {new Date(flight.arrival).toLocaleString()}</Typography>
-              <Typography>Flight Price: ${flight.price}</Typography>
-              <Typography>Hotel: {matchingHotel.name}</Typography>
-              <Typography>Hotel Price per night: ${matchingHotel.price_per_night}</Typography>
-              <Typography>Total Price for {guests} guests: ${calculateTotalPrice(flight, matchingHotel, guests)}</Typography>
-              <Link to={`/details?flightId=${flight.id}&hotelId=${matchingHotel.id}`}>Details</Link>
-            </CardContent>
-          </Card>
-        ) : null;
-      })}
+    <div className="results-container">
+      <div className="results-list">
+        {type === 'flight' && filteredFlights.map((flight) => (
+          <Link to={`/details?id=${flight.id}&type=flight`} key={flight.id} className="result-card-link">
+            <Card
+              className="result-card"
+              onMouseEnter={() => setHoveredLocation({ lat: flight.latitude, lng: flight.longitude })}
+              onMouseLeave={() => setHoveredLocation(null)}
+            >
+              <CardContent>
+                <Typography variant="h5">{flight.to}</Typography>
+                <Typography>Departure: {new Date(flight.departure).toLocaleString()}</Typography>
+                <Typography>Arrival: {new Date(flight.arrival).toLocaleString()}</Typography>
+                <Typography>Price: ${flight.price}</Typography>
+              </CardContent>
+            </Card>
+          </Link>
+        ))}
+        {type === 'hotel' && filteredHotels.map((hotel) => (
+          <Link to={`/details?id=${hotel.id}&type=hotel`} key={hotel.id} className="result-card-link">
+            <Card
+              className="result-card"
+              onMouseEnter={() => setHoveredLocation({ lat: hotel.latitude, lng: hotel.longitude })}
+              onMouseLeave={() => setHoveredLocation(null)}
+            >
+              <CardMedia
+                component="img"
+                alt={hotel.name}
+                height="140"
+                image={hotel.image}
+                className="result-image"
+              />
+              <CardContent className="result-content">
+                <Box className="result-details">
+                  <Typography variant="h5">{hotel.name}</Typography>
+                  <Typography>{hotel.location}</Typography>
+                  <Typography>{hotel.distance_to_city_center} km vom Stadtzentrum</Typography>
+                  <Typography className="rating">{hotel.rating} {hotel.reviews} Bewertungen</Typography>
+                  <Typography>{hotel.price_per_night} CHF / Nacht</Typography>
+                </Box>
+                <Box className="result-price">
+                  <Button variant="contained" color="primary">Zum Angebot</Button>
+                </Box>
+              </CardContent>
+            </Card>
+          </Link>
+        ))}
+        {type === 'hotel+flight' && filteredFlights.map((flight) => {
+          const matchingHotel = filteredHotels.find(hotel => hotel.location === flight.to);
+          return matchingHotel ? (
+            <Link to={`/details?id=${flight.id}&type=hotel+flight`} key={flight.id} className="result-card-link">
+              <Card
+                className="result-card"
+                onMouseEnter={() => setHoveredLocation({ lat: matchingHotel.latitude, lng: matchingHotel.longitude })}
+                onMouseLeave={() => setHoveredLocation(null)}
+              >
+                <CardContent className="result-content">
+                  <Box className="result-details">
+                    <Typography variant="h5">{flight.to}</Typography>
+                    <Typography>Departure: {new Date(flight.departure).toLocaleString()}</Typography>
+                    <Typography>Arrival: {new Date(flight.arrival).toLocaleString()}</Typography>
+                    <Typography>Flight Price: ${flight.price}</Typography>
+                    <Typography>Hotel: {matchingHotel.name}</Typography>
+                    <Typography>Hotel Price per night: ${matchingHotel.price_per_night}</Typography>
+                    <Typography>Total Price for {guests} guests: ${calculateTotalPrice(flight, matchingHotel, guests)}</Typography>
+                  </Box>
+                  <Box className="result-price">
+                    <Button variant="contained" color="primary">Zum Angebot</Button>
+                  </Box>
+                </CardContent>
+              </Card>
+            </Link>
+          ) : null;
+        })}
+      </div>
+      <div className="map-container">
+        {hoveredLocation && <GoogleMapEmbed lat={hoveredLocation.lat} lng={hoveredLocation.lng} />}
+      </div>
     </div>
   );
 };

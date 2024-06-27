@@ -7,6 +7,11 @@ npm install
 
 npm install react react-dom @mui/material @emotion/react @emotion/styled @mui/x-date-pickers @mui/x-date-pickers/AdapterDateFns axios json-server date-fns
 
+npm install @react-google-maps/api
+
+npm install react-leaflet leaflet
+
+
 npm start
 ```
 

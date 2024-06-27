@@ -5,6 +5,8 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import SearchForm from './components/SearchForm';
 import Results from './components/Results';
 import DetailView from './components/DetailView'; // New import for the detail view
+import Header from './components/Header';
+import './App.css'; // Ensure you have the App.css imported
 
 const App = () => {
   const [results, setResults] = useState({ flights: [], hotels: [] });
@@ -59,15 +61,18 @@ const App = () => {
   }, [searchParams]);
 
   return (
-    <Router>
-      <Container>
-        <Routes>
-          <Route path="/" element={<SearchForm onSearch={handleSearch} />} />
-          <Route path="/results" element={<Results results={results} searchParams={searchParams} />} />
-          <Route path="/details" element={<DetailView />} />
-        </Routes>
-      </Container>
-    </Router>
+    <div className="app">
+      <Router>
+        <Header />
+        <Container className="content">
+          <Routes>
+            <Route path="/" element={<SearchForm onSearch={handleSearch} />} />
+            <Route path="/results" element={<Results results={results} searchParams={searchParams} />} />
+            <Route path="/details" element={<DetailView />} />
+          </Routes>
+        </Container>
+      </Router>
+    </div>
   );
 };
 

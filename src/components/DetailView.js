@@ -1,99 +1,69 @@
-import React, { useState, useEffect } from 'react';
+// components/DetailView.js
+import React, { useEffect, useState } from 'react';
+import { useLocation } from 'react-router-dom';
 import axios from 'axios';
-import { useSearchParams } from 'react-router-dom';
-import { Container, Typography, Card, CardContent, CardMedia } from '@mui/material';
+import './DetailView.css'; // Import the correct CSS file
 
 const DetailView = () => {
-  const [searchParams] = useSearchParams();
-  const flightId = searchParams.get('flightId');
-  const hotelId = searchParams.get('hotelId');
+  const [data, setData] = useState(null);
+  const location = useLocation();
+  const searchParams = new URLSearchParams(location.search);
   const id = searchParams.get('id');
-  const [details, setDetails] = useState(null);
+  const type = searchParams.get('type');
 
   useEffect(() => {
-    const fetchDetails = async () => {
+    const fetchData = async () => {
       try {
-        let flightDetails, hotelDetails, itemDetails;
-        if (flightId) {
-          const flightResponse = await axios.get(`http://localhost:3001/flights/${flightId}`);
-          flightDetails = flightResponse.data;
+        console.log('Fetching data for ID:', id, 'Type:', type);
+        let response;
+        if (type === 'flight') {
+          response = await axios.get(`http://localhost:3001/flights/${id}`);
+        } else if (type === 'hotel') {
+          response = await axios.get(`http://localhost:3001/hotels/${id}`);
+        } else if (type === 'hotel+flight') {
+          const flightResponse = await axios.get(`http://localhost:3001/flights/${id}`);
+          const hotelResponse = await axios.get(`http://localhost:3001/hotels/${id}`);
+          response = { data: { flight: flightResponse.data, hotel: hotelResponse.data } };
         }
-        if (hotelId) {
-          const hotelResponse = await axios.get(`http://localhost:3001/hotels/${hotelId}`);
-          hotelDetails = hotelResponse.data;
-        }
-        if (id) {
-          try {
-            const flightResponse = await axios.get(`http://localhost:3001/flights/${id}`);
-            itemDetails = { flight: flightResponse.data };
-          } catch (error) {
-            const hotelResponse = await axios.get(`http://localhost:3001/hotels/${id}`);
-            itemDetails = { hotel: hotelResponse.data };
-          }
-        }
-        setDetails({ flight: flightDetails, hotel: hotelDetails, item: itemDetails });
+        console.log('Data fetched:', response.data);
+        setData(response.data);
       } catch (error) {
-        console.error("Error fetching details:", error);
+        console.error('Error fetching data:', error);
       }
     };
-    fetchDetails();
-  }, [flightId, hotelId, id]);
+    fetchData();
+  }, [id, type]);
 
-  if (!details) return <div>Loading...</div>;
+  if (!data) {
+    return <div>Loading...</div>;
+  }
 
   return (
-    <Container>
-      {details.flight && (
-        <Card style={{ margin: '1em' }}>
-          <CardContent>
-            <Typography variant="h5">Flight to {details.flight.to}</Typography>
-            <Typography>Departure: {new Date(details.flight.departure).toLocaleString()}</Typography>
-            <Typography>Arrival: {new Date(details.flight.arrival).toLocaleString()}</Typography>
-            <Typography>Price: ${details.flight.price}</Typography>
-          </CardContent>
-        </Card>
+    <div className="detail-container">
+      {type === 'hotel+flight' ? (
+        <>
+          <h1>{data.hotel.name}</h1>
+          <img src={data.hotel.image} alt={data.hotel.name} />
+          <p>{data.hotel.description}</p>
+          <h2>Flight Details</h2>
+          <p>Flight to: {data.flight.to}</p>
+          <p>Departure: {new Date(data.flight.departure).toLocaleString()}</p>
+          <p>Arrival: {new Date(data.flight.arrival).toLocaleString()}</p>
+        </>
+      ) : type === 'hotel' ? (
+        <>
+          <h1>{data.name}</h1>
+          <img src={data.image} alt={data.name} />
+          <p>{data.description}</p>
+        </>
+      ) : (
+        <>
+          <h1>Flight to {data.to}</h1>
+          <p>Departure: {new Date(data.departure).toLocaleString()}</p>
+          <p>Arrival: {new Date(data.arrival).toLocaleString()}</p>
+        </>
       )}
-      {details.hotel && (
-        <Card style={{ margin: '1em' }}>
-          <CardMedia
-            component="img"
-            alt={details.hotel.name}
-            height="140"
-            image={details.hotel.image}
-          />
-          <CardContent>
-            <Typography variant="h5">{details.hotel.name}</Typography>
-            <Typography>Location: {details.hotel.location}</Typography>
-            <Typography>Price per night: ${details.hotel.price_per_night}</Typography>
-          </CardContent>
-        </Card>
-      )}
-      {details.item && details.item.flight && (
-        <Card style={{ margin: '1em' }}>
-          <CardContent>
-            <Typography variant="h5">Flight to {details.item.flight.to}</Typography>
-            <Typography>Departure: {new Date(details.item.flight.departure).toLocaleString()}</Typography>
-            <Typography>Arrival: {new Date(details.item.flight.arrival).toLocaleString()}</Typography>
-            <Typography>Price: ${details.item.flight.price}</Typography>
-          </CardContent>
-        </Card>
-      )}
-      {details.item && details.item.hotel && (
-        <Card style={{ margin: '1em' }}>
-          <CardMedia
-            component="img"
-            alt={details.item.hotel.name}
-            height="140"
-            image={details.item.hotel.image}
-          />
-          <CardContent>
-            <Typography variant="h5">{details.item.hotel.name}</Typography>
-            <Typography>Location: {details.item.hotel.location}</Typography>
-            <Typography>Price per night: ${details.item.hotel.price_per_night}</Typography>
-          </CardContent>
-        </Card>
-      )}
-    </Container>
+    </div>
   );
 };
 

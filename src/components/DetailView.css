@@ -1,0 +1,105 @@
+.details-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .details-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .details-header img {
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .details-header-info {
+    flex-grow: 1;
+    margin-left: 20px;
+  }
+  
+  .details-header-info h1 {
+    margin: 0;
+  }
+  
+  .details-header-info .rating {
+    font-size: 24px;
+    color: green;
+  }
+  
+  .details-overview {
+    margin-top: 20px;
+  }
+  
+  .details-overview h2 {
+    margin-bottom: 10px;
+  }
+  
+  .details-highlights, .details-amenities {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .details-highlights div, .details-amenities div {
+    flex-basis: 32%;
+  }
+  
+  .details-amenities ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .details-amenities ul li {
+    display: flex;
+    align-items: center;
+  }
+  
+  .details-amenities ul li::before {
+    content: '✔';
+    color: green;
+    margin-right: 8px;
+  }
+  
+  .details-map {
+    margin-top: 20px;
+  }
+  
+  .details-map img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .details-rooms {
+    margin-top: 20px;
+  }
+  
+  .details-rooms h2 {
+    margin-bottom: 10px;
+  }
+  
+  .room-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .room-card img {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .room-card-info {
+    flex-grow: 1;
+    margin-left: 20px;
+  }
+  

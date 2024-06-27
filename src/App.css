@@ -1,17 +1,10 @@
-body {
-  font-family: 'Arial', sans-serif;
+.app {
+  display: flex;
+  flex-direction: column;
 }
 
-h1 {
-  text-align: center;
-  margin-top: 20px;
-}
-
-.MuiContainer-root {
-  margin-top: 50px;
-}
-
-.MuiButton-containedPrimary {
-  background-color: #1976d2;
-  color: #fff;
+.content {
+  transition: margin-top 0.3s ease-in-out;
+  margin-top: 14vh; /* Added margin-top for the content */
+  padding: 20px; /* Optional: add some padding to the content */
 }
