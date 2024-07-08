@@ -131,6 +131,25 @@
     align-items: center;
     margin-right: 10px;
   }
+
+  /* Add this to your Login.css */
+
+.flex-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.flex-row div {
+  display: flex;
+  align-items: center;
+}
+
+.flex-row label {
+  margin-left: 5px;
+}
+
   
   
   
@@ -150,11 +169,18 @@
   border: 1px solid white;
   padding: 5px 10px;
   border-radius: 5px;
-  margin-left: 20px;
   font-size: 1.2em;
-  margin-right: 10vh;
+  margin-right: 10px; /* Margin between user name and the separator */
 }
 
+/* Separator line */
+.separator {
+  height: 30px; /* Adjust height as needed */
+  width: 1px;
+  background-color: white;
+  margin-left: 5vh;
+  margin-right: 5vh;
+}
 
 
 /* plus sign */
@@ -226,6 +252,7 @@
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
+  
 }
 
 .menu .link {
@@ -296,8 +323,16 @@
 }
 
 .menu .item:hover .link {
-  border-radius: 16px 16px 0 0;
+  border-top-left-radius: 19px;  /* Top left border-radius on hover */
+  border-top-right-radius: 19px; /* Top right border-radius on hover */
+  border-bottom-right-radius: 0px; 
+  border-bottom-left-radius: 0px;
+  border-top: 1.5px solid white;    /* Top border on hover */
+  border-right: 1.5px solid white;  /* Right border on hover */
+  border-left: 1.5px solid white;  /* left border on hover */
+
 }
+
 
 .menu .item:hover .link::after {
   transform: scaleX(1);
@@ -355,3 +390,4 @@
   -webkit-background-clip: none;
   -webkit-text-fill-color: #ffffff;
 }
+

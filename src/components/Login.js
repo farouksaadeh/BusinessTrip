@@ -1,3 +1,4 @@
+// src/components/Login.js
 import React, { useState } from 'react';
 import './Login.css';
 
@@ -5,6 +6,8 @@ const Login = ({ onClose, onSignUp, onLogin }) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
+  const [rememberMe, setRememberMe] = useState(false);
+  const [disableSessionExpiration, setDisableSessionExpiration] = useState(false);
 
   const handleLogin = async (e) => {
     e.preventDefault();
@@ -18,7 +21,7 @@ const Login = ({ onClose, onSignUp, onLogin }) => {
       if (user) {
         // User found, handle successful login
         console.log(`Logged in user: ${user.firstName} ${user.lastName}`); // Added console log
-        onLogin(user);
+        onLogin(user, rememberMe, disableSessionExpiration);
         onClose();
       } else {
         setError('Invalid email or password');
@@ -58,8 +61,12 @@ const Login = ({ onClose, onSignUp, onLogin }) => {
         {error && <div className="error">{error}</div>}
         <div className="flex-row">
           <div>
-            <input type="checkbox" />
+            <input type="checkbox" checked={rememberMe} onChange={(e) => setRememberMe(e.target.checked)} />
             <label>Remember me</label>
+          </div>
+          <div>
+            <input type="checkbox" checked={disableSessionExpiration} onChange={(e) => setDisableSessionExpiration(e.target.checked)} />
+            <label>Disable session expiration</label>
           </div>
           <span className="span">Forgot password?</span>
         </div>

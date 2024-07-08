@@ -40,6 +40,7 @@ function Header({ isLoggedIn, user, onLogin, onLogout }) {
           {isLoggedIn ? (
             <>
               <span className="user-name">{user.firstName} {user.lastName}</span>
+              <div className="separator"></div>
               {user.role === 'admin' && (
                 <div className="menu">
                   <div className="item">

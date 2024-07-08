@@ -3792,6 +3792,13 @@
       "password": "1234",
       "role": "admin",
       "id": 17
+    },
+    {
+      "email": "AJRI2@",
+      "password": "AJRI2@",
+      "firstName": "AJRI",
+      "lastName": "AJRI",
+      "id": 18
     }
   ]
 }

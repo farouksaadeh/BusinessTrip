@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import axios from 'axios';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import SearchForm from './components/SearchForm';
@@ -8,7 +8,8 @@ import Header from './components/Header';
 import ManageUsers from './components/ManageUsers';
 import ManageHotels from './components/ManageHotels';
 import ManageFlights from './components/ManageFlights';
-import ProtectedRoute from './components/ProtectedRoute'; // New import for ProtectedRoute
+import ProtectedRoute from './components/ProtectedRoute';
+import SessionTimer from './components/SessionTimer';
 import './App.css';
 
 const App = () => {
@@ -24,6 +25,9 @@ const App = () => {
 
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [user, setUser] = useState({ firstName: 'John', lastName: 'Doe' });
+  const [rememberMe, setRememberMe] = useState(false);
+  const [disableSessionExpiration, setDisableSessionExpiration] = useState(false);
+  const [timeLeft, setTimeLeft] = useState(300); // 5 minutes in seconds
 
   const handleSearch = (params) => {
     setSearchParams(params);
@@ -61,23 +65,34 @@ const App = () => {
     }
   }, [searchParams]);
 
-  const handleLogin = (user) => {
+  const handleLogin = (user, rememberMe, disableSessionExpiration) => {
     setUser(user);
     setIsLoggedIn(true);
-    sessionStorage.setItem('user', JSON.stringify(user));
-    sessionStorage.setItem('isLoggedIn', 'true');
+    setRememberMe(rememberMe);
+    setDisableSessionExpiration(disableSessionExpiration);
+
+    if (rememberMe) {
+      localStorage.setItem('user', JSON.stringify(user));
+      localStorage.setItem('isLoggedIn', 'true');
+    } else {
+      sessionStorage.setItem('user', JSON.stringify(user));
+      sessionStorage.setItem('isLoggedIn', 'true');
+      setTimeLeft(300); // Reset the timer for 5 minutes
+    }
   };
 
-  const handleLogout = () => {
+  const handleLogout = useCallback(() => {
     setUser({ firstName: '', lastName: '' });
     setIsLoggedIn(false);
+    localStorage.removeItem('user');
+    localStorage.removeItem('isLoggedIn');
     sessionStorage.removeItem('user');
     sessionStorage.removeItem('isLoggedIn');
-  };
+  }, []);
 
   useEffect(() => {
-    const storedUser = sessionStorage.getItem('user');
-    const storedIsLoggedIn = sessionStorage.getItem('isLoggedIn');
+    const storedUser = localStorage.getItem('user') || sessionStorage.getItem('user');
+    const storedIsLoggedIn = localStorage.getItem('isLoggedIn') || sessionStorage.getItem('isLoggedIn');
 
     if (storedIsLoggedIn === 'true' && storedUser) {
       setUser(JSON.parse(storedUser));
@@ -90,15 +105,16 @@ const App = () => {
   };
 
   useEffect(() => {
-    if (isLoggedIn) {
+    if (isLoggedIn && !rememberMe && !disableSessionExpiration) {
       setLogoutTimer();
     }
-  }, [isLoggedIn]);
+  }, [isLoggedIn, rememberMe, disableSessionExpiration, handleLogout]);
 
   return (
     <div className="app">
       <Router>
         <Header isLoggedIn={isLoggedIn} user={user} onLogin={handleLogin} onLogout={handleLogout} />
+        {isLoggedIn && !rememberMe && !disableSessionExpiration && <SessionTimer initialTime={timeLeft} onTimeout={handleLogout} />}
         <div className="content">
           <Routes>
             <Route path="/" element={<SearchForm onSearch={handleSearch} />} />
