@@ -6,6 +6,7 @@ import { AdapterDateFns } from '@mui/x-date-pickers/AdapterDateFns';
 import Autocomplete from '@mui/material/Autocomplete';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom'; // Import useNavigate for navigation
+import './SearchForm.css'; // Import CSS for styling
 
 const SearchForm = ({ onSearch }) => {
   const [type, setType] = useState('flight');
@@ -49,9 +50,9 @@ const SearchForm = ({ onSearch }) => {
   };
 
   return (
-    <Container>
-      <Grid container spacing={3}>
-        <Grid item xs={12}>
+    <Container className="search-form-container">
+      <Grid container spacing={3} className="search-form-grid">
+        <Grid item xs={12} className="search-form-grid-item">
           <FormControl fullWidth>
             <InputLabel>Reisetyp</InputLabel>
             <Select value={type} onChange={(e) => setType(e.target.value)}>
@@ -61,7 +62,7 @@ const SearchForm = ({ onSearch }) => {
             </Select>
           </FormControl>
         </Grid>
-        <Grid item xs={6}>
+        <Grid item xs={6} className="search-form-grid-item">
           <Autocomplete
             freeSolo
             options={destinations}
@@ -70,7 +71,7 @@ const SearchForm = ({ onSearch }) => {
             onInputChange={(e, newValue) => setDestination(newValue)}
           />
         </Grid>
-        <Grid item xs={3}>
+        <Grid item xs={3} className="search-form-grid-item">
           <LocalizationProvider dateAdapter={AdapterDateFns}>
             <DatePicker
               label="Abreisedatum"
@@ -80,7 +81,7 @@ const SearchForm = ({ onSearch }) => {
             />
           </LocalizationProvider>
         </Grid>
-        <Grid item xs={3}>
+        <Grid item xs={3} className="search-form-grid-item">
           <LocalizationProvider dateAdapter={AdapterDateFns}>
             <DatePicker
               label="Rückreisedatum"
@@ -92,7 +93,7 @@ const SearchForm = ({ onSearch }) => {
         </Grid>
         {type !== 'flight' && (
           <>
-            <Grid item xs={6}>
+            <Grid item xs={6} className="search-form-grid-item">
               <TextField
                 label="Gäste"
                 type="number"
@@ -101,7 +102,7 @@ const SearchForm = ({ onSearch }) => {
                 onChange={(e) => setGuests(e.target.value)}
               />
             </Grid>
-            <Grid item xs={6}>
+            <Grid item xs={6} className="search-form-grid-item">
               <TextField
                 label="Nächte"
                 type="number"
@@ -112,7 +113,7 @@ const SearchForm = ({ onSearch }) => {
             </Grid>
           </>
         )}
-        <Grid item xs={12}>
+        <Grid item xs={12} className="search-form-grid-item">
           <Button variant="contained" color="primary" fullWidth onClick={handleSearch}>
             Suchen
           </Button>

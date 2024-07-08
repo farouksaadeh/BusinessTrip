@@ -10,7 +10,13 @@
       "airline": {
         "name": "Air France",
         "logo": "https://example.com/air-france-logo.png"
-      }
+      },
+      "coordinates": {
+        "latitude": 49.00969,
+        "longitude": 2.547924
+      },
+      "rating": 3.2,
+      "reviews": 2029
     },
     {
       "id": 2,
@@ -22,7 +28,13 @@
       "airline": {
         "name": "British Airways",
         "logo": "https://example.com/british-airways-logo.png"
-      }
+      },
+      "coordinates": {
+        "latitude": 51.47002,
+        "longitude": -0.454295
+      },
+      "rating": 3.5,
+      "reviews": 4520
     },
     {
       "id": 3,
@@ -34,7 +46,13 @@
       "airline": {
         "name": "Swiss Air",
         "logo": "https://example.com/swiss-air-logo.png"
-      }
+      },
+      "coordinates": {
+        "latitude": 40.641311,
+        "longitude": -73.778139
+      },
+      "rating": 4,
+      "reviews": 3011
     },
     {
       "id": 4,
@@ -46,7 +64,13 @@
       "airline": {
         "name": "Emirates",
         "logo": "https://example.com/emirates-logo.png"
-      }
+      },
+      "coordinates": {
+        "latitude": 25.253174,
+        "longitude": 55.365673
+      },
+      "rating": 3.4,
+      "reviews": 843
     },
     {
       "id": 5,
@@ -58,7 +82,13 @@
       "airline": {
         "name": "Singapore Airlines",
         "logo": "https://example.com/singapore-airlines-logo.png"
-      }
+      },
+      "coordinates": {
+        "latitude": 1.36442,
+        "longitude": 103.991531
+      },
+      "rating": 3.5,
+      "reviews": 4678
     },
     {
       "id": 6,
@@ -70,7 +100,13 @@
       "airline": {
         "name": "Japan Airlines",
         "logo": "https://example.com/japan-airlines-logo.png"
-      }
+      },
+      "coordinates": {
+        "latitude": 35.764722,
+        "longitude": 140.386389
+      },
+      "rating": 3.3,
+      "reviews": 4265
     },
     {
       "id": 7,
@@ -82,7 +118,13 @@
       "airline": {
         "name": "Qantas",
         "logo": "https://example.com/qantas-logo.png"
-      }
+      },
+      "coordinates": {
+        "latitude": -33.939923,
+        "longitude": 151.175276
+      },
+      "rating": 3.1,
+      "reviews": 2235
     },
     {
       "id": 8,
@@ -94,7 +136,13 @@
       "airline": {
         "name": "Alitalia",
         "logo": "https://example.com/alitalia-logo.png"
-      }
+      },
+      "coordinates": {
+        "latitude": 41.799886,
+        "longitude": 12.246238
+      },
+      "rating": 4.1,
+      "reviews": 2463
     },
     {
       "id": 9,
@@ -106,7 +154,13 @@
       "airline": {
         "name": "Iberia",
         "logo": "https://example.com/iberia-logo.png"
-      }
+      },
+      "coordinates": {
+        "latitude": 41.297445,
+        "longitude": 2.083294
+      },
+      "rating": 4.1,
+      "reviews": 1936
     },
     {
       "id": 10,
@@ -118,7 +172,13 @@
       "airline": {
         "name": "Turkish Airlines",
         "logo": "https://example.com/turkish-airlines-logo.png"
-      }
+      },
+      "coordinates": {
+        "latitude": 41.275278,
+        "longitude": 28.751944
+      },
+      "rating": 4.9,
+      "reviews": 2194
     },
     {
       "id": 11,
@@ -130,7 +190,13 @@
       "airline": {
         "name": "Thai Airways",
         "logo": "https://example.com/thai-airways-logo.png"
-      }
+      },
+      "coordinates": {
+        "latitude": 13.689999,
+        "longitude": 100.750112
+      },
+      "rating": 4.4,
+      "reviews": 4577
     },
     {
       "id": 12,
@@ -142,7 +208,13 @@
       "airline": {
         "name": "Cathay Pacific",
         "logo": "https://example.com/cathay-pacific-logo.png"
-      }
+      },
+      "coordinates": {
+        "latitude": 22.308046,
+        "longitude": 113.91848
+      },
+      "rating": 3.9,
+      "reviews": 1389
     },
     {
       "id": 13,
@@ -154,7 +226,13 @@
       "airline": {
         "name": "United Airlines",
         "logo": "https://example.com/united-airlines-logo.png"
-      }
+      },
+      "coordinates": {
+        "latitude": 33.941589,
+        "longitude": -118.40853
+      },
+      "rating": 3,
+      "reviews": 1955
     },
     {
       "id": 14,
@@ -166,7 +244,13 @@
       "airline": {
         "name": "Air Canada",
         "logo": "https://example.com/air-canada-logo.png"
-      }
+      },
+      "coordinates": {
+        "latitude": 43.677717,
+        "longitude": -79.624819
+      },
+      "rating": 4.4,
+      "reviews": 3813
     },
     {
       "id": 15,
@@ -178,7 +262,13 @@
       "airline": {
         "name": "Air France",
         "logo": "https://example.com/air-france-logo.png"
-      }
+      },
+      "coordinates": {
+        "latitude": 49.00969,
+        "longitude": 2.547924
+      },
+      "rating": 3.7,
+      "reviews": 88
     },
     {
       "id": 16,
@@ -190,7 +280,13 @@
       "airline": {
         "name": "British Airways",
         "logo": "https://example.com/british-airways-logo.png"
-      }
+      },
+      "coordinates": {
+        "latitude": 51.47002,
+        "longitude": -0.454295
+      },
+      "rating": 4.5,
+      "reviews": 3906
     },
     {
       "id": 17,
@@ -202,7 +298,13 @@
       "airline": {
         "name": "Swiss Air",
         "logo": "https://example.com/swiss-air-logo.png"
-      }
+      },
+      "coordinates": {
+        "latitude": 40.641311,
+        "longitude": -73.778139
+      },
+      "rating": 4.3,
+      "reviews": 1528
     },
     {
       "id": 18,
@@ -214,7 +316,13 @@
       "airline": {
         "name": "Emirates",
         "logo": "https://example.com/emirates-logo.png"
-      }
+      },
+      "coordinates": {
+        "latitude": 25.253174,
+        "longitude": 55.365673
+      },
+      "rating": 4.7,
+      "reviews": 4726
     },
     {
       "id": 19,
@@ -226,7 +334,13 @@
       "airline": {
         "name": "Singapore Airlines",
         "logo": "https://example.com/singapore-airlines-logo.png"
-      }
+      },
+      "coordinates": {
+        "latitude": 1.36442,
+        "longitude": 103.991531
+      },
+      "rating": 4,
+      "reviews": 4435
     },
     {
       "id": 20,
@@ -238,7 +352,13 @@
       "airline": {
         "name": "Japan Airlines",
         "logo": "https://example.com/japan-airlines-logo.png"
-      }
+      },
+      "coordinates": {
+        "latitude": 35.764722,
+        "longitude": 140.386389
+      },
+      "rating": 4.5,
+      "reviews": 3461
     },
     {
       "id": 21,
@@ -250,7 +370,13 @@
       "airline": {
         "name": "Qantas",
         "logo": "https://example.com/qantas-logo.png"
-      }
+      },
+      "coordinates": {
+        "latitude": -33.939923,
+        "longitude": 151.175276
+      },
+      "rating": 3.4,
+      "reviews": 4015
     },
     {
       "id": 22,
@@ -262,7 +388,13 @@
       "airline": {
         "name": "Alitalia",
         "logo": "https://example.com/alitalia-logo.png"
-      }
+      },
+      "coordinates": {
+        "latitude": 41.799886,
+        "longitude": 12.246238
+      },
+      "rating": 3.5,
+      "reviews": 4007
     },
     {
       "id": 23,
@@ -274,7 +406,13 @@
       "airline": {
         "name": "Iberia",
         "logo": "https://example.com/iberia-logo.png"
-      }
+      },
+      "coordinates": {
+        "latitude": 41.297445,
+        "longitude": 2.083294
+      },
+      "rating": 3.2,
+      "reviews": 2463
     },
     {
       "id": 24,
@@ -286,7 +424,13 @@
       "airline": {
         "name": "Turkish Airlines",
         "logo": "https://example.com/turkish-airlines-logo.png"
-      }
+      },
+      "coordinates": {
+        "latitude": 41.275278,
+        "longitude": 28.751944
+      },
+      "rating": 5,
+      "reviews": 846
     },
     {
       "id": 25,
@@ -298,7 +442,13 @@
       "airline": {
         "name": "Thai Airways",
         "logo": "https://example.com/thai-airways-logo.png"
-      }
+      },
+      "coordinates": {
+        "latitude": 13.689999,
+        "longitude": 100.750112
+      },
+      "rating": 4.2,
+      "reviews": 3014
     },
     {
       "id": 26,
@@ -310,7 +460,13 @@
       "airline": {
         "name": "Cathay Pacific",
         "logo": "https://example.com/cathay-pacific-logo.png"
-      }
+      },
+      "coordinates": {
+        "latitude": 22.308046,
+        "longitude": 113.91848
+      },
+      "rating": 4.3,
+      "reviews": 2336
     },
     {
       "id": 27,
@@ -322,7 +478,13 @@
       "airline": {
         "name": "United Airlines",
         "logo": "https://example.com/united-airlines-logo.png"
-      }
+      },
+      "coordinates": {
+        "latitude": 33.941589,
+        "longitude": -118.40853
+      },
+      "rating": 4.8,
+      "reviews": 4722
     },
     {
       "id": 28,
@@ -334,7 +496,13 @@
       "airline": {
         "name": "Air Canada",
         "logo": "https://example.com/air-canada-logo.png"
-      }
+      },
+      "coordinates": {
+        "latitude": 43.677717,
+        "longitude": -79.624819
+      },
+      "rating": 4.2,
+      "reviews": 2779
     },
     {
       "id": 29,
@@ -346,7 +514,13 @@
       "airline": {
         "name": "Air France",
         "logo": "https://example.com/air-france-logo.png"
-      }
+      },
+      "coordinates": {
+        "latitude": 49.00969,
+        "longitude": 2.547924
+      },
+      "rating": 3.6,
+      "reviews": 4936
     },
     {
       "id": 30,
@@ -358,7 +532,13 @@
       "airline": {
         "name": "British Airways",
         "logo": "https://example.com/british-airways-logo.png"
-      }
+      },
+      "coordinates": {
+        "latitude": 51.47002,
+        "longitude": -0.454295
+      },
+      "rating": 4.8,
+      "reviews": 4435
     },
     {
       "id": 31,
@@ -370,7 +550,13 @@
       "airline": {
         "name": "Swiss Air",
         "logo": "https://example.com/swiss-air-logo.png"
-      }
+      },
+      "coordinates": {
+        "latitude": 40.641311,
+        "longitude": -73.778139
+      },
+      "rating": 4.7,
+      "reviews": 1639
     },
     {
       "id": 32,
@@ -382,7 +568,13 @@
       "airline": {
         "name": "Emirates",
         "logo": "https://example.com/emirates-logo.png"
-      }
+      },
+      "coordinates": {
+        "latitude": 25.253174,
+        "longitude": 55.365673
+      },
+      "rating": 4.7,
+      "reviews": 764
     },
     {
       "id": 33,
@@ -394,7 +586,13 @@
       "airline": {
         "name": "Singapore Airlines",
         "logo": "https://example.com/singapore-airlines-logo.png"
-      }
+      },
+      "coordinates": {
+        "latitude": 1.36442,
+        "longitude": 103.991531
+      },
+      "rating": 3.4,
+      "reviews": 2064
     },
     {
       "id": 34,
@@ -406,7 +604,13 @@
       "airline": {
         "name": "Japan Airlines",
         "logo": "https://example.com/japan-airlines-logo.png"
-      }
+      },
+      "coordinates": {
+        "latitude": 35.764722,
+        "longitude": 140.386389
+      },
+      "rating": 3,
+      "reviews": 71
     },
     {
       "id": 35,
@@ -418,7 +622,13 @@
       "airline": {
         "name": "Qantas",
         "logo": "https://example.com/qantas-logo.png"
-      }
+      },
+      "coordinates": {
+        "latitude": -33.939923,
+        "longitude": 151.175276
+      },
+      "rating": 3.3,
+      "reviews": 1106
     },
     {
       "id": 36,
@@ -430,7 +640,13 @@
       "airline": {
         "name": "Alitalia",
         "logo": "https://example.com/alitalia-logo.png"
-      }
+      },
+      "coordinates": {
+        "latitude": 41.799886,
+        "longitude": 12.246238
+      },
+      "rating": 4.5,
+      "reviews": 654
     },
     {
       "id": 37,
@@ -442,7 +658,13 @@
       "airline": {
         "name": "Iberia",
         "logo": "https://example.com/iberia-logo.png"
-      }
+      },
+      "coordinates": {
+        "latitude": 41.297445,
+        "longitude": 2.083294
+      },
+      "rating": 5,
+      "reviews": 1476
     },
     {
       "id": 38,
@@ -454,7 +676,13 @@
       "airline": {
         "name": "Turkish Airlines",
         "logo": "https://example.com/turkish-airlines-logo.png"
-      }
+      },
+      "coordinates": {
+        "latitude": 41.275278,
+        "longitude": 28.751944
+      },
+      "rating": 3.4,
+      "reviews": 4871
     },
     {
       "id": 39,
@@ -466,7 +694,13 @@
       "airline": {
         "name": "Thai Airways",
         "logo": "https://example.com/thai-airways-logo.png"
-      }
+      },
+      "coordinates": {
+        "latitude": 13.689999,
+        "longitude": 100.750112
+      },
+      "rating": 3.6,
+      "reviews": 467
     },
     {
       "id": 40,
@@ -478,7 +712,13 @@
       "airline": {
         "name": "Cathay Pacific",
         "logo": "https://example.com/cathay-pacific-logo.png"
-      }
+      },
+      "coordinates": {
+        "latitude": 22.308046,
+        "longitude": 113.91848
+      },
+      "rating": 4.9,
+      "reviews": 2420
     },
     {
       "id": 41,
@@ -490,7 +730,13 @@
       "airline": {
         "name": "United Airlines",
         "logo": "https://example.com/united-airlines-logo.png"
-      }
+      },
+      "coordinates": {
+        "latitude": 33.941589,
+        "longitude": -118.40853
+      },
+      "rating": 4.5,
+      "reviews": 4725
     },
     {
       "id": 42,
@@ -502,7 +748,13 @@
       "airline": {
         "name": "Air Canada",
         "logo": "https://example.com/air-canada-logo.png"
-      }
+      },
+      "coordinates": {
+        "latitude": 43.677717,
+        "longitude": -79.624819
+      },
+      "rating": 3.5,
+      "reviews": 3122
     },
     {
       "id": 43,
@@ -514,7 +766,13 @@
       "airline": {
         "name": "Air France",
         "logo": "https://example.com/air-france-logo.png"
-      }
+      },
+      "coordinates": {
+        "latitude": 49.00969,
+        "longitude": 2.547924
+      },
+      "rating": 5,
+      "reviews": 4713
     },
     {
       "id": 44,
@@ -526,7 +784,13 @@
       "airline": {
         "name": "British Airways",
         "logo": "https://example.com/british-airways-logo.png"
-      }
+      },
+      "coordinates": {
+        "latitude": 51.47002,
+        "longitude": -0.454295
+      },
+      "rating": 4.3,
+      "reviews": 3155
     },
     {
       "id": 45,
@@ -538,7 +802,13 @@
       "airline": {
         "name": "Swiss Air",
         "logo": "https://example.com/swiss-air-logo.png"
-      }
+      },
+      "coordinates": {
+        "latitude": 40.641311,
+        "longitude": -73.778139
+      },
+      "rating": 4.3,
+      "reviews": 2621
     },
     {
       "id": 46,
@@ -550,7 +820,13 @@
       "airline": {
         "name": "Emirates",
         "logo": "https://example.com/emirates-logo.png"
-      }
+      },
+      "coordinates": {
+        "latitude": 25.253174,
+        "longitude": 55.365673
+      },
+      "rating": 3.3,
+      "reviews": 1709
     },
     {
       "id": 47,
@@ -562,7 +838,13 @@
       "airline": {
         "name": "Singapore Airlines",
         "logo": "https://example.com/singapore-airlines-logo.png"
-      }
+      },
+      "coordinates": {
+        "latitude": 1.36442,
+        "longitude": 103.991531
+      },
+      "rating": 4,
+      "reviews": 4691
     },
     {
       "id": 48,
@@ -574,7 +856,13 @@
       "airline": {
         "name": "Japan Airlines",
         "logo": "https://example.com/japan-airlines-logo.png"
-      }
+      },
+      "coordinates": {
+        "latitude": 35.764722,
+        "longitude": 140.386389
+      },
+      "rating": 4.3,
+      "reviews": 1677
     },
     {
       "id": 49,
@@ -586,7 +874,13 @@
       "airline": {
         "name": "Qantas",
         "logo": "https://example.com/qantas-logo.png"
-      }
+      },
+      "coordinates": {
+        "latitude": -33.939923,
+        "longitude": 151.175276
+      },
+      "rating": 4.6,
+      "reviews": 3759
     },
     {
       "id": 50,
@@ -598,7 +892,13 @@
       "airline": {
         "name": "Alitalia",
         "logo": "https://example.com/alitalia-logo.png"
-      }
+      },
+      "coordinates": {
+        "latitude": 41.799886,
+        "longitude": 12.246238
+      },
+      "rating": 3.6,
+      "reviews": 604
     },
     {
       "id": 51,
@@ -610,7 +910,13 @@
       "airline": {
         "name": "Iberia",
         "logo": "https://example.com/iberia-logo.png"
-      }
+      },
+      "coordinates": {
+        "latitude": 41.297445,
+        "longitude": 2.083294
+      },
+      "rating": 4.4,
+      "reviews": 1751
     },
     {
       "id": 52,
@@ -622,7 +928,13 @@
       "airline": {
         "name": "Turkish Airlines",
         "logo": "https://example.com/turkish-airlines-logo.png"
-      }
+      },
+      "coordinates": {
+        "latitude": 41.275278,
+        "longitude": 28.751944
+      },
+      "rating": 4.8,
+      "reviews": 1409
     },
     {
       "id": 53,
@@ -634,7 +946,13 @@
       "airline": {
         "name": "Thai Airways",
         "logo": "https://example.com/thai-airways-logo.png"
-      }
+      },
+      "coordinates": {
+        "latitude": 13.689999,
+        "longitude": 100.750112
+      },
+      "rating": 3.5,
+      "reviews": 2654
     },
     {
       "id": 54,
@@ -646,7 +964,13 @@
       "airline": {
         "name": "Cathay Pacific",
         "logo": "https://example.com/cathay-pacific-logo.png"
-      }
+      },
+      "coordinates": {
+        "latitude": 22.308046,
+        "longitude": 113.91848
+      },
+      "rating": 4.4,
+      "reviews": 876
     },
     {
       "id": 55,
@@ -658,7 +982,13 @@
       "airline": {
         "name": "United Airlines",
         "logo": "https://example.com/united-airlines-logo.png"
-      }
+      },
+      "coordinates": {
+        "latitude": 33.941589,
+        "longitude": -118.40853
+      },
+      "rating": 4.6,
+      "reviews": 2473
     },
     {
       "id": 56,
@@ -670,7 +1000,13 @@
       "airline": {
         "name": "Air Canada",
         "logo": "https://example.com/air-canada-logo.png"
-      }
+      },
+      "coordinates": {
+        "latitude": 43.677717,
+        "longitude": -79.624819
+      },
+      "rating": 3.7,
+      "reviews": 4599
     },
     {
       "id": 57,
@@ -682,7 +1018,13 @@
       "airline": {
         "name": "Air France",
         "logo": "https://example.com/air-france-logo.png"
-      }
+      },
+      "coordinates": {
+        "latitude": 49.00969,
+        "longitude": 2.547924
+      },
+      "rating": 3.1,
+      "reviews": 855
     },
     {
       "id": 58,
@@ -694,7 +1036,13 @@
       "airline": {
         "name": "British Airways",
         "logo": "https://example.com/british-airways-logo.png"
-      }
+      },
+      "coordinates": {
+        "latitude": 51.47002,
+        "longitude": -0.454295
+      },
+      "rating": 4,
+      "reviews": 3773
     },
     {
       "id": 59,
@@ -706,7 +1054,13 @@
       "airline": {
         "name": "Swiss Air",
         "logo": "https://example.com/swiss-air-logo.png"
-      }
+      },
+      "coordinates": {
+        "latitude": 40.641311,
+        "longitude": -73.778139
+      },
+      "rating": 4,
+      "reviews": 1401
     },
     {
       "id": 60,
@@ -718,7 +1072,13 @@
       "airline": {
         "name": "Emirates",
         "logo": "https://example.com/emirates-logo.png"
-      }
+      },
+      "coordinates": {
+        "latitude": 25.253174,
+        "longitude": 55.365673
+      },
+      "rating": 4,
+      "reviews": 2522
     },
     {
       "id": 61,
@@ -730,7 +1090,13 @@
       "airline": {
         "name": "Singapore Airlines",
         "logo": "https://example.com/singapore-airlines-logo.png"
-      }
+      },
+      "coordinates": {
+        "latitude": 1.36442,
+        "longitude": 103.991531
+      },
+      "rating": 4.5,
+      "reviews": 3395
     },
     {
       "id": 62,
@@ -742,7 +1108,13 @@
       "airline": {
         "name": "Japan Airlines",
         "logo": "https://example.com/japan-airlines-logo.png"
-      }
+      },
+      "coordinates": {
+        "latitude": 35.764722,
+        "longitude": 140.386389
+      },
+      "rating": 4.2,
+      "reviews": 1143
     },
     {
       "id": 63,
@@ -754,7 +1126,13 @@
       "airline": {
         "name": "Qantas",
         "logo": "https://example.com/qantas-logo.png"
-      }
+      },
+      "coordinates": {
+        "latitude": -33.939923,
+        "longitude": 151.175276
+      },
+      "rating": 4.9,
+      "reviews": 1347
     },
     {
       "id": 64,
@@ -766,7 +1144,13 @@
       "airline": {
         "name": "Alitalia",
         "logo": "https://example.com/alitalia-logo.png"
-      }
+      },
+      "coordinates": {
+        "latitude": 41.799886,
+        "longitude": 12.246238
+      },
+      "rating": 3,
+      "reviews": 3551
     },
     {
       "id": 65,
@@ -778,7 +1162,13 @@
       "airline": {
         "name": "Iberia",
         "logo": "https://example.com/iberia-logo.png"
-      }
+      },
+      "coordinates": {
+        "latitude": 41.297445,
+        "longitude": 2.083294
+      },
+      "rating": 4.4,
+      "reviews": 3782
     },
     {
       "id": 66,
@@ -790,7 +1180,13 @@
       "airline": {
         "name": "Turkish Airlines",
         "logo": "https://example.com/turkish-airlines-logo.png"
-      }
+      },
+      "coordinates": {
+        "latitude": 41.275278,
+        "longitude": 28.751944
+      },
+      "rating": 4.3,
+      "reviews": 4918
     },
     {
       "id": 67,
@@ -802,7 +1198,13 @@
       "airline": {
         "name": "Thai Airways",
         "logo": "https://example.com/thai-airways-logo.png"
-      }
+      },
+      "coordinates": {
+        "latitude": 13.689999,
+        "longitude": 100.750112
+      },
+      "rating": 3.8,
+      "reviews": 236
     },
     {
       "id": 68,
@@ -814,7 +1216,13 @@
       "airline": {
         "name": "Cathay Pacific",
         "logo": "https://example.com/cathay-pacific-logo.png"
-      }
+      },
+      "coordinates": {
+        "latitude": 22.308046,
+        "longitude": 113.91848
+      },
+      "rating": 4.7,
+      "reviews": 198
     },
     {
       "id": 69,
@@ -826,7 +1234,13 @@
       "airline": {
         "name": "United Airlines",
         "logo": "https://example.com/united-airlines-logo.png"
-      }
+      },
+      "coordinates": {
+        "latitude": 33.941589,
+        "longitude": -118.40853
+      },
+      "rating": 4.9,
+      "reviews": 1629
     },
     {
       "id": 70,
@@ -838,7 +1252,13 @@
       "airline": {
         "name": "Air Canada",
         "logo": "https://example.com/air-canada-logo.png"
-      }
+      },
+      "coordinates": {
+        "latitude": 43.677717,
+        "longitude": -79.624819
+      },
+      "rating": 3,
+      "reviews": 89
     },
     {
       "id": 71,
@@ -850,7 +1270,13 @@
       "airline": {
         "name": "Air France",
         "logo": "https://example.com/air-france-logo.png"
-      }
+      },
+      "coordinates": {
+        "latitude": 49.00969,
+        "longitude": 2.547924
+      },
+      "rating": 3.6,
+      "reviews": 1797
     },
     {
       "id": 72,
@@ -862,7 +1288,13 @@
       "airline": {
         "name": "British Airways",
         "logo": "https://example.com/british-airways-logo.png"
-      }
+      },
+      "coordinates": {
+        "latitude": 51.47002,
+        "longitude": -0.454295
+      },
+      "rating": 4,
+      "reviews": 2231
     },
     {
       "id": 73,
@@ -874,7 +1306,13 @@
       "airline": {
         "name": "Swiss Air",
         "logo": "https://example.com/swiss-air-logo.png"
-      }
+      },
+      "coordinates": {
+        "latitude": 40.641311,
+        "longitude": -73.778139
+      },
+      "rating": 3.9,
+      "reviews": 1950
     },
     {
       "id": 74,
@@ -886,7 +1324,13 @@
       "airline": {
         "name": "Emirates",
         "logo": "https://example.com/emirates-logo.png"
-      }
+      },
+      "coordinates": {
+        "latitude": 25.253174,
+        "longitude": 55.365673
+      },
+      "rating": 4.9,
+      "reviews": 2490
     },
     {
       "id": 75,
@@ -898,7 +1342,13 @@
       "airline": {
         "name": "Singapore Airlines",
         "logo": "https://example.com/singapore-airlines-logo.png"
-      }
+      },
+      "coordinates": {
+        "latitude": 1.36442,
+        "longitude": 103.991531
+      },
+      "rating": 4.3,
+      "reviews": 2627
     },
     {
       "id": 76,
@@ -910,7 +1360,13 @@
       "airline": {
         "name": "Japan Airlines",
         "logo": "https://example.com/japan-airlines-logo.png"
-      }
+      },
+      "coordinates": {
+        "latitude": 35.764722,
+        "longitude": 140.386389
+      },
+      "rating": 3.7,
+      "reviews": 1599
     },
     {
       "id": 77,
@@ -922,7 +1378,13 @@
       "airline": {
         "name": "Qantas",
         "logo": "https://example.com/qantas-logo.png"
-      }
+      },
+      "coordinates": {
+        "latitude": -33.939923,
+        "longitude": 151.175276
+      },
+      "rating": 4.8,
+      "reviews": 3453
     },
     {
       "id": 78,
@@ -934,7 +1396,13 @@
       "airline": {
         "name": "Alitalia",
         "logo": "https://example.com/alitalia-logo.png"
-      }
+      },
+      "coordinates": {
+        "latitude": 41.799886,
+        "longitude": 12.246238
+      },
+      "rating": 3.4,
+      "reviews": 213
     },
     {
       "id": 79,
@@ -946,7 +1414,13 @@
       "airline": {
         "name": "Iberia",
         "logo": "https://example.com/iberia-logo.png"
-      }
+      },
+      "coordinates": {
+        "latitude": 41.297445,
+        "longitude": 2.083294
+      },
+      "rating": 4.4,
+      "reviews": 3015
     },
     {
       "id": 80,
@@ -958,7 +1432,13 @@
       "airline": {
         "name": "Turkish Airlines",
         "logo": "https://example.com/turkish-airlines-logo.png"
-      }
+      },
+      "coordinates": {
+        "latitude": 41.275278,
+        "longitude": 28.751944
+      },
+      "rating": 4.1,
+      "reviews": 3736
     },
     {
       "id": 81,
@@ -970,7 +1450,13 @@
       "airline": {
         "name": "Thai Airways",
         "logo": "https://example.com/thai-airways-logo.png"
-      }
+      },
+      "coordinates": {
+        "latitude": 13.689999,
+        "longitude": 100.750112
+      },
+      "rating": 4.1,
+      "reviews": 3329
     },
     {
       "id": 82,
@@ -982,7 +1468,13 @@
       "airline": {
         "name": "Cathay Pacific",
         "logo": "https://example.com/cathay-pacific-logo.png"
-      }
+      },
+      "coordinates": {
+        "latitude": 22.308046,
+        "longitude": 113.91848
+      },
+      "rating": 3.3,
+      "reviews": 3377
     },
     {
       "id": 83,
@@ -994,7 +1486,13 @@
       "airline": {
         "name": "United Airlines",
         "logo": "https://example.com/united-airlines-logo.png"
-      }
+      },
+      "coordinates": {
+        "latitude": 33.941589,
+        "longitude": -118.40853
+      },
+      "rating": 4.2,
+      "reviews": 3315
     },
     {
       "id": 84,
@@ -1006,7 +1504,13 @@
       "airline": {
         "name": "Air Canada",
         "logo": "https://example.com/air-canada-logo.png"
-      }
+      },
+      "coordinates": {
+        "latitude": 43.677717,
+        "longitude": -79.624819
+      },
+      "rating": 3.6,
+      "reviews": 2195
     },
     {
       "id": 85,
@@ -1018,7 +1522,13 @@
       "airline": {
         "name": "Air France",
         "logo": "https://example.com/air-france-logo.png"
-      }
+      },
+      "coordinates": {
+        "latitude": 49.00969,
+        "longitude": 2.547924
+      },
+      "rating": 4.7,
+      "reviews": 735
     },
     {
       "id": 86,
@@ -1030,7 +1540,13 @@
       "airline": {
         "name": "British Airways",
         "logo": "https://example.com/british-airways-logo.png"
-      }
+      },
+      "coordinates": {
+        "latitude": 51.47002,
+        "longitude": -0.454295
+      },
+      "rating": 4.8,
+      "reviews": 1539
     },
     {
       "id": 87,
@@ -1042,7 +1558,13 @@
       "airline": {
         "name": "Swiss Air",
         "logo": "https://example.com/swiss-air-logo.png"
-      }
+      },
+      "coordinates": {
+        "latitude": 40.641311,
+        "longitude": -73.778139
+      },
+      "rating": 4.2,
+      "reviews": 1188
     },
     {
       "id": 88,
@@ -1054,709 +1576,2222 @@
       "airline": {
         "name": "Emirates",
         "logo": "https://example.com/emirates-logo.png"
-      }
+      },
+      "coordinates": {
+        "latitude": 25.253174,
+        "longitude": 55.365673
+      },
+      "rating": 3.3,
+      "reviews": 4076
+    },
+    {
+      "id": 89,
+      "from": "Zurich",
+      "to": "Berlin",
+      "departure": "2024-09-89T10:00:00Z",
+      "arrival": "2024-09-89T12:00:00Z",
+      "price": 260,
+      "airline": {
+        "name": "Air France",
+        "logo": "https://example.com/airline-logo.png"
+      },
+      "coordinates": {
+        "latitude": 52.3667,
+        "longitude": 13.5033
+      },
+      "rating": 3.5,
+      "reviews": 4505
+    },
+    {
+      "id": 90,
+      "from": "Zurich",
+      "to": "Vienna",
+      "departure": "2024-09-90T10:00:00Z",
+      "arrival": "2024-09-90T12:00:00Z",
+      "price": 189,
+      "airline": {
+        "name": "Lufthansa",
+        "logo": "https://example.com/airline-logo.png"
+      },
+      "coordinates": {
+        "latitude": 48.1103,
+        "longitude": 16.5697
+      },
+      "rating": 4.4,
+      "reviews": 4811
+    },
+    {
+      "id": 91,
+      "from": "Zurich",
+      "to": "Amsterdam",
+      "departure": "2024-09-91T10:00:00Z",
+      "arrival": "2024-09-91T12:00:00Z",
+      "price": 534,
+      "airline": {
+        "name": "Air France",
+        "logo": "https://example.com/airline-logo.png"
+      },
+      "coordinates": {
+        "latitude": 52.3105,
+        "longitude": 4.7683
+      },
+      "rating": 4.1,
+      "reviews": 1383
+    },
+    {
+      "id": 92,
+      "from": "Zurich",
+      "to": "Madrid",
+      "departure": "2024-09-92T10:00:00Z",
+      "arrival": "2024-09-92T12:00:00Z",
+      "price": 270,
+      "airline": {
+        "name": "Lufthansa",
+        "logo": "https://example.com/airline-logo.png"
+      },
+      "coordinates": {
+        "latitude": 40.4722,
+        "longitude": -3.5608
+      },
+      "rating": 3.7,
+      "reviews": 1405
+    },
+    {
+      "id": 93,
+      "from": "Zurich",
+      "to": "Lisbon",
+      "departure": "2024-09-93T10:00:00Z",
+      "arrival": "2024-09-93T12:00:00Z",
+      "price": 576,
+      "airline": {
+        "name": "Air France",
+        "logo": "https://example.com/airline-logo.png"
+      },
+      "coordinates": {
+        "latitude": 38.7742,
+        "longitude": -9.1342
+      },
+      "rating": 3.2,
+      "reviews": 3431
+    },
+    {
+      "id": 94,
+      "from": "Zurich",
+      "to": "Copenhagen",
+      "departure": "2024-09-94T10:00:00Z",
+      "arrival": "2024-09-94T12:00:00Z",
+      "price": 282,
+      "airline": {
+        "name": "Air France",
+        "logo": "https://example.com/airline-logo.png"
+      },
+      "coordinates": {
+        "latitude": 55.6181,
+        "longitude": 12.6561
+      },
+      "rating": 5,
+      "reviews": 1937
+    },
+    {
+      "id": 95,
+      "from": "Zurich",
+      "to": "Stockholm",
+      "departure": "2024-09-95T10:00:00Z",
+      "arrival": "2024-09-95T12:00:00Z",
+      "price": 269,
+      "airline": {
+        "name": "Air France",
+        "logo": "https://example.com/airline-logo.png"
+      },
+      "coordinates": {
+        "latitude": 59.6519,
+        "longitude": 17.9186
+      },
+      "rating": 3.4,
+      "reviews": 3001
+    },
+    {
+      "id": 96,
+      "from": "Zurich",
+      "to": "Oslo",
+      "departure": "2024-09-96T10:00:00Z",
+      "arrival": "2024-09-96T12:00:00Z",
+      "price": 509,
+      "airline": {
+        "name": "Air France",
+        "logo": "https://example.com/airline-logo.png"
+      },
+      "coordinates": {
+        "latitude": 60.1976,
+        "longitude": 11.1004
+      },
+      "rating": 3.8,
+      "reviews": 2786
+    },
+    {
+      "id": 97,
+      "from": "Zurich",
+      "to": "Helsinki",
+      "departure": "2024-09-97T10:00:00Z",
+      "arrival": "2024-09-97T12:00:00Z",
+      "price": 261,
+      "airline": {
+        "name": "Lufthansa",
+        "logo": "https://example.com/airline-logo.png"
+      },
+      "coordinates": {
+        "latitude": 60.3172,
+        "longitude": 24.9633
+      },
+      "rating": 4.4,
+      "reviews": 3932
+    },
+    {
+      "id": 98,
+      "from": "Zurich",
+      "to": "Athens",
+      "departure": "2024-09-98T10:00:00Z",
+      "arrival": "2024-09-98T12:00:00Z",
+      "price": 324,
+      "airline": {
+        "name": "KLM",
+        "logo": "https://example.com/airline-logo.png"
+      },
+      "coordinates": {
+        "latitude": 37.9364,
+        "longitude": 23.9445
+      },
+      "rating": 4.9,
+      "reviews": 4904
+    },
+    {
+      "id": 99,
+      "from": "Zurich",
+      "to": "Prague",
+      "departure": "2024-09-99T10:00:00Z",
+      "arrival": "2024-09-99T12:00:00Z",
+      "price": 176,
+      "airline": {
+        "name": "Lufthansa",
+        "logo": "https://example.com/airline-logo.png"
+      },
+      "coordinates": {
+        "latitude": 50.1008,
+        "longitude": 14.26
+      },
+      "rating": 3.4,
+      "reviews": 2090
+    },
+    {
+      "id": 100,
+      "from": "Zurich",
+      "to": "Budapest",
+      "departure": "2024-09-100T10:00:00Z",
+      "arrival": "2024-09-100T12:00:00Z",
+      "price": 455,
+      "airline": {
+        "name": "Air France",
+        "logo": "https://example.com/airline-logo.png"
+      },
+      "coordinates": {
+        "latitude": 47.433,
+        "longitude": 19.261
+      },
+      "rating": 4.8,
+      "reviews": 3786
+    },
+    {
+      "id": 101,
+      "from": "Zurich",
+      "to": "Warsaw",
+      "departure": "2024-09-101T10:00:00Z",
+      "arrival": "2024-09-101T12:00:00Z",
+      "price": 522,
+      "airline": {
+        "name": "Lufthansa",
+        "logo": "https://example.com/airline-logo.png"
+      },
+      "coordinates": {
+        "latitude": 52.1657,
+        "longitude": 20.9671
+      },
+      "rating": 4,
+      "reviews": 4073
+    },
+    {
+      "id": 102,
+      "from": "Zurich",
+      "to": "Brussels",
+      "departure": "2024-09-102T10:00:00Z",
+      "arrival": "2024-09-102T12:00:00Z",
+      "price": 395,
+      "airline": {
+        "name": "Lufthansa",
+        "logo": "https://example.com/airline-logo.png"
+      },
+      "coordinates": {
+        "latitude": 50.9009,
+        "longitude": 4.4844
+      },
+      "rating": 3.7,
+      "reviews": 1409
     }
-],
-"hotels": [
-  {
-    "id": 1,
-    "name": "Le Meurice",
-    "location": "Paris",
-    "price_per_night": 450,
-    "image": "https://example.com/le-meurice.jpg"
-  },
-  {
-    "id": 2,
-    "name": "Shangri-La Hotel",
-    "location": "Paris",
-    "price_per_night": 500,
-    "image": "https://example.com/shangri-la-paris.jpg"
-  },
-  {
-    "id": 3,
-    "name": "The Ritz London",
-    "location": "London",
-    "price_per_night": 600,
-    "image": "https://example.com/the-ritz-london.jpg"
-  },
-  {
-    "id": 4,
-    "name": "The Savoy",
-    "location": "London",
-    "price_per_night": 550,
-    "image": "https://example.com/the-savoy.jpg"
-  },
-  {
-    "id": 5,
-    "name": "The Plaza",
-    "location": "New York",
-    "price_per_night": 700,
-    "image": "https://example.com/the-plaza.jpg"
-  },
-  {
-    "id": 6,
-    "name": "Mandarin Oriental",
-    "location": "New York",
-    "price_per_night": 750,
-    "image": "https://example.com/mandarin-oriental-ny.jpg"
-  },
-  {
-    "id": 7,
-    "name": "Burj Al Arab",
-    "location": "Dubai",
-    "price_per_night": 1200,
-    "image": "https://example.com/burj-al-arab.jpg"
-  },
-  {
-    "id": 8,
-    "name": "Atlantis The Palm",
-    "location": "Dubai",
-    "price_per_night": 1000,
-    "image": "https://example.com/atlantis-the-palm.jpg"
-  },
-  {
-    "id": 9,
-    "name": "Marina Bay Sands",
-    "location": "Singapore",
-    "price_per_night": 800,
-    "image": "https://example.com/marina-bay-sands.jpg"
-  },
-  {
-    "id": 10,
-    "name": "Raffles Hotel",
-    "location": "Singapore",
-    "price_per_night": 850,
-    "image": "https://example.com/raffles-hotel.jpg"
-  },
-  {
-    "id": 11,
-    "name": "The Peninsula",
-    "location": "Tokyo",
-    "price_per_night": 900,
-    "image": "https://example.com/the-peninsula-tokyo.jpg"
-  },
-  {
-    "id": 12,
-    "name": "Park Hyatt",
-    "location": "Tokyo",
-    "price_per_night": 950,
-    "image": "https://example.com/park-hyatt-tokyo.jpg"
-  },
-  {
-    "id": 13,
-    "name": "Four Seasons Hotel",
-    "location": "Sydney",
-    "price_per_night": 700,
-    "image": "https://example.com/four-seasons-sydney.jpg"
-  },
-  {
-    "id": 14,
-    "name": "Shangri-La Hotel",
-    "location": "Sydney",
-    "price_per_night": 750,
-    "image": "https://example.com/shangri-la-sydney.jpg"
-  },
-  {
-    "id": 15,
-    "name": "Hotel de Russie",
-    "location": "Rome",
-    "price_per_night": 650,
-    "image": "https://example.com/hotel-de-russie.jpg"
-  },
-  {
-    "id": 16,
-    "name": "The St. Regis Rome",
-    "location": "Rome",
-    "price_per_night": 700,
-    "image": "https://example.com/st-regis-rome.jpg"
-  },
-  {
-    "id": 17,
-    "name": "Hotel Arts",
-    "location": "Barcelona",
-    "price_per_night": 600,
-    "image": "https://example.com/hotel-arts-barcelona.jpg"
-  },
-  {
-    "id": 18,
-    "name": "W Barcelona",
-    "location": "Barcelona",
-    "price_per_night": 650,
-    "image": "https://example.com/w-barcelona.jpg"
-  },
-  {
-    "id": 19,
-    "name": "Ciragan Palace Kempinski",
-    "location": "Istanbul",
-    "price_per_night": 800,
-    "image": "https://example.com/ciragan-palace.jpg"
-  },
-  {
-    "id": 20,
-    "name": "Four Seasons Hotel Istanbul",
-    "location": "Istanbul",
-    "price_per_night": 850,
-    "image": "https://example.com/four-seasons-istanbul.jpg"
-  },
-  {
-    "id": 21,
-    "name": "Mandarin Oriental",
-    "location": "Bangkok",
-    "price_per_night": 700,
-    "image": "https://example.com/mandarin-oriental-bangkok.jpg"
-  },
-  {
-    "id": 22,
-    "name": "The Siam",
-    "location": "Bangkok",
-    "price_per_night": 750,
-    "image": "https://example.com/the-siam.jpg"
-  },
-  {
-    "id": 23,
-    "name": "The Ritz-Carlton",
-    "location": "Hong Kong",
-    "price_per_night": 900,
-    "image": "https://example.com/ritz-carlton-hk.jpg"
-  },
-  {
-    "id": 24,
-    "name": "Four Seasons Hotel",
-    "location": "Hong Kong",
-    "price_per_night": 950,
-    "image": "https://example.com/four-seasons-hk.jpg"
-  },
-  {
-    "id": 25,
-    "name": "The Beverly Hills Hotel",
-    "location": "Los Angeles",
-    "price_per_night": 700,
-    "image": "https://example.com/beverly-hills-hotel.jpg"
-  },
-  {
-    "id": 26,
-    "name": "The Peninsula Beverly Hills",
-    "location": "Los Angeles",
-    "price_per_night": 750,
-    "image": "https://example.com/peninsula-beverly-hills.jpg"
-  },
-  {
-    "id": 27,
-    "name": "Fairmont Royal York",
-    "location": "Toronto",
-    "price_per_night": 600,
-    "image": "https://example.com/fairmont-royal-york.jpg"
-  },
-  {
-    "id": 28,
-    "name": "The Ritz-Carlton Toronto",
-    "location": "Toronto",
-    "price_per_night": 650,
-    "image": "https://example.com/ritz-carlton-toronto.jpg"
-  },
-  {
-    "id": 29,
-    "name": "Le Meurice",
-    "location": "Paris",
-    "price_per_night": 450,
-    "image": "https://example.com/le-meurice.jpg"
-  },
-  {
-    "id": 30,
-    "name": "Shangri-La Hotel",
-    "location": "Paris",
-    "price_per_night": 500,
-    "image": "https://example.com/shangri-la-paris.jpg"
-  },
-  {
-    "id": 31,
-    "name": "The Ritz London",
-    "location": "London",
-    "price_per_night": 600,
-    "image": "https://example.com/the-ritz-london.jpg"
-  },
-  {
-    "id": 32,
-    "name": "The Savoy",
-    "location": "London",
-    "price_per_night": 550,
-    "image": "https://example.com/the-savoy.jpg"
-  },
-  {
-    "id": 33,
-    "name": "The Plaza",
-    "location": "New York",
-    "price_per_night": 700,
-    "image": "https://example.com/the-plaza.jpg"
-  },
-  {
-    "id": 34,
-    "name": "Mandarin Oriental",
-    "location": "New York",
-    "price_per_night": 750,
-    "image": "https://example.com/mandarin-oriental-ny.jpg"
-  },
-  {
-    "id": 35,
-    "name": "Burj Al Arab",
-    "location": "Dubai",
-    "price_per_night": 1200,
-    "image": "https://example.com/burj-al-arab.jpg"
-  },
-  {
-    "id": 36,
-    "name": "Atlantis The Palm",
-    "location": "Dubai",
-    "price_per_night": 1000,
-    "image": "https://example.com/atlantis-the-palm.jpg"
-  },
-  {
-    "id": 37,
-    "name": "Marina Bay Sands",
-    "location": "Singapore",
-    "price_per_night": 800,
-    "image": "https://example.com/marina-bay-sands.jpg"
-  },
-  {
-    "id": 38,
-    "name": "Raffles Hotel",
-    "location": "Singapore",
-    "price_per_night": 850,
-    "image": "https://example.com/raffles-hotel.jpg"
-  },
-  {
-    "id": 39,
-    "name": "The Peninsula",
-    "location": "Tokyo",
-    "price_per_night": 900,
-    "image": "https://example.com/the-peninsula-tokyo.jpg"
-  },
-  {
-    "id": 40,
-    "name": "Park Hyatt",
-    "location": "Tokyo",
-    "price_per_night": 950,
-    "image": "https://example.com/park-hyatt-tokyo.jpg"
-  },
-  {
-    "id": 41,
-    "name": "Four Seasons Hotel",
-    "location": "Sydney",
-    "price_per_night": 700,
-    "image": "https://example.com/four-seasons-sydney.jpg"
-  },
-  {
-    "id": 42,
-    "name": "Shangri-La Hotel",
-    "location": "Sydney",
-    "price_per_night": 750,
-    "image": "https://example.com/shangri-la-sydney.jpg"
-  },
-  {
-    "id": 43,
-    "name": "Hotel de Russie",
-    "location": "Rome",
-    "price_per_night": 650,
-    "image": "https://example.com/hotel-de-russie.jpg"
-  },
-  {
-    "id": 44,
-    "name": "The St. Regis Rome",
-    "location": "Rome",
-    "price_per_night": 700,
-    "image": "https://example.com/st-regis-rome.jpg"
-  },
-  {
-    "id": 45,
-    "name": "Hotel Arts",
-    "location": "Barcelona",
-    "price_per_night": 600,
-    "image": "https://example.com/hotel-arts-barcelona.jpg"
-  },
-  {
-    "id": 46,
-    "name": "W Barcelona",
-    "location": "Barcelona",
-    "price_per_night": 650,
-    "image": "https://example.com/w-barcelona.jpg"
-  },
-  {
-    "id": 47,
-    "name": "Ciragan Palace Kempinski",
-    "location": "Istanbul",
-    "price_per_night": 800,
-    "image": "https://example.com/ciragan-palace.jpg"
-  },
-  {
-    "id": 48,
-    "name": "Four Seasons Hotel Istanbul",
-    "location": "Istanbul",
-    "price_per_night": 850,
-    "image": "https://example.com/four-seasons-istanbul.jpg"
-  },
-  {
-    "id": 49,
-    "name": "Mandarin Oriental",
-    "location": "Bangkok",
-    "price_per_night": 700,
-    "image": "https://example.com/mandarin-oriental-bangkok.jpg"
-  },
-  {
-    "id": 50,
-    "name": "The Siam",
-    "location": "Bangkok",
-    "price_per_night": 750,
-    "image": "https://example.com/the-siam.jpg"
-  },
-  {
-    "id": 51,
-    "name": "The Ritz-Carlton",
-    "location": "Hong Kong",
-    "price_per_night": 900,
-    "image": "https://example.com/ritz-carlton-hk.jpg"
-  },
-  {
-    "id": 52,
-    "name": "Four Seasons Hotel",
-    "location": "Hong Kong",
-    "price_per_night": 950,
-    "image": "https://example.com/four-seasons-hk.jpg"
-  },
-  {
-    "id": 53,
-    "name": "The Beverly Hills Hotel",
-    "location": "Los Angeles",
-    "price_per_night": 700,
-    "image": "https://example.com/beverly-hills-hotel.jpg"
-  },
-  {
-    "id": 54,
-    "name": "The Peninsula Beverly Hills",
-    "location": "Los Angeles",
-    "price_per_night": 750,
-    "image": "https://example.com/peninsula-beverly-hills.jpg"
-  },
-  {
-    "id": 55,
-    "name": "Fairmont Royal York",
-    "location": "Toronto",
-    "price_per_night": 600,
-    "image": "https://example.com/fairmont-royal-york.jpg"
-  },
-  {
-    "id": 56,
-    "name": "The Ritz-Carlton Toronto",
-    "location": "Toronto",
-    "price_per_night": 650,
-    "image": "https://example.com/ritz-carlton-toronto.jpg"
-  },
-  {
-    "id": 57,
-    "name": "Le Meurice",
-    "location": "Paris",
-    "price_per_night": 450,
-    "image": "https://example.com/le-meurice.jpg"
-  },
-  {
-    "id": 58,
-    "name": "Shangri-La Hotel",
-    "location": "Paris",
-    "price_per_night": 500,
-    "image": "https://example.com/shangri-la-paris.jpg"
-  },
-  {
-    "id": 59,
-    "name": "The Ritz London",
-    "location": "London",
-    "price_per_night": 600,
-    "image": "https://example.com/the-ritz-london.jpg"
-  },
-  {
-    "id": 60,
-    "name": "The Savoy",
-    "location": "London",
-    "price_per_night": 550,
-    "image": "https://example.com/the-savoy.jpg"
-  },
-  {
-    "id": 61,
-    "name": "The Plaza",
-    "location": "New York",
-    "price_per_night": 700,
-    "image": "https://example.com/the-plaza.jpg"
-  },
-  {
-    "id": 62,
-    "name": "Mandarin Oriental",
-    "location": "New York",
-    "price_per_night": 750,
-    "image": "https://example.com/mandarin-oriental-ny.jpg"
-  },
-  {
-    "id": 63,
-    "name": "Burj Al Arab",
-    "location": "Dubai",
-    "price_per_night": 1200,
-    "image": "https://example.com/burj-al-arab.jpg"
-  },
-  {
-    "id": 64,
-    "name": "Atlantis The Palm",
-    "location": "Dubai",
-    "price_per_night": 1000,
-    "image": "https://example.com/atlantis-the-palm.jpg"
-  },
-  {
-    "id": 65,
-    "name": "Marina Bay Sands",
-    "location": "Singapore",
-    "price_per_night": 800,
-    "image": "https://example.com/marina-bay-sands.jpg"
-  },
-  {
-    "id": 66,
-    "name": "Raffles Hotel",
-    "location": "Singapore",
-    "price_per_night": 850,
-    "image": "https://example.com/raffles-hotel.jpg"
-  },
-  {
-    "id": 67,
-    "name": "The Peninsula",
-    "location": "Tokyo",
-    "price_per_night": 900,
-    "image": "https://example.com/the-peninsula-tokyo.jpg"
-  },
-  {
-    "id": 68,
-    "name": "Park Hyatt",
-    "location": "Tokyo",
-    "price_per_night": 950,
-    "image": "https://example.com/park-hyatt-tokyo.jpg"
-  },
-  {
-    "id": 69,
-    "name": "Four Seasons Hotel",
-    "location": "Sydney",
-    "price_per_night": 700,
-    "image": "https://example.com/four-seasons-sydney.jpg"
-  },
-  {
-    "id": 70,
-    "name": "Shangri-La Hotel",
-    "location": "Sydney",
-    "price_per_night": 750,
-    "image": "https://example.com/shangri-la-sydney.jpg"
-  },
-  {
-    "id": 71,
-    "name": "Hotel de Russie",
-    "location": "Rome",
-    "price_per_night": 650,
-    "image": "https://example.com/hotel-de-russie.jpg"
-  },
-  {
-    "id": 72,
-    "name": "The St. Regis Rome",
-    "location": "Rome",
-    "price_per_night": 700,
-    "image": "https://example.com/st-regis-rome.jpg"
-  },
-  {
-    "id": 73,
-    "name": "Hotel Arts",
-    "location": "Barcelona",
-    "price_per_night": 600,
-    "image": "https://example.com/hotel-arts-barcelona.jpg"
-  },
-  {
-    "id": 74,
-    "name": "W Barcelona",
-    "location": "Barcelona",
-    "price_per_night": 650,
-    "image": "https://example.com/w-barcelona.jpg"
-  },
-  {
-    "id": 75,
-    "name": "Ciragan Palace Kempinski",
-    "location": "Istanbul",
-    "price_per_night": 800,
-    "image": "https://example.com/ciragan-palace.jpg"
-  },
-  {
-    "id": 76,
-    "name": "Four Seasons Hotel Istanbul",
-    "location": "Istanbul",
-    "price_per_night": 850,
-    "image": "https://example.com/four-seasons-istanbul.jpg"
-  },
-  {
-    "id": 77,
-    "name": "Mandarin Oriental",
-    "location": "Bangkok",
-    "price_per_night": 700,
-    "image": "https://example.com/mandarin-oriental-bangkok.jpg"
-  },
-  {
-    "id": 78,
-    "name": "The Siam",
-    "location": "Bangkok",
-    "price_per_night": 750,
-    "image": "https://example.com/the-siam.jpg"
-  },
-  {
-    "id": 79,
-    "name": "The Ritz-Carlton",
-    "location": "Hong Kong",
-    "price_per_night": 900,
-    "image": "https://example.com/ritz-carlton-hk.jpg"
-  },
-  {
-    "id": 80,
-    "name": "Four Seasons Hotel",
-    "location": "Hong Kong",
-    "price_per_night": 950,
-    "image": "https://example.com/four-seasons-hk.jpg"
-  },
-  {
-    "id": 81,
-    "name": "The Beverly Hills Hotel",
-    "location": "Los Angeles",
-    "price_per_night": 700,
-    "image": "https://example.com/beverly-hills-hotel.jpg"
-  },
-  {
-    "id": 82,
-    "name": "The Peninsula Beverly Hills",
-    "location": "Los Angeles",
-    "price_per_night": 750,
-    "image": "https://example.com/peninsula-beverly-hills.jpg"
-  },
-  {
-    "id": 83,
-    "name": "Fairmont Royal York",
-    "location": "Toronto",
-    "price_per_night": 600,
-    "image": "https://example.com/fairmont-royal-york.jpg"
-  },
-  {
-    "id": 84,
-    "name": "The Ritz-Carlton Toronto",
-    "location": "Toronto",
-    "price_per_night": 650,
-    "image": "https://example.com/ritz-carlton-toronto.jpg"
-  },
-  {
-    "id": 85,
-    "name": "Le Meurice",
-    "location": "Paris",
-    "price_per_night": 450,
-    "image": "https://example.com/le-meurice.jpg"
-  },
-  {
-    "id": 86,
-    "name": "Shangri-La Hotel",
-    "location": "Paris",
-    "price_per_night": 500,
-    "image": "https://example.com/shangri-la-paris.jpg"
-  },
-  {
-    "id": 87,
-    "name": "The Ritz London",
-    "location": "London",
-    "price_per_night": 600,
-    "image": "https://example.com/the-ritz-london.jpg"
-  },
-  {
-    "id": 88,
-    "name": "The Savoy",
-    "location": "London",
-    "price_per_night": 550,
-    "image": "https://example.com/the-savoy.jpg"
-  },
-  {
-    "id": 89,
-    "name": "The Plaza",
-    "location": "New York",
-    "price_per_night": 700,
-    "image": "https://example.com/the-plaza.jpg"
-  },
-  {
-    "id": 90,
-    "name": "Mandarin Oriental",
-    "location": "New York",
-    "price_per_night": 750,
-    "image": "https://example.com/mandarin-oriental-ny.jpg"
-  },
-  {
-    "id": 91,
-    "name": "Burj Al Arab",
-    "location": "Dubai",
-    "price_per_night": 1200,
-    "image": "https://example.com/burj-al-arab.jpg"
-  },
-  {
-    "id": 92,
-    "name": "Atlantis The Palm",
-    "location": "Dubai",
-    "price_per_night": 1000,
-    "image": "https://example.com/atlantis-the-palm.jpg"
-  },
-  {
-    "id": 93,
-    "name": "Marina Bay Sands",
-    "location": "Singapore",
-    "price_per_night": 800,
-    "image": "https://example.com/marina-bay-sands.jpg"
-  },
-  {
-    "id": 94,
-    "name": "Raffles Hotel",
-    "location": "Singapore",
-    "price_per_night": 850,
-    "image": "https://example.com/raffles-hotel.jpg"
-  },
-  {
-    "id": 95,
-    "name": "The Peninsula",
-    "location": "Tokyo",
-    "price_per_night": 900,
-    "image": "https://example.com/the-peninsula-tokyo.jpg"
-  },
-  {
-    "id": 96,
-    "name": "Park Hyatt",
-    "location": "Tokyo",
-    "price_per_night": 950,
-    "image": "https://example.com/park-hyatt-tokyo.jpg"
-  },
-  {
-    "id": 97,
-    "name": "Four Seasons Hotel",
-    "location": "Sydney",
-    "price_per_night": 700,
-    "image": "https://example.com/four-seasons-sydney.jpg"
-  },
-  {
-    "id": 98,
-    "name": "Shangri-La Hotel",
-    "location": "Sydney",
-    "price_per_night": 750,
-    "image": "https://example.com/shangri-la-sydney.jpg"
-  },
-  {
-    "id": 99,
-    "name": "Hotel de Russie",
-    "location": "Rome",
-    "price_per_night": 650,
-    "image": "https://example.com/hotel-de-russie.jpg"
-  },
-  {
-    "id": 100,
-    "name": "The St. Regis Rome",
-    "location": "Rome",
-    "price_per_night": 700,
-    "image": "https://example.com/st-regis-rome.jpg"
-  }
-]
+  ],
+  "hotels": [
+    {
+      "id": 1,
+      "name": "Le Meurice",
+      "location": "Paris",
+      "price_per_night": 450,
+      "image": "https://example.com/le-meurice.jpg",
+      "coordinates": {
+        "latitude": 48.865633,
+        "longitude": 2.327355
+      },
+      "rating": 4.2,
+      "reviews": 191
+    },
+    {
+      "id": 2,
+      "name": "Shangri-La Hotel",
+      "location": "Paris",
+      "price_per_night": 500,
+      "image": "https://example.com/shangri-la-paris.jpg",
+      "coordinates": {
+        "latitude": 48.8566,
+        "longitude": 2.3522
+      },
+      "rating": 3.9,
+      "reviews": 3315
+    },
+    {
+      "id": 3,
+      "name": "The Ritz London",
+      "location": "London",
+      "price_per_night": 600,
+      "image": "https://example.com/the-ritz-london.jpg",
+      "coordinates": {
+        "latitude": 51.507268,
+        "longitude": -0.141588
+      },
+      "rating": 3.4,
+      "reviews": 1038
+    },
+    {
+      "id": 4,
+      "name": "The Savoy",
+      "location": "London",
+      "price_per_night": 550,
+      "image": "https://example.com/the-savoy.jpg",
+      "coordinates": {
+        "latitude": 51.510048,
+        "longitude": -0.120649
+      },
+      "rating": 4.2,
+      "reviews": 2545
+    },
+    {
+      "id": 5,
+      "name": "The Plaza",
+      "location": "New York",
+      "price_per_night": 700,
+      "image": "https://example.com/the-plaza.jpg",
+      "coordinates": {
+        "latitude": 40.764741,
+        "longitude": -73.974238
+      },
+      "rating": 3.3,
+      "reviews": 1921
+    },
+    {
+      "id": 6,
+      "name": "Mandarin Oriental",
+      "location": "New York",
+      "price_per_night": 750,
+      "image": "https://example.com/mandarin-oriental-ny.jpg",
+      "coordinates": {
+        "latitude": 40.7128,
+        "longitude": -74.006
+      },
+      "rating": 3.3,
+      "reviews": 4586
+    },
+    {
+      "id": 7,
+      "name": "Burj Al Arab",
+      "location": "Dubai",
+      "price_per_night": 1200,
+      "image": "https://example.com/burj-al-arab.jpg",
+      "coordinates": {
+        "latitude": 25.141245,
+        "longitude": 55.185241
+      },
+      "rating": 5,
+      "reviews": 3020
+    },
+    {
+      "id": 8,
+      "name": "Atlantis The Palm",
+      "location": "Dubai",
+      "price_per_night": 1000,
+      "image": "https://example.com/atlantis-the-palm.jpg",
+      "coordinates": {
+        "latitude": 25.130582,
+        "longitude": 55.117052
+      },
+      "rating": 5,
+      "reviews": 504
+    },
+    {
+      "id": 9,
+      "name": "Marina Bay Sands",
+      "location": "Singapore",
+      "price_per_night": 800,
+      "image": "https://example.com/marina-bay-sands.jpg",
+      "coordinates": {
+        "latitude": 1.283963,
+        "longitude": 103.860304
+      },
+      "rating": 4.1,
+      "reviews": 3806
+    },
+    {
+      "id": 10,
+      "name": "Raffles Hotel",
+      "location": "Singapore",
+      "price_per_night": 850,
+      "image": "https://example.com/raffles-hotel.jpg",
+      "coordinates": {
+        "latitude": 1.294912,
+        "longitude": 103.853309
+      },
+      "rating": 4.6,
+      "reviews": 633
+    },
+    {
+      "id": 11,
+      "name": "The Peninsula",
+      "location": "Tokyo",
+      "price_per_night": 900,
+      "image": "https://example.com/the-peninsula-tokyo.jpg",
+      "coordinates": {
+        "latitude": 35.6895,
+        "longitude": 139.6917
+      },
+      "rating": 4.7,
+      "reviews": 4027
+    },
+    {
+      "id": 12,
+      "name": "Park Hyatt",
+      "location": "Tokyo",
+      "price_per_night": 950,
+      "image": "https://example.com/park-hyatt-tokyo.jpg",
+      "coordinates": {
+        "latitude": 35.6895,
+        "longitude": 139.6917
+      },
+      "rating": 4.3,
+      "reviews": 2796
+    },
+    {
+      "id": 13,
+      "name": "Four Seasons Hotel",
+      "location": "Sydney",
+      "price_per_night": 700,
+      "image": "https://example.com/four-seasons-sydney.jpg",
+      "coordinates": {
+        "latitude": -33.8688,
+        "longitude": 151.2093
+      },
+      "rating": 3.9,
+      "reviews": 3516
+    },
+    {
+      "id": 14,
+      "name": "Shangri-La Hotel",
+      "location": "Sydney",
+      "price_per_night": 750,
+      "image": "https://example.com/shangri-la-sydney.jpg",
+      "coordinates": {
+        "latitude": -33.8688,
+        "longitude": 151.2093
+      },
+      "rating": 4.6,
+      "reviews": 3356
+    },
+    {
+      "id": 15,
+      "name": "Hotel de Russie",
+      "location": "Rome",
+      "price_per_night": 650,
+      "image": "https://example.com/hotel-de-russie.jpg",
+      "coordinates": {
+        "latitude": 41.910685,
+        "longitude": 12.476045
+      },
+      "rating": 3.4,
+      "reviews": 4534
+    },
+    {
+      "id": 16,
+      "name": "The St. Regis Rome",
+      "location": "Rome",
+      "price_per_night": 700,
+      "image": "https://example.com/st-regis-rome.jpg",
+      "coordinates": {
+        "latitude": 41.905394,
+        "longitude": 12.496865
+      },
+      "rating": 3.1,
+      "reviews": 4380
+    },
+    {
+      "id": 17,
+      "name": "Hotel Arts",
+      "location": "Barcelona",
+      "price_per_night": 600,
+      "image": "https://example.com/hotel-arts-barcelona.jpg",
+      "coordinates": {
+        "latitude": 41.3851,
+        "longitude": 2.1734
+      },
+      "rating": 4.1,
+      "reviews": 2844
+    },
+    {
+      "id": 18,
+      "name": "W Barcelona",
+      "location": "Barcelona",
+      "price_per_night": 650,
+      "image": "https://example.com/w-barcelona.jpg",
+      "coordinates": {
+        "latitude": 41.368259,
+        "longitude": 2.190833
+      },
+      "rating": 3.1,
+      "reviews": 3382
+    },
+    {
+      "id": 19,
+      "name": "Ciragan Palace Kempinski",
+      "location": "Istanbul",
+      "price_per_night": 800,
+      "image": "https://example.com/ciragan-palace.jpg",
+      "coordinates": {
+        "latitude": 41.04307,
+        "longitude": 29.01369
+      },
+      "rating": 3.2,
+      "reviews": 517
+    },
+    {
+      "id": 20,
+      "name": "Four Seasons Hotel Istanbul",
+      "location": "Istanbul",
+      "price_per_night": 850,
+      "image": "https://example.com/four-seasons-istanbul.jpg",
+      "coordinates": {
+        "latitude": 41.005355,
+        "longitude": 28.976953
+      },
+      "rating": 4.8,
+      "reviews": 2416
+    },
+    {
+      "id": 21,
+      "name": "Mandarin Oriental",
+      "location": "Bangkok",
+      "price_per_night": 700,
+      "image": "https://example.com/mandarin-oriental-bangkok.jpg",
+      "coordinates": {
+        "latitude": 13.7563,
+        "longitude": 100.5018
+      },
+      "rating": 3.6,
+      "reviews": 2874
+    },
+    {
+      "id": 22,
+      "name": "The Siam",
+      "location": "Bangkok",
+      "price_per_night": 750,
+      "image": "https://example.com/the-siam.jpg",
+      "coordinates": {
+        "latitude": 13.774073,
+        "longitude": 100.510409
+      },
+      "rating": 3.5,
+      "reviews": 1093
+    },
+    {
+      "id": 23,
+      "name": "The Ritz-Carlton",
+      "location": "Hong Kong",
+      "price_per_night": 900,
+      "image": "https://example.com/ritz-carlton-hk.jpg",
+      "coordinates": {
+        "latitude": 22.3193,
+        "longitude": 114.1694
+      },
+      "rating": 4,
+      "reviews": 4827
+    },
+    {
+      "id": 24,
+      "name": "Four Seasons Hotel",
+      "location": "Hong Kong",
+      "price_per_night": 950,
+      "image": "https://example.com/four-seasons-hk.jpg",
+      "coordinates": {
+        "latitude": 22.3193,
+        "longitude": 114.1694
+      },
+      "rating": 4.2,
+      "reviews": 1192
+    },
+    {
+      "id": 25,
+      "name": "The Beverly Hills Hotel",
+      "location": "Los Angeles",
+      "price_per_night": 700,
+      "image": "https://example.com/beverly-hills-hotel.jpg",
+      "coordinates": {
+        "latitude": 34.081012,
+        "longitude": -118.413251
+      },
+      "rating": 3,
+      "reviews": 2814
+    },
+    {
+      "id": 26,
+      "name": "The Peninsula Beverly Hills",
+      "location": "Los Angeles",
+      "price_per_night": 750,
+      "image": "https://example.com/peninsula-beverly-hills.jpg",
+      "coordinates": {
+        "latitude": 34.066085,
+        "longitude": -118.412898
+      },
+      "rating": 4.8,
+      "reviews": 1673
+    },
+    {
+      "id": 27,
+      "name": "Fairmont Royal York",
+      "location": "Toronto",
+      "price_per_night": 600,
+      "image": "https://example.com/fairmont-royal-york.jpg",
+      "coordinates": {
+        "latitude": 43.645529,
+        "longitude": -79.381689
+      },
+      "rating": 4.4,
+      "reviews": 333
+    },
+    {
+      "id": 28,
+      "name": "The Ritz-Carlton Toronto",
+      "location": "Toronto",
+      "price_per_night": 650,
+      "image": "https://example.com/ritz-carlton-toronto.jpg",
+      "coordinates": {
+        "latitude": 43.642566,
+        "longitude": -79.383491
+      },
+      "rating": 3.7,
+      "reviews": 4308
+    },
+    {
+      "id": 29,
+      "name": "Le Meurice",
+      "location": "Paris",
+      "price_per_night": 450,
+      "image": "https://example.com/le-meurice.jpg",
+      "coordinates": {
+        "latitude": 48.865633,
+        "longitude": 2.327355
+      },
+      "rating": 4.8,
+      "reviews": 902
+    },
+    {
+      "id": 30,
+      "name": "Shangri-La Hotel",
+      "location": "Paris",
+      "price_per_night": 500,
+      "image": "https://example.com/shangri-la-paris.jpg",
+      "coordinates": {
+        "latitude": 48.8566,
+        "longitude": 2.3522
+      },
+      "rating": 4.7,
+      "reviews": 4681
+    },
+    {
+      "id": 31,
+      "name": "The Ritz London",
+      "location": "London",
+      "price_per_night": 600,
+      "image": "https://example.com/the-ritz-london.jpg",
+      "coordinates": {
+        "latitude": 51.507268,
+        "longitude": -0.141588
+      },
+      "rating": 4.2,
+      "reviews": 2793
+    },
+    {
+      "id": 32,
+      "name": "The Savoy",
+      "location": "London",
+      "price_per_night": 550,
+      "image": "https://example.com/the-savoy.jpg",
+      "coordinates": {
+        "latitude": 51.510048,
+        "longitude": -0.120649
+      },
+      "rating": 3.1,
+      "reviews": 114
+    },
+    {
+      "id": 33,
+      "name": "The Plaza",
+      "location": "New York",
+      "price_per_night": 700,
+      "image": "https://example.com/the-plaza.jpg",
+      "coordinates": {
+        "latitude": 40.764741,
+        "longitude": -73.974238
+      },
+      "rating": 3.5,
+      "reviews": 2351
+    },
+    {
+      "id": 34,
+      "name": "Mandarin Oriental",
+      "location": "New York",
+      "price_per_night": 750,
+      "image": "https://example.com/mandarin-oriental-ny.jpg",
+      "coordinates": {
+        "latitude": 40.7128,
+        "longitude": -74.006
+      },
+      "rating": 3.6,
+      "reviews": 908
+    },
+    {
+      "id": 35,
+      "name": "Burj Al Arab",
+      "location": "Dubai",
+      "price_per_night": 1200,
+      "image": "https://example.com/burj-al-arab.jpg",
+      "coordinates": {
+        "latitude": 25.141245,
+        "longitude": 55.185241
+      },
+      "rating": 3.8,
+      "reviews": 4378
+    },
+    {
+      "id": 36,
+      "name": "Atlantis The Palm",
+      "location": "Dubai",
+      "price_per_night": 1000,
+      "image": "https://example.com/atlantis-the-palm.jpg",
+      "coordinates": {
+        "latitude": 25.130582,
+        "longitude": 55.117052
+      },
+      "rating": 3.4,
+      "reviews": 1313
+    },
+    {
+      "id": 37,
+      "name": "Marina Bay Sands",
+      "location": "Singapore",
+      "price_per_night": 800,
+      "image": "https://example.com/marina-bay-sands.jpg",
+      "coordinates": {
+        "latitude": 1.283963,
+        "longitude": 103.860304
+      },
+      "rating": 3.7,
+      "reviews": 4729
+    },
+    {
+      "id": 38,
+      "name": "Raffles Hotel",
+      "location": "Singapore",
+      "price_per_night": 850,
+      "image": "https://example.com/raffles-hotel.jpg",
+      "coordinates": {
+        "latitude": 1.294912,
+        "longitude": 103.853309
+      },
+      "rating": 4.1,
+      "reviews": 4410
+    },
+    {
+      "id": 39,
+      "name": "The Peninsula",
+      "location": "Tokyo",
+      "price_per_night": 900,
+      "image": "https://example.com/the-peninsula-tokyo.jpg",
+      "coordinates": {
+        "latitude": 35.6895,
+        "longitude": 139.6917
+      },
+      "rating": 5,
+      "reviews": 2385
+    },
+    {
+      "id": 40,
+      "name": "Park Hyatt",
+      "location": "Tokyo",
+      "price_per_night": 950,
+      "image": "https://example.com/park-hyatt-tokyo.jpg",
+      "coordinates": {
+        "latitude": 35.6895,
+        "longitude": 139.6917
+      },
+      "rating": 4.6,
+      "reviews": 4770
+    },
+    {
+      "id": 41,
+      "name": "Four Seasons Hotel",
+      "location": "Sydney",
+      "price_per_night": 700,
+      "image": "https://example.com/four-seasons-sydney.jpg",
+      "coordinates": {
+        "latitude": -33.8688,
+        "longitude": 151.2093
+      },
+      "rating": 4.4,
+      "reviews": 736
+    },
+    {
+      "id": 42,
+      "name": "Shangri-La Hotel",
+      "location": "Sydney",
+      "price_per_night": 750,
+      "image": "https://example.com/shangri-la-sydney.jpg",
+      "coordinates": {
+        "latitude": -33.8688,
+        "longitude": 151.2093
+      },
+      "rating": 3.5,
+      "reviews": 4545
+    },
+    {
+      "id": 43,
+      "name": "Hotel de Russie",
+      "location": "Rome",
+      "price_per_night": 650,
+      "image": "https://example.com/hotel-de-russie.jpg",
+      "coordinates": {
+        "latitude": 41.910685,
+        "longitude": 12.476045
+      },
+      "rating": 4,
+      "reviews": 4449
+    },
+    {
+      "id": 44,
+      "name": "The St. Regis Rome",
+      "location": "Rome",
+      "price_per_night": 700,
+      "image": "https://example.com/st-regis-rome.jpg",
+      "coordinates": {
+        "latitude": 41.905394,
+        "longitude": 12.496865
+      },
+      "rating": 4.6,
+      "reviews": 966
+    },
+    {
+      "id": 45,
+      "name": "Hotel Arts",
+      "location": "Barcelona",
+      "price_per_night": 600,
+      "image": "https://example.com/hotel-arts-barcelona.jpg",
+      "coordinates": {
+        "latitude": 41.3851,
+        "longitude": 2.1734
+      },
+      "rating": 3.8,
+      "reviews": 3249
+    },
+    {
+      "id": 46,
+      "name": "W Barcelona",
+      "location": "Barcelona",
+      "price_per_night": 650,
+      "image": "https://example.com/w-barcelona.jpg",
+      "coordinates": {
+        "latitude": 41.368259,
+        "longitude": 2.190833
+      },
+      "rating": 3.5,
+      "reviews": 4663
+    },
+    {
+      "id": 47,
+      "name": "Ciragan Palace Kempinski",
+      "location": "Istanbul",
+      "price_per_night": 800,
+      "image": "https://example.com/ciragan-palace.jpg",
+      "coordinates": {
+        "latitude": 41.04307,
+        "longitude": 29.01369
+      },
+      "rating": 4.9,
+      "reviews": 4725
+    },
+    {
+      "id": 48,
+      "name": "Four Seasons Hotel Istanbul",
+      "location": "Istanbul",
+      "price_per_night": 850,
+      "image": "https://example.com/four-seasons-istanbul.jpg",
+      "coordinates": {
+        "latitude": 41.005355,
+        "longitude": 28.976953
+      },
+      "rating": 4.2,
+      "reviews": 911
+    },
+    {
+      "id": 49,
+      "name": "Mandarin Oriental",
+      "location": "Bangkok",
+      "price_per_night": 700,
+      "image": "https://example.com/mandarin-oriental-bangkok.jpg",
+      "coordinates": {
+        "latitude": 13.7563,
+        "longitude": 100.5018
+      },
+      "rating": 4.6,
+      "reviews": 3026
+    },
+    {
+      "id": 50,
+      "name": "The Siam",
+      "location": "Bangkok",
+      "price_per_night": 750,
+      "image": "https://example.com/the-siam.jpg",
+      "coordinates": {
+        "latitude": 13.774073,
+        "longitude": 100.510409
+      },
+      "rating": 3.3,
+      "reviews": 2977
+    },
+    {
+      "id": 51,
+      "name": "The Ritz-Carlton",
+      "location": "Hong Kong",
+      "price_per_night": 900,
+      "image": "https://example.com/ritz-carlton-hk.jpg",
+      "coordinates": {
+        "latitude": 22.3193,
+        "longitude": 114.1694
+      },
+      "rating": 4.4,
+      "reviews": 4188
+    },
+    {
+      "id": 52,
+      "name": "Four Seasons Hotel",
+      "location": "Hong Kong",
+      "price_per_night": 950,
+      "image": "https://example.com/four-seasons-hk.jpg",
+      "coordinates": {
+        "latitude": 22.3193,
+        "longitude": 114.1694
+      },
+      "rating": 4.1,
+      "reviews": 4720
+    },
+    {
+      "id": 53,
+      "name": "The Beverly Hills Hotel",
+      "location": "Los Angeles",
+      "price_per_night": 700,
+      "image": "https://example.com/beverly-hills-hotel.jpg",
+      "coordinates": {
+        "latitude": 34.081012,
+        "longitude": -118.413251
+      },
+      "rating": 3.2,
+      "reviews": 3350
+    },
+    {
+      "id": 54,
+      "name": "The Peninsula Beverly Hills",
+      "location": "Los Angeles",
+      "price_per_night": 750,
+      "image": "https://example.com/peninsula-beverly-hills.jpg",
+      "coordinates": {
+        "latitude": 34.066085,
+        "longitude": -118.412898
+      },
+      "rating": 3.5,
+      "reviews": 1510
+    },
+    {
+      "id": 55,
+      "name": "Fairmont Royal York",
+      "location": "Toronto",
+      "price_per_night": 600,
+      "image": "https://example.com/fairmont-royal-york.jpg",
+      "coordinates": {
+        "latitude": 43.645529,
+        "longitude": -79.381689
+      },
+      "rating": 3.4,
+      "reviews": 611
+    },
+    {
+      "id": 56,
+      "name": "The Ritz-Carlton Toronto",
+      "location": "Toronto",
+      "price_per_night": 650,
+      "image": "https://example.com/ritz-carlton-toronto.jpg",
+      "coordinates": {
+        "latitude": 43.642566,
+        "longitude": -79.383491
+      },
+      "rating": 4.4,
+      "reviews": 929
+    },
+    {
+      "id": 57,
+      "name": "Le Meurice",
+      "location": "Paris",
+      "price_per_night": 450,
+      "image": "https://example.com/le-meurice.jpg",
+      "coordinates": {
+        "latitude": 48.865633,
+        "longitude": 2.327355
+      },
+      "rating": 4.6,
+      "reviews": 4995
+    },
+    {
+      "id": 58,
+      "name": "Shangri-La Hotel",
+      "location": "Paris",
+      "price_per_night": 500,
+      "image": "https://example.com/shangri-la-paris.jpg",
+      "coordinates": {
+        "latitude": 48.8566,
+        "longitude": 2.3522
+      },
+      "rating": 4.2,
+      "reviews": 1226
+    },
+    {
+      "id": 59,
+      "name": "The Ritz London",
+      "location": "London",
+      "price_per_night": 600,
+      "image": "https://example.com/the-ritz-london.jpg",
+      "coordinates": {
+        "latitude": 51.507268,
+        "longitude": -0.141588
+      },
+      "rating": 3.9,
+      "reviews": 3682
+    },
+    {
+      "id": 60,
+      "name": "The Savoy",
+      "location": "London",
+      "price_per_night": 550,
+      "image": "https://example.com/the-savoy.jpg",
+      "coordinates": {
+        "latitude": 51.510048,
+        "longitude": -0.120649
+      },
+      "rating": 4.3,
+      "reviews": 1642
+    },
+    {
+      "id": 61,
+      "name": "The Plaza",
+      "location": "New York",
+      "price_per_night": 700,
+      "image": "https://example.com/the-plaza.jpg",
+      "coordinates": {
+        "latitude": 40.764741,
+        "longitude": -73.974238
+      },
+      "rating": 4.2,
+      "reviews": 757
+    },
+    {
+      "id": 62,
+      "name": "Mandarin Oriental",
+      "location": "New York",
+      "price_per_night": 750,
+      "image": "https://example.com/mandarin-oriental-ny.jpg",
+      "coordinates": {
+        "latitude": 40.7128,
+        "longitude": -74.006
+      },
+      "rating": 3,
+      "reviews": 3574
+    },
+    {
+      "id": 63,
+      "name": "Burj Al Arab",
+      "location": "Dubai",
+      "price_per_night": 1200,
+      "image": "https://example.com/burj-al-arab.jpg",
+      "coordinates": {
+        "latitude": 25.141245,
+        "longitude": 55.185241
+      },
+      "rating": 3.8,
+      "reviews": 1551
+    },
+    {
+      "id": 64,
+      "name": "Atlantis The Palm",
+      "location": "Dubai",
+      "price_per_night": 1000,
+      "image": "https://example.com/atlantis-the-palm.jpg",
+      "coordinates": {
+        "latitude": 25.130582,
+        "longitude": 55.117052
+      },
+      "rating": 4.3,
+      "reviews": 3001
+    },
+    {
+      "id": 65,
+      "name": "Marina Bay Sands",
+      "location": "Singapore",
+      "price_per_night": 800,
+      "image": "https://example.com/marina-bay-sands.jpg",
+      "coordinates": {
+        "latitude": 1.283963,
+        "longitude": 103.860304
+      },
+      "rating": 3.4,
+      "reviews": 3052
+    },
+    {
+      "id": 66,
+      "name": "Raffles Hotel",
+      "location": "Singapore",
+      "price_per_night": 850,
+      "image": "https://example.com/raffles-hotel.jpg",
+      "coordinates": {
+        "latitude": 1.294912,
+        "longitude": 103.853309
+      },
+      "rating": 4,
+      "reviews": 3628
+    },
+    {
+      "id": 67,
+      "name": "The Peninsula",
+      "location": "Tokyo",
+      "price_per_night": 900,
+      "image": "https://example.com/the-peninsula-tokyo.jpg",
+      "coordinates": {
+        "latitude": 35.6895,
+        "longitude": 139.6917
+      },
+      "rating": 4.3,
+      "reviews": 4708
+    },
+    {
+      "id": 68,
+      "name": "Park Hyatt",
+      "location": "Tokyo",
+      "price_per_night": 950,
+      "image": "https://example.com/park-hyatt-tokyo.jpg",
+      "coordinates": {
+        "latitude": 35.6895,
+        "longitude": 139.6917
+      },
+      "rating": 3.6,
+      "reviews": 3660
+    },
+    {
+      "id": 69,
+      "name": "Four Seasons Hotel",
+      "location": "Sydney",
+      "price_per_night": 700,
+      "image": "https://example.com/four-seasons-sydney.jpg",
+      "coordinates": {
+        "latitude": -33.8688,
+        "longitude": 151.2093
+      },
+      "rating": 4.4,
+      "reviews": 3297
+    },
+    {
+      "id": 70,
+      "name": "Shangri-La Hotel",
+      "location": "Sydney",
+      "price_per_night": 750,
+      "image": "https://example.com/shangri-la-sydney.jpg",
+      "coordinates": {
+        "latitude": -33.8688,
+        "longitude": 151.2093
+      },
+      "rating": 4,
+      "reviews": 485
+    },
+    {
+      "id": 71,
+      "name": "Hotel de Russie",
+      "location": "Rome",
+      "price_per_night": 650,
+      "image": "https://example.com/hotel-de-russie.jpg",
+      "coordinates": {
+        "latitude": 41.910685,
+        "longitude": 12.476045
+      },
+      "rating": 4.2,
+      "reviews": 199
+    },
+    {
+      "id": 72,
+      "name": "The St. Regis Rome",
+      "location": "Rome",
+      "price_per_night": 700,
+      "image": "https://example.com/st-regis-rome.jpg",
+      "coordinates": {
+        "latitude": 41.905394,
+        "longitude": 12.496865
+      },
+      "rating": 4.9,
+      "reviews": 703
+    },
+    {
+      "id": 73,
+      "name": "Hotel Arts",
+      "location": "Barcelona",
+      "price_per_night": 600,
+      "image": "https://example.com/hotel-arts-barcelona.jpg",
+      "coordinates": {
+        "latitude": 41.3851,
+        "longitude": 2.1734
+      },
+      "rating": 4.2,
+      "reviews": 455
+    },
+    {
+      "id": 74,
+      "name": "W Barcelona",
+      "location": "Barcelona",
+      "price_per_night": 650,
+      "image": "https://example.com/w-barcelona.jpg",
+      "coordinates": {
+        "latitude": 41.368259,
+        "longitude": 2.190833
+      },
+      "rating": 3.2,
+      "reviews": 4095
+    },
+    {
+      "id": 75,
+      "name": "Ciragan Palace Kempinski",
+      "location": "Istanbul",
+      "price_per_night": 800,
+      "image": "https://example.com/ciragan-palace.jpg",
+      "coordinates": {
+        "latitude": 41.04307,
+        "longitude": 29.01369
+      },
+      "rating": 4.6,
+      "reviews": 4667
+    },
+    {
+      "id": 76,
+      "name": "Four Seasons Hotel Istanbul",
+      "location": "Istanbul",
+      "price_per_night": 850,
+      "image": "https://example.com/four-seasons-istanbul.jpg",
+      "coordinates": {
+        "latitude": 41.005355,
+        "longitude": 28.976953
+      },
+      "rating": 4.3,
+      "reviews": 527
+    },
+    {
+      "id": 77,
+      "name": "Mandarin Oriental",
+      "location": "Bangkok",
+      "price_per_night": 700,
+      "image": "https://example.com/mandarin-oriental-bangkok.jpg",
+      "coordinates": {
+        "latitude": 13.7563,
+        "longitude": 100.5018
+      },
+      "rating": 3.5,
+      "reviews": 4035
+    },
+    {
+      "id": 78,
+      "name": "The Siam",
+      "location": "Bangkok",
+      "price_per_night": 750,
+      "image": "https://example.com/the-siam.jpg",
+      "coordinates": {
+        "latitude": 13.774073,
+        "longitude": 100.510409
+      },
+      "rating": 4.5,
+      "reviews": 1273
+    },
+    {
+      "id": 79,
+      "name": "The Ritz-Carlton",
+      "location": "Hong Kong",
+      "price_per_night": 900,
+      "image": "https://example.com/ritz-carlton-hk.jpg",
+      "coordinates": {
+        "latitude": 22.3193,
+        "longitude": 114.1694
+      },
+      "rating": 3.5,
+      "reviews": 2466
+    },
+    {
+      "id": 80,
+      "name": "Four Seasons Hotel",
+      "location": "Hong Kong",
+      "price_per_night": 950,
+      "image": "https://example.com/four-seasons-hk.jpg",
+      "coordinates": {
+        "latitude": 22.3193,
+        "longitude": 114.1694
+      },
+      "rating": 4.3,
+      "reviews": 4144
+    },
+    {
+      "id": 81,
+      "name": "The Beverly Hills Hotel",
+      "location": "Los Angeles",
+      "price_per_night": 700,
+      "image": "https://example.com/beverly-hills-hotel.jpg",
+      "coordinates": {
+        "latitude": 34.081012,
+        "longitude": -118.413251
+      },
+      "rating": 3.1,
+      "reviews": 3315
+    },
+    {
+      "id": 82,
+      "name": "The Peninsula Beverly Hills",
+      "location": "Los Angeles",
+      "price_per_night": 750,
+      "image": "https://example.com/peninsula-beverly-hills.jpg",
+      "coordinates": {
+        "latitude": 34.066085,
+        "longitude": -118.412898
+      },
+      "rating": 3.4,
+      "reviews": 1541
+    },
+    {
+      "id": 83,
+      "name": "Fairmont Royal York",
+      "location": "Toronto",
+      "price_per_night": 600,
+      "image": "https://example.com/fairmont-royal-york.jpg",
+      "coordinates": {
+        "latitude": 43.645529,
+        "longitude": -79.381689
+      },
+      "rating": 3.1,
+      "reviews": 4053
+    },
+    {
+      "id": 84,
+      "name": "The Ritz-Carlton Toronto",
+      "location": "Toronto",
+      "price_per_night": 650,
+      "image": "https://example.com/ritz-carlton-toronto.jpg",
+      "coordinates": {
+        "latitude": 43.642566,
+        "longitude": -79.383491
+      },
+      "rating": 3.5,
+      "reviews": 3595
+    },
+    {
+      "id": 85,
+      "name": "Le Meurice",
+      "location": "Paris",
+      "price_per_night": 450,
+      "image": "https://example.com/le-meurice.jpg",
+      "coordinates": {
+        "latitude": 48.865633,
+        "longitude": 2.327355
+      },
+      "rating": 4.3,
+      "reviews": 3961
+    },
+    {
+      "id": 86,
+      "name": "Shangri-La Hotel",
+      "location": "Paris",
+      "price_per_night": 500,
+      "image": "https://example.com/shangri-la-paris.jpg",
+      "coordinates": {
+        "latitude": 48.8566,
+        "longitude": 2.3522
+      },
+      "rating": 4.3,
+      "reviews": 128
+    },
+    {
+      "id": 87,
+      "name": "The Ritz London",
+      "location": "London",
+      "price_per_night": 600,
+      "image": "https://example.com/the-ritz-london.jpg",
+      "coordinates": {
+        "latitude": 51.507268,
+        "longitude": -0.141588
+      },
+      "rating": 4.2,
+      "reviews": 1222
+    },
+    {
+      "id": 88,
+      "name": "The Savoy",
+      "location": "London",
+      "price_per_night": 550,
+      "image": "https://example.com/the-savoy.jpg",
+      "coordinates": {
+        "latitude": 51.510048,
+        "longitude": -0.120649
+      },
+      "rating": 3,
+      "reviews": 4803
+    },
+    {
+      "id": 89,
+      "name": "The Plaza",
+      "location": "New York",
+      "price_per_night": 700,
+      "image": "https://example.com/the-plaza.jpg",
+      "coordinates": {
+        "latitude": 40.764741,
+        "longitude": -73.974238
+      },
+      "rating": 4.4,
+      "reviews": 1311
+    },
+    {
+      "id": 90,
+      "name": "Mandarin Oriental",
+      "location": "New York",
+      "price_per_night": 750,
+      "image": "https://example.com/mandarin-oriental-ny.jpg",
+      "coordinates": {
+        "latitude": 40.7128,
+        "longitude": -74.006
+      },
+      "rating": 3.4,
+      "reviews": 2060
+    },
+    {
+      "id": 91,
+      "name": "Burj Al Arab",
+      "location": "Dubai",
+      "price_per_night": 1200,
+      "image": "https://example.com/burj-al-arab.jpg",
+      "coordinates": {
+        "latitude": 25.141245,
+        "longitude": 55.185241
+      },
+      "rating": 4.2,
+      "reviews": 902
+    },
+    {
+      "id": 92,
+      "name": "Atlantis The Palm",
+      "location": "Dubai",
+      "price_per_night": 1000,
+      "image": "https://example.com/atlantis-the-palm.jpg",
+      "coordinates": {
+        "latitude": 25.130582,
+        "longitude": 55.117052
+      },
+      "rating": 5,
+      "reviews": 4103
+    },
+    {
+      "id": 93,
+      "name": "Marina Bay Sands",
+      "location": "Singapore",
+      "price_per_night": 800,
+      "image": "https://example.com/marina-bay-sands.jpg",
+      "coordinates": {
+        "latitude": 1.283963,
+        "longitude": 103.860304
+      },
+      "rating": 4,
+      "reviews": 2196
+    },
+    {
+      "id": 94,
+      "name": "Raffles Hotel",
+      "location": "Singapore",
+      "price_per_night": 850,
+      "image": "https://example.com/raffles-hotel.jpg",
+      "coordinates": {
+        "latitude": 1.294912,
+        "longitude": 103.853309
+      },
+      "rating": 3.9,
+      "reviews": 304
+    },
+    {
+      "id": 95,
+      "name": "The Peninsula",
+      "location": "Tokyo",
+      "price_per_night": 900,
+      "image": "https://example.com/the-peninsula-tokyo.jpg",
+      "coordinates": {
+        "latitude": 35.6895,
+        "longitude": 139.6917
+      },
+      "rating": 4.4,
+      "reviews": 498
+    },
+    {
+      "id": 96,
+      "name": "Park Hyatt",
+      "location": "Tokyo",
+      "price_per_night": 950,
+      "image": "https://example.com/park-hyatt-tokyo.jpg",
+      "coordinates": {
+        "latitude": 35.6895,
+        "longitude": 139.6917
+      },
+      "rating": 3.7,
+      "reviews": 2313
+    },
+    {
+      "id": 97,
+      "name": "Four Seasons Hotel",
+      "location": "Sydney",
+      "price_per_night": 700,
+      "image": "https://example.com/four-seasons-sydney.jpg",
+      "coordinates": {
+        "latitude": -33.8688,
+        "longitude": 151.2093
+      },
+      "rating": 4.2,
+      "reviews": 3033
+    },
+    {
+      "id": 98,
+      "name": "Shangri-La Hotel",
+      "location": "Sydney",
+      "price_per_night": 750,
+      "image": "https://example.com/shangri-la-sydney.jpg",
+      "coordinates": {
+        "latitude": -33.8688,
+        "longitude": 151.2093
+      },
+      "rating": 4.6,
+      "reviews": 421
+    },
+    {
+      "id": 99,
+      "name": "Hotel de Russie",
+      "location": "Rome",
+      "price_per_night": 650,
+      "image": "https://example.com/hotel-de-russie.jpg",
+      "coordinates": {
+        "latitude": 41.910685,
+        "longitude": 12.476045
+      },
+      "rating": 4.7,
+      "reviews": 3857
+    },
+    {
+      "id": 100,
+      "name": "The St. Regis Rome",
+      "location": "Rome",
+      "price_per_night": 700,
+      "image": "https://example.com/st-regis-rome.jpg",
+      "coordinates": {
+        "latitude": 41.905394,
+        "longitude": 12.496865
+      },
+      "rating": 4,
+      "reviews": 2047
+    },
+    {
+      "id": 101,
+      "name": "Hotel Adlon",
+      "location": "Berlin",
+      "price_per_night": 613,
+      "image": "https://example.com/hotel-image.jpg",
+      "coordinates": {
+        "latitude": 52.52,
+        "longitude": 13.405
+      },
+      "rating": 4.2,
+      "reviews": 3550
+    },
+    {
+      "id": 102,
+      "name": "The Ritz-Carlton Berlin",
+      "location": "Berlin",
+      "price_per_night": 432,
+      "image": "https://example.com/hotel-image.jpg",
+      "coordinates": {
+        "latitude": 52.52,
+        "longitude": 13.405
+      },
+      "rating": 4.7,
+      "reviews": 4143
+    },
+    {
+      "id": 103,
+      "name": "Hotel de Rome",
+      "location": "Berlin",
+      "price_per_night": 394,
+      "image": "https://example.com/hotel-image.jpg",
+      "coordinates": {
+        "latitude": 52.52,
+        "longitude": 13.405
+      },
+      "rating": 3.1,
+      "reviews": 541
+    },
+    {
+      "id": 104,
+      "name": "Hotel Sacher",
+      "location": "Vienna",
+      "price_per_night": 775,
+      "image": "https://example.com/hotel-image.jpg",
+      "coordinates": {
+        "latitude": 48.2082,
+        "longitude": 16.3738
+      },
+      "rating": 4.4,
+      "reviews": 1224
+    },
+    {
+      "id": 105,
+      "name": "The Ritz-Carlton Vienna",
+      "location": "Vienna",
+      "price_per_night": 704,
+      "image": "https://example.com/hotel-image.jpg",
+      "coordinates": {
+        "latitude": 48.2082,
+        "longitude": 16.3738
+      },
+      "rating": 4.8,
+      "reviews": 4652
+    },
+    {
+      "id": 106,
+      "name": "Palais Coburg",
+      "location": "Vienna",
+      "price_per_night": 703,
+      "image": "https://example.com/hotel-image.jpg",
+      "coordinates": {
+        "latitude": 48.2082,
+        "longitude": 16.3738
+      },
+      "rating": 4,
+      "reviews": 329
+    },
+    {
+      "id": 107,
+      "name": "Hotel De L'Europe",
+      "location": "Amsterdam",
+      "price_per_night": 559,
+      "image": "https://example.com/hotel-image.jpg",
+      "coordinates": {
+        "latitude": 52.3676,
+        "longitude": 4.9041
+      },
+      "rating": 4.5,
+      "reviews": 3171
+    },
+    {
+      "id": 108,
+      "name": "The Dylan Amsterdam",
+      "location": "Amsterdam",
+      "price_per_night": 453,
+      "image": "https://example.com/hotel-image.jpg",
+      "coordinates": {
+        "latitude": 52.3676,
+        "longitude": 4.9041
+      },
+      "rating": 4.6,
+      "reviews": 3470
+    },
+    {
+      "id": 109,
+      "name": "Waldorf Astoria Amsterdam",
+      "location": "Amsterdam",
+      "price_per_night": 388,
+      "image": "https://example.com/hotel-image.jpg",
+      "coordinates": {
+        "latitude": 52.3676,
+        "longitude": 4.9041
+      },
+      "rating": 4.4,
+      "reviews": 1763
+    },
+    {
+      "id": 110,
+      "name": "Hotel Ritz",
+      "location": "Madrid",
+      "price_per_night": 603,
+      "image": "https://example.com/hotel-image.jpg",
+      "coordinates": {
+        "latitude": 40.4168,
+        "longitude": -3.7038
+      },
+      "rating": 3.8,
+      "reviews": 3141
+    },
+    {
+      "id": 111,
+      "name": "The Westin Palace",
+      "location": "Madrid",
+      "price_per_night": 470,
+      "image": "https://example.com/hotel-image.jpg",
+      "coordinates": {
+        "latitude": 40.4168,
+        "longitude": -3.7038
+      },
+      "rating": 4.7,
+      "reviews": 1870
+    },
+    {
+      "id": 112,
+      "name": "Hotel Urban",
+      "location": "Madrid",
+      "price_per_night": 427,
+      "image": "https://example.com/hotel-image.jpg",
+      "coordinates": {
+        "latitude": 40.4168,
+        "longitude": -3.7038
+      },
+      "rating": 3.1,
+      "reviews": 4680
+    },
+    {
+      "id": 113,
+      "name": "Four Seasons Hotel Ritz",
+      "location": "Lisbon",
+      "price_per_night": 897,
+      "image": "https://example.com/hotel-image.jpg",
+      "coordinates": {
+        "latitude": 38.7223,
+        "longitude": -9.1393
+      },
+      "rating": 4.6,
+      "reviews": 1828
+    },
+    {
+      "id": 114,
+      "name": "Altis Belém Hotel & Spa",
+      "location": "Lisbon",
+      "price_per_night": 677,
+      "image": "https://example.com/hotel-image.jpg",
+      "coordinates": {
+        "latitude": 38.7223,
+        "longitude": -9.1393
+      },
+      "rating": 3.5,
+      "reviews": 1226
+    },
+    {
+      "id": 115,
+      "name": "Pestana Palace",
+      "location": "Lisbon",
+      "price_per_night": 474,
+      "image": "https://example.com/hotel-image.jpg",
+      "coordinates": {
+        "latitude": 38.7223,
+        "longitude": -9.1393
+      },
+      "rating": 3.3,
+      "reviews": 4262
+    },
+    {
+      "id": 116,
+      "name": "Hotel D'Angleterre",
+      "location": "Copenhagen",
+      "price_per_night": 317,
+      "image": "https://example.com/hotel-image.jpg",
+      "coordinates": {
+        "latitude": 55.6761,
+        "longitude": 12.5683
+      },
+      "rating": 3.5,
+      "reviews": 1311
+    },
+    {
+      "id": 117,
+      "name": "Nimb Hotel",
+      "location": "Copenhagen",
+      "price_per_night": 743,
+      "image": "https://example.com/hotel-image.jpg",
+      "coordinates": {
+        "latitude": 55.6761,
+        "longitude": 12.5683
+      },
+      "rating": 5,
+      "reviews": 3789
+    },
+    {
+      "id": 118,
+      "name": "Radisson Collection Royal Hotel",
+      "location": "Copenhagen",
+      "price_per_night": 255,
+      "image": "https://example.com/hotel-image.jpg",
+      "coordinates": {
+        "latitude": 55.6761,
+        "longitude": 12.5683
+      },
+      "rating": 4.4,
+      "reviews": 3683
+    },
+    {
+      "id": 119,
+      "name": "Grand Hôtel",
+      "location": "Stockholm",
+      "price_per_night": 770,
+      "image": "https://example.com/hotel-image.jpg",
+      "coordinates": {
+        "latitude": 59.3293,
+        "longitude": 18.0686
+      },
+      "rating": 3.1,
+      "reviews": 4999
+    },
+    {
+      "id": 120,
+      "name": "Hotel Diplomat",
+      "location": "Stockholm",
+      "price_per_night": 764,
+      "image": "https://example.com/hotel-image.jpg",
+      "coordinates": {
+        "latitude": 59.3293,
+        "longitude": 18.0686
+      },
+      "rating": 3.6,
+      "reviews": 2879
+    },
+    {
+      "id": 121,
+      "name": "Nobis Hotel",
+      "location": "Stockholm",
+      "price_per_night": 994,
+      "image": "https://example.com/hotel-image.jpg",
+      "coordinates": {
+        "latitude": 59.3293,
+        "longitude": 18.0686
+      },
+      "rating": 3.5,
+      "reviews": 576
+    },
+    {
+      "id": 122,
+      "name": "The Thief",
+      "location": "Oslo",
+      "price_per_night": 926,
+      "image": "https://example.com/hotel-image.jpg",
+      "coordinates": {
+        "latitude": 59.9139,
+        "longitude": 10.7522
+      },
+      "rating": 3.9,
+      "reviews": 1333
+    },
+    {
+      "id": 123,
+      "name": "Hotel Continental",
+      "location": "Oslo",
+      "price_per_night": 451,
+      "image": "https://example.com/hotel-image.jpg",
+      "coordinates": {
+        "latitude": 59.9139,
+        "longitude": 10.7522
+      },
+      "rating": 3.7,
+      "reviews": 1536
+    },
+    {
+      "id": 124,
+      "name": "Grand Hotel",
+      "location": "Oslo",
+      "price_per_night": 724,
+      "image": "https://example.com/hotel-image.jpg",
+      "coordinates": {
+        "latitude": 59.9139,
+        "longitude": 10.7522
+      },
+      "rating": 3.8,
+      "reviews": 1982
+    },
+    {
+      "id": 125,
+      "name": "Hotel Kämp",
+      "location": "Helsinki",
+      "price_per_night": 255,
+      "image": "https://example.com/hotel-image.jpg",
+      "coordinates": {
+        "latitude": 60.1695,
+        "longitude": 24.9354
+      },
+      "rating": 4,
+      "reviews": 1127
+    },
+    {
+      "id": 126,
+      "name": "Hotel Haven",
+      "location": "Helsinki",
+      "price_per_night": 215,
+      "image": "https://example.com/hotel-image.jpg",
+      "coordinates": {
+        "latitude": 60.1695,
+        "longitude": 24.9354
+      },
+      "rating": 3,
+      "reviews": 480
+    },
+    {
+      "id": 127,
+      "name": "Clarion Hotel Helsinki",
+      "location": "Helsinki",
+      "price_per_night": 497,
+      "image": "https://example.com/hotel-image.jpg",
+      "coordinates": {
+        "latitude": 60.1695,
+        "longitude": 24.9354
+      },
+      "rating": 5,
+      "reviews": 4003
+    },
+    {
+      "id": 128,
+      "name": "Hotel Grande Bretagne",
+      "location": "Athens",
+      "price_per_night": 908,
+      "image": "https://example.com/hotel-image.jpg",
+      "coordinates": {
+        "latitude": 37.9838,
+        "longitude": 23.7275
+      },
+      "rating": 3.5,
+      "reviews": 4932
+    },
+    {
+      "id": 129,
+      "name": "Electra Palace Athens",
+      "location": "Athens",
+      "price_per_night": 738,
+      "image": "https://example.com/hotel-image.jpg",
+      "coordinates": {
+        "latitude": 37.9838,
+        "longitude": 23.7275
+      },
+      "rating": 3.6,
+      "reviews": 3874
+    },
+    {
+      "id": 130,
+      "name": "King George Hotel",
+      "location": "Athens",
+      "price_per_night": 720,
+      "image": "https://example.com/hotel-image.jpg",
+      "coordinates": {
+        "latitude": 37.9838,
+        "longitude": 23.7275
+      },
+      "rating": 3.1,
+      "reviews": 2398
+    },
+    {
+      "id": 131,
+      "name": "Hotel Paris Prague",
+      "location": "Prague",
+      "price_per_night": 935,
+      "image": "https://example.com/hotel-image.jpg",
+      "coordinates": {
+        "latitude": 50.0755,
+        "longitude": 14.4378
+      },
+      "rating": 4.5,
+      "reviews": 2740
+    },
+    {
+      "id": 132,
+      "name": "Four Seasons Hotel Prague",
+      "location": "Prague",
+      "price_per_night": 374,
+      "image": "https://example.com/hotel-image.jpg",
+      "coordinates": {
+        "latitude": 50.0755,
+        "longitude": 14.4378
+      },
+      "rating": 4.9,
+      "reviews": 3983
+    },
+    {
+      "id": 133,
+      "name": "Mandarin Oriental Prague",
+      "location": "Prague",
+      "price_per_night": 359,
+      "image": "https://example.com/hotel-image.jpg",
+      "coordinates": {
+        "latitude": 50.0755,
+        "longitude": 14.4378
+      },
+      "rating": 3.1,
+      "reviews": 4418
+    },
+    {
+      "id": 134,
+      "name": "Four Seasons Hotel Gresham Palace",
+      "location": "Budapest",
+      "price_per_night": 546,
+      "image": "https://example.com/hotel-image.jpg",
+      "coordinates": {
+        "latitude": 47.4979,
+        "longitude": 19.0402
+      },
+      "rating": 5,
+      "reviews": 61
+    },
+    {
+      "id": 135,
+      "name": "Aria Hotel Budapest",
+      "location": "Budapest",
+      "price_per_night": 943,
+      "image": "https://example.com/hotel-image.jpg",
+      "coordinates": {
+        "latitude": 47.4979,
+        "longitude": 19.0402
+      },
+      "rating": 4.4,
+      "reviews": 2429
+    },
+    {
+      "id": 136,
+      "name": "Kempinski Hotel Corvinus",
+      "location": "Budapest",
+      "price_per_night": 988,
+      "image": "https://example.com/hotel-image.jpg",
+      "coordinates": {
+        "latitude": 47.4979,
+        "longitude": 19.0402
+      },
+      "rating": 3.4,
+      "reviews": 2126
+    },
+    {
+      "id": 137,
+      "name": "Raffles Europejski Warsaw",
+      "location": "Warsaw",
+      "price_per_night": 881,
+      "image": "https://example.com/hotel-image.jpg",
+      "coordinates": {
+        "latitude": 52.2297,
+        "longitude": 21.0122
+      },
+      "rating": 4,
+      "reviews": 3449
+    },
+    {
+      "id": 138,
+      "name": "Hotel Bristol",
+      "location": "Warsaw",
+      "price_per_night": 968,
+      "image": "https://example.com/hotel-image.jpg",
+      "coordinates": {
+        "latitude": 52.2297,
+        "longitude": 21.0122
+      },
+      "rating": 4.8,
+      "reviews": 2369
+    },
+    {
+      "id": 139,
+      "name": "The Westin Warsaw",
+      "location": "Warsaw",
+      "price_per_night": 665,
+      "image": "https://example.com/hotel-image.jpg",
+      "coordinates": {
+        "latitude": 52.2297,
+        "longitude": 21.0122
+      },
+      "rating": 3.6,
+      "reviews": 3491
+    },
+    {
+      "id": 140,
+      "name": "Hotel Amigo",
+      "location": "Brussels",
+      "price_per_night": 639,
+      "image": "https://example.com/hotel-image.jpg",
+      "coordinates": {
+        "latitude": 50.8503,
+        "longitude": 4.3517
+      },
+      "rating": 3.3,
+      "reviews": 991
+    },
+    {
+      "id": 141,
+      "name": "Sofitel Brussels Le Louise",
+      "location": "Brussels",
+      "price_per_night": 493,
+      "image": "https://example.com/hotel-image.jpg",
+      "coordinates": {
+        "latitude": 50.8503,
+        "longitude": 4.3517
+      },
+      "rating": 4.9,
+      "reviews": 4771
+    },
+    {
+      "id": 142,
+      "name": "The Dominican",
+      "location": "Brussels",
+      "price_per_night": 913,
+      "image": "https://example.com/hotel-image.jpg",
+      "coordinates": {
+        "latitude": 50.8503,
+        "longitude": 4.3517
+      },
+      "rating": 3.4,
+      "reviews": 3011
+    }
+  ],
+  "users": [
+    {
+      "email": "FaroukSaadeh",
+      "password": "Faw",
+      "firstName": "TEST",
+      "lastName": "TEST",
+      "id": 2
+    },
+    {
+      "email": "Raihana",
+      "password": "Raihana",
+      "firstName": "Raihana",
+      "lastName": "Raihana",
+      "id": 3
+    },
+    {
+      "email": "Raihanae",
+      "password": "Raihana",
+      "firstName": "Raihana",
+      "lastName": "Raihana",
+      "id": 4
+    },
+    {
+      "email": "",
+      "password": "",
+      "firstName": "BUSINESSTRIP",
+      "lastName": "",
+      "id": 5
+    },
+    {
+      "email": "efwef",
+      "password": "wefwe",
+      "firstName": "ewf",
+      "lastName": "ewf",
+      "id": 6
+    },
+    {
+      "email": "erewr",
+      "password": "ewr",
+      "firstName": "ewr",
+      "lastName": "ewr",
+      "id": 7
+    },
+    {
+      "email": "dsg",
+      "password": "dsg",
+      "firstName": "gewg",
+      "lastName": "sdg",
+      "id": 8
+    },
+    {
+      "email": "Farouk",
+      "password": "Farouk",
+      "firstName": "Farouk",
+      "lastName": "Farouk",
+      "id": 9
+    },
+    {
+      "email": "er2r@",
+      "password": "ewr",
+      "firstName": "Farouk",
+      "lastName": "Farouk",
+      "id": 10
+    },
+    {
+      "email": "erger@",
+      "password": "svsfv",
+      "firstName": "dwrg",
+      "lastName": "rger",
+      "id": 12
+    },
+    {
+      "email": "@",
+      "password": "123",
+      "firstName": "John",
+      "lastName": "Doe",
+      "id": 13
+    },
+    {
+      "email": "tw@",
+      "password": "wegwgwe",
+      "firstName": "ewrwe",
+      "lastName": "twetw",
+      "id": 14
+    },
+    {
+      "email": "FS@",
+      "password": "FS@",
+      "firstName": "Farouke",
+      "lastName": "Saadeh",
+      "id": 15,
+      "role": "admin"
+    },
+    {
+      "email": "AJRI@",
+      "password": "AJRI@",
+      "firstName": "AJRI",
+      "lastName": "AJRI",
+      "id": 16
+    },
+    {
+      "firstName": "BBW",
+      "lastName": "Admin",
+      "email": "BBW-Admin@hotmail.com",
+      "password": "1234",
+      "role": "admin",
+      "id": 17
+    }
+  ]
 }

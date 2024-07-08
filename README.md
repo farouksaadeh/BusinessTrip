@@ -11,6 +11,10 @@ npm install @react-google-maps/api
 
 npm install react-leaflet leaflet
 
+npm install react-image-gallery
+
+npm install axios react-image-gallery
+
 
 npm start
 ```
