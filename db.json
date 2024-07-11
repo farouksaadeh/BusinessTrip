@@ -3820,6 +3820,21 @@
       "firstName": "1234@",
       "lastName": "1234@",
       "id": 23
+    },
+    {
+      "firstName": "Luigi",
+      "lastName": "Cavuoti",
+      "email": "LuigiAdmin@hotmail.com",
+      "password": "Admin",
+      "role": "admin",
+      "id": 24
+    },
+    {
+      "email": "Luigi@hotmail.com",
+      "password": "LuigiUser",
+      "firstName": "Luigi",
+      "lastName": "Cavuoti",
+      "id": 25
     }
   ],
   "favorites": [
