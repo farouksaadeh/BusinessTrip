@@ -3687,74 +3687,11 @@
       "id": 2
     },
     {
-      "email": "Raihana",
-      "password": "Raihana",
-      "firstName": "Raihana",
-      "lastName": "Raihana",
-      "id": 3
-    },
-    {
-      "email": "Raihanae",
-      "password": "Raihana",
-      "firstName": "Raihana",
-      "lastName": "Raihana",
-      "id": 4
-    },
-    {
-      "email": "",
-      "password": "",
-      "firstName": "BUSINESSTRIP",
-      "lastName": "",
-      "id": 5
-    },
-    {
-      "email": "efwef",
-      "password": "wefwe",
-      "firstName": "ewf",
-      "lastName": "ewf",
-      "id": 6
-    },
-    {
-      "email": "erewr",
-      "password": "ewr",
-      "firstName": "ewr",
-      "lastName": "ewr",
-      "id": 7
-    },
-    {
-      "email": "Farouk",
-      "password": "Farouk",
-      "firstName": "Farouk",
-      "lastName": "Farouk",
-      "id": 9
-    },
-    {
-      "email": "er2r@",
-      "password": "ewr",
-      "firstName": "Farouk",
-      "lastName": "Farouk",
-      "id": 10
-    },
-    {
       "email": "PostMan@hotmail.com",
       "password": "POSTMAN2",
       "firstName": "Post",
       "lastName": "Man",
       "id": 12
-    },
-    {
-      "email": "TEST123@hotmail.com",
-      "password": "123",
-      "firstName": "John",
-      "lastName": "Doe",
-      "id": 13
-    },
-    {
-      "email": "tw@",
-      "password": "wegwgwe",
-      "firstName": "ewrwe",
-      "lastName": "twetw",
-      "id": 14
     },
     {
       "email": "FS@",
@@ -3765,61 +3702,12 @@
       "role": "admin"
     },
     {
-      "email": "AJRI@",
-      "password": "AJRI@",
-      "firstName": "AJRI",
-      "lastName": "AJRI",
-      "id": 16
-    },
-    {
       "firstName": "BBW",
       "lastName": "Admin",
       "email": "BBW-Admin@hotmail.com",
       "password": "1234",
       "role": "admin",
       "id": 17
-    },
-    {
-      "email": "AJRI2@",
-      "password": "AJRI2@",
-      "firstName": "AJRI",
-      "lastName": "AJRI",
-      "id": 18
-    },
-    {
-      "email": "NN@",
-      "password": "NN@",
-      "firstName": "Nemanja",
-      "lastName": "Nemanja",
-      "id": 19
-    },
-    {
-      "firstName": "John",
-      "lastName": "Doe",
-      "email": "john.doe@example.com",
-      "password": "securepassword",
-      "id": 20
-    },
-    {
-      "email": "wegew@",
-      "password": "weg",
-      "firstName": "weg",
-      "lastName": "ewgewg",
-      "id": 21
-    },
-    {
-      "email": "1234@",
-      "password": "1234@",
-      "firstName": "",
-      "lastName": "",
-      "id": 22
-    },
-    {
-      "email": "1234@e",
-      "password": "1234@",
-      "firstName": "1234@",
-      "lastName": "1234@",
-      "id": 23
     },
     {
       "firstName": "Luigi",
@@ -3837,82 +3725,5 @@
       "id": 25
     }
   ],
-  "favorites": [
-    {
-      "userId": 19,
-      "itemId": 1,
-      "itemType": "flight",
-      "name": "Paris",
-      "price": 130,
-      "id": 1
-    },
-    {
-      "userId": 19,
-      "itemId": 3,
-      "itemType": "hotel-flight",
-      "name": "New York",
-      "price": 400,
-      "id": 4
-    },
-    {
-      "userId": 19,
-      "itemId": 3,
-      "itemType": "hotel-flight",
-      "name": "New York",
-      "price": 400,
-      "id": 5
-    },
-    {
-      "userId": 19,
-      "itemId": 3,
-      "itemType": "hotel-flight",
-      "name": "New York",
-      "price": 400,
-      "id": 6
-    },
-    {
-      "userId": 15,
-      "itemId": 8,
-      "itemType": "hotel",
-      "name": "Atlantis The Palm",
-      "price": 1000,
-      "id": 8
-    },
-    {
-      "userId": 19,
-      "itemId": 3,
-      "itemType": "flight",
-      "name": "New York",
-      "price": 400,
-      "id": 9
-    },
-    {
-      "userId": 19,
-      "itemId": 4,
-      "itemType": "hotel",
-      "name": "The Savoy",
-      "price": 550,
-      "id": 14
-    },
-    {
-      "userId": 19,
-      "itemId": 31,
-      "itemType": "hotel",
-      "name": "The Ritz London",
-      "price": 600,
-      "id": 15
-    },
-    {
-      "userId": 19,
-      "itemId": 17,
-      "itemType": "hotel-flight",
-      "id": 16
-    },
-    {
-      "userId": 19,
-      "itemId": 45,
-      "itemType": "hotel-flight",
-      "id": 17
-    }
-  ]
+  "favorites": []
 }

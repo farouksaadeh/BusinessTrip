@@ -127,7 +127,6 @@ const HotelDetailView = () => {
           <div className="hotel-header">
             <h1>{hotel.name}</h1>
             <p>Standort: {hotel.location}</p>
-            <p>Preis pro Nacht: CHF {hotel.price_per_night}</p>
           </div>
 
           <div className="image-gallery">
@@ -280,7 +279,7 @@ const HotelDetailView = () => {
             <p>CVV: ***</p>
             <p>Ablaufdatum: {paymentInfo.expiryDate.toLocaleDateString()}</p>
           </div>
-          <div className="hotel-details">
+          <div className="hotel-details" style={{ display: 'flex', flexDirection: 'column' }}>
             <h3>Hoteldetails</h3>
             <p>Hotel: {hotel.name}</p>
             <p>Standort: {hotel.location}</p>

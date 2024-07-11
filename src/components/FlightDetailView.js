@@ -267,7 +267,7 @@ const FlightDetailView = () => {
           )}
         </>
       ) : (
-        <div className="flight-confirmation">
+        <div className="flight-confirmation"  style={{ display: 'flex', flexDirection: 'column' }}>
           <h2>Buchungsbestätigung</h2>
           <p>Vielen Dank für Ihre Buchung!</p>
           <p>Ihre Buchungsnummer lautet: <strong>{Math.floor(Math.random() * 1000000)}</strong></p>
@@ -278,7 +278,7 @@ const FlightDetailView = () => {
             <p>CVV: ***</p>
             <p>Ablaufdatum: {paymentInfo.expiryDate}</p>
           </div>
-          <div className="flight-details">
+          <div className="flight-details" style={{ display: 'flex', flexDirection: 'column' }}>
             <h3>Flugdetails</h3>
             <p>Ziel: {flight.to}</p>
             <p>Abflug: {new Date(flight.departure).toLocaleString()}</p>
@@ -303,3 +303,5 @@ const FlightDetailView = () => {
 };
 
 export default FlightDetailView;
+
+

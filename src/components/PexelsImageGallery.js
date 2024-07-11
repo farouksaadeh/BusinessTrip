@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { createClient } from 'pexels';
 
-const client = createClient('g2nYiD2jz1NZFyNJi4EgSrTBLlptInmmOggC8HDInHNF4nuMRWnjYAHM'); // Ersetze 'YOUR_PEXELS_API_KEY' durch deinen tatsächlichen API-Schlüssel
+const client = createClient('g2nYiD2jz1NZFyNJi4EgSrTBLlptInmmOggC8HDInHNF4nuMRWnjYAHM'); 
 
 const PexelsImageGallery = ({ query, alt }) => {
   const [imageUrl, setImageUrl] = useState(null);
