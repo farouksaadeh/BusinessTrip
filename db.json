@@ -3834,7 +3834,7 @@
     {
       "userId": 19,
       "itemId": 3,
-      "itemType": "hotel+flight",
+      "itemType": "hotel-flight",
       "name": "New York",
       "price": 400,
       "id": 4
@@ -3842,7 +3842,7 @@
     {
       "userId": 19,
       "itemId": 3,
-      "itemType": "hotel+flight",
+      "itemType": "hotel-flight",
       "name": "New York",
       "price": 400,
       "id": 5
@@ -3850,7 +3850,7 @@
     {
       "userId": 19,
       "itemId": 3,
-      "itemType": "hotel+flight",
+      "itemType": "hotel-flight",
       "name": "New York",
       "price": 400,
       "id": 6
@@ -3890,13 +3890,13 @@
     {
       "userId": 19,
       "itemId": 17,
-      "itemType": "hotel+flight",
+      "itemType": "hotel-flight",
       "id": 16
     },
     {
       "userId": 19,
       "itemId": 45,
-      "itemType": "hotel+flight",
+      "itemType": "hotel-flight",
       "id": 17
     }
   ]

@@ -153,7 +153,7 @@ const Results = ({ results, searchParams, user, isLoggedIn }) => {
                       <span className="icon">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="24" fill="currentColor" className="bi bi-airplane-fill" viewBox="0 0 16 16">
                           <path d="M6.428 1.151C6.708.591 7.213 0 8 0s1.292.592 1.572 1.151C9.861 1.73 10 2.431 10 3v3.691l5.17 2.585a1.5 1.5 0 0 1 .83 1.342V12a.5.5 0 0 1-.582.493l-5.507-.918-.375 2.253 1.318 1.318A.5.5 0 0 1 10.5 16h-5a.5.5 0 0 1-.354-.854l1.319-1.318-.376-2.253-5.507.918A.5.5 0 0 1 0 12v-1.382a1.5 1.5 0 0 1 .83-1.342L6 6.691V3c0-.568.14-1.271.428-1.849Z"></path>
-                        </svg>
+                      </svg>
                       </span>
                       <span className="text">Book Now</span>
                     </button>
@@ -169,11 +169,11 @@ const Results = ({ results, searchParams, user, isLoggedIn }) => {
             </button>
           </div>
         ))}
-        {type === 'hotel+flight' && filteredFlights.map((flight) => {
+        {type === 'hotel-flight' && filteredFlights.map((flight) => {
           const matchingHotel = filteredHotels.find(hotel => hotel.location === flight.to);
           return matchingHotel ? (
             <div key={flight.id} className="result-card-container">
-              <Link to={`/details?flightId=${flight.id}&hotelId=${matchingHotel.id}&type=hotel+flight`} className="result-card-link">
+              <Link to={`/details?flightId=${flight.id}&hotelId=${matchingHotel.id}&type=hotel-flight`} className="result-card-link">
                 <Card
                   className="result-card"
                   onMouseEnter={() => setHoveredLocation(matchingHotel.coordinates)}
@@ -194,21 +194,21 @@ const Results = ({ results, searchParams, user, isLoggedIn }) => {
                         <span className="icon">
                           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="24" fill="currentColor" className="bi bi-airplane-fill" viewBox="0 0 16 16">
                             <path d="M6.428 1.151C6.708.591 7.213 0 8 0s1.292.592 1.572 1.151C9.861 1.73 10 2.431 10 3v3.691l5.17 2.585a1.5 1.5 0 0 1 .83 1.342V12a.5.5 0 0 1-.582.493l-5.507-.918-.375 2.253 1.318 1.318A.5.5 0 0 1 10.5 16h-5a.5.5 0 0 1-.354-.854l1.319-1.318-.376-2.253-5.507.918A.5.5 0 0 1 0 12v-1.382a1.5 1.5 0 0 1 .83-1.342L6 6.691V3c0-.568.14-1.271.428-1.849Z"></path>
-                        </svg>
-                      </span>
-                      <span className="text">Book Now</span>
-                    </button>
-                  </Box>
-                </CardContent>
-              </Card>
-            </Link>
-            <button
-              className={`favorite-btn ${isItemFavorite(flight) ? 'favorite' : ''}`}
-              onClick={() => handleFavoriteClick(flight)}
-            >
-              {isItemFavorite(flight) ? '❤️ ' : '♡ '}
-            </button>
-          </div>
+                          </svg>
+                        </span>
+                        <span className="text">Book Now</span>
+                      </button>
+                    </Box>
+                  </CardContent>
+                </Card>
+              </Link>
+              <button
+                className={`favorite-btn ${isItemFavorite(flight) ? 'favorite' : ''}`}
+                onClick={() => handleFavoriteClick(flight)}
+              >
+                {isItemFavorite(flight) ? '❤️ ' : '♡ '}
+              </button>
+            </div>
           ) : null;
         })}
       </div>

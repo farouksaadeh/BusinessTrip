@@ -6,18 +6,16 @@
   color: #053D6C;
 }
 
-.hotel-flight-detail-container .hotel-header,
-.hotel-flight-detail-container .flight-header,
-.hotel-flight-detail-container .total-price,
-.hotel-flight-detail-container .flight-tariff-selection,
-.hotel-flight-detail-container .flight-passenger-info,
-.hotel-flight-detail-container .flight-baggage-info,
-.hotel-flight-detail-container .payment-info,
-.hotel-flight-detail-container .total-price-confirmation,
-.hotel-flight-detail-container .hotel-summary,
-.hotel-flight-detail-container .flight-summary,
-.hotel-flight-detail-container .hotel-confirmation,
-.hotel-flight-detail-container .flight-confirmation {
+.flight-header,
+.hotel-header {
+  margin-bottom: 20px;
+}
+
+.total-price {
+  margin-bottom: 20px;
+}
+
+.flight-tariff-selection, .flight-passenger-info, .flight-baggage-info, .flight-payment, .hotel-room-selection, .payment-info {
   margin-bottom: 20px;
 }
 
@@ -68,23 +66,22 @@
   justify-content: space-between;
 }
 
-.payment-info,
-.hotel-details,
-.flight-details {
+.confirmation {
+  text-align: center;
+}
+
+.payment-info, .details {
   text-align: left;
   margin: 0 auto;
   width: 50%;
 }
 
-.payment-info h3,
-.hotel-details h3,
-.flight-details h3 {
+.payment-info h3, .flight-details h3, .hotel-details h3 {
   border-bottom: 1px solid #053D6C;
   padding-bottom: 5px;
 }
 
-.hotel-details p,
-.flight-details p {
+.flight-details p, .hotel-details p {
   margin: 5px 0;
 }
 
@@ -104,16 +101,22 @@
   color: white;
 }
 
+.image-gallery {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
 .image-gallery img {
-  max-width: 100px;
-  max-height: 100px;
-  margin: 5px;
+  width: 200px;
+  height: 150px;
+  border-radius: 8px;
   object-fit: cover;
 }
 
 .show-more-btn {
-  display: block;
-  margin: 10px auto;
   padding: 10px 20px;
   background: linear-gradient(199deg, rgb(108, 146, 202) 33%, rgb(5, 29, 64) 100%);
   border: none;
@@ -121,22 +124,24 @@
   color: white;
   cursor: pointer;
   text-decoration: none;
-}
-
-.date-picker {
-  width: 100%;
-  padding: 8px;
-  box-sizing: border-box;
-  border-radius: 4px;
-  border: 1px solid #ccc;
-}
-
-.total-price-confirmation {
-  text-align: center;
-}
-
-.total-price-confirmation h2,
-.total-price-confirmation .flight-summary,
-.total-price-confirmation .hotel-summary {
   margin-bottom: 20px;
+}
+
+.hotel-amenities {
+  margin-bottom: 20px;
+}
+
+.hotel-amenities h3 {
+  margin-bottom: 10px;
+}
+
+.hotel-amenities ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.hotel-amenities ul li {
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23053D6C"><path d="M0 0h24v24H0z" fill="none"/><path d="M9 16.17l-4.17-4.17L3.42 13.58 9 19.17l12-12-1.41-1.41z"/></svg>') no-repeat left center;
+  padding-left: 30px;
+  margin-bottom: 10px;
 }

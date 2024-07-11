@@ -37,11 +37,11 @@ const SearchForm = ({ onSearch }) => {
 
   const handleSearch = () => {
     const results = [];
-    if (type === 'flight' || type === 'hotel+flight') {
+    if (type === 'flight' || type === 'hotel-flight') {
       const matchingFlights = flights.filter(flight => flight.to.toLowerCase().includes(destination.toLowerCase()));
       results.push(...matchingFlights);
     }
-    if (type === 'hotel' || type === 'hotel+flight') {
+    if (type === 'hotel' || type === '') {
       const matchingHotels = hotels.filter(hotel => hotel.location.toLowerCase().includes(destination.toLowerCase()));
       results.push(...matchingHotels);
     }
@@ -58,7 +58,7 @@ const SearchForm = ({ onSearch }) => {
             <Select value={type} onChange={(e) => setType(e.target.value)}>
               <MenuItem value="flight">Flug</MenuItem>
               <MenuItem value="hotel">Hotel</MenuItem>
-              <MenuItem value="hotel+flight">Hotel + Flug</MenuItem>
+              <MenuItem value="hotel-flight">Hotel + Flug</MenuItem>
             </Select>
           </FormControl>
         </Grid>

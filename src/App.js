@@ -28,9 +28,9 @@ const DetailView = () => {
       return <HotelDetailView />;
     case 'flight':
       return <FlightDetailView />;
-    case 'hotel+flight':
+    case 'hotel-flight':
       if (flightId && hotelId) {
-        return <HotelFlightDetailView flightId={flightId} hotelId={hotelId} />;
+        return <HotelFlightDetailView />;
       }
       return <div>Ungültiger Typ oder fehlende IDs</div>;
     default:
@@ -65,10 +65,10 @@ const App = () => {
         let flightsResponse;
         let hotelsResponse;
 
-        if (searchParams.type === 'flight' || searchParams.type === 'hotel+flight') {
+        if (searchParams.type === 'flight' || searchParams.type === 'hotel-flight') {
           flightsResponse = await axios.get('http://localhost:3001/flights');
         }
-        if (searchParams.type === 'hotel' || searchParams.type === 'hotel+flight') {
+        if (searchParams.type === 'hotel' || searchParams.type === 'hotel-flight') {
           hotelsResponse = await axios.get('http://localhost:3001/hotels');
         }
 
