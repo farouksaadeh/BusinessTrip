@@ -391,3 +391,16 @@
   -webkit-text-fill-color: #ffffff;
 }
 
+.favorites-button {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #FF5E62; /* or any color you prefer */
+}
+
+.favorites-button:hover {
+  color: #FF9966; /* or any hover color you prefer */
+}

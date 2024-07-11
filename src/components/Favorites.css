@@ -1,0 +1,32 @@
+.favorites-container {
+    padding: 20px;
+  }
+  
+  .favorites-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .favorite-card {
+    width: calc(33% - 20px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .favorite-card button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(199deg, rgb(255, 99, 71) 33%, rgb(220, 20, 60) 100%);
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+  
+  .favorite-card button:hover {
+    background: linear-gradient(199deg, rgb(220, 20, 60) 33%, rgb(255, 99, 71) 100%);
+    transform: scale(1.05);
+  }
+  

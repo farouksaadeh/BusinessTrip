@@ -6,6 +6,7 @@
   margin-top: 8vh;
   height: 92vh; /* Full viewport height */
   z-index: 999; /* Ensure it's above other content */
+  flex: 1;
 }
 
 .map-toggle-button {
@@ -59,7 +60,7 @@
   align-items: center;
   padding: 20px;
   border: 1px solid #ddd;
-  border-radius: 8px;
+  border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s ease;
 }
@@ -69,12 +70,13 @@
 }
 
 .result-image {
-  width: 160px;
+  width: 220px;
   height: 160px;
-  border-radius: 8px;
   object-fit: cover;
   margin-right: 20px;
+  border-radius: 10px;
 }
+
 
 .result-content {
   display: flex;
@@ -98,8 +100,10 @@
 
 
 .result-price {
-  flex: 1;
-  text-align: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 16px;
 }
 
 
@@ -123,7 +127,6 @@
 }
 
 .btn .icon {
-  position: absolute;
   height: 40px;
   width: 70px;
   display: flex;
@@ -151,4 +154,36 @@
 
 .btn:active .icon {
   transform: scale(0.85);
+}
+
+.favorite-btn {
+  position: relative;
+  top: 10px;
+  right: 10px;
+  background: linear-gradient(199deg, rgb(108, 146, 202) 33%, rgb(5, 29, 64) 100%);
+  color: white;
+  border: none;
+  border-radius: 10%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s ease;
+  z-index: 2; /* Ensure it is above other content */
+}
+
+.favorite-btn:hover {
+  transform: scale(1.1);
+  background: linear-gradient(199deg, rgb(5, 29, 64) 33%, rgb(108, 146, 202) 100%);
+}
+
+.favorite-btn.favorite {
+  background: #FF5353;
+}
+
+.favorite-btn svg {
+  width: 20px;
+  height: 20px;
 }

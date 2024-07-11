@@ -1,0 +1,142 @@
+.hotel-flight-detail-container {
+  padding-top: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-family: Arial, sans-serif;
+  color: #053D6C;
+}
+
+.hotel-flight-detail-container .hotel-header,
+.hotel-flight-detail-container .flight-header,
+.hotel-flight-detail-container .total-price,
+.hotel-flight-detail-container .flight-tariff-selection,
+.hotel-flight-detail-container .flight-passenger-info,
+.hotel-flight-detail-container .flight-baggage-info,
+.hotel-flight-detail-container .payment-info,
+.hotel-flight-detail-container .total-price-confirmation,
+.hotel-flight-detail-container .hotel-summary,
+.hotel-flight-detail-container .flight-summary,
+.hotel-flight-detail-container .hotel-confirmation,
+.hotel-flight-detail-container .flight-confirmation {
+  margin-bottom: 20px;
+}
+
+.tariff-options {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.tariff {
+  padding: 20px;
+  border: 1px solid #053D6C;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 30%;
+}
+
+.tariff.selected {
+  background-color: rgba(108, 146, 202, 0.3);
+}
+
+.btn-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.btn-content {
+  padding: 10px 20px;
+  background: linear-gradient(199deg, rgb(108, 146, 202) 33%, rgb(5, 29, 64) 100%);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn-title {
+  font-size: 16px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.input-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.payment-info,
+.hotel-details,
+.flight-details {
+  text-align: left;
+  margin: 0 auto;
+  width: 50%;
+}
+
+.payment-info h3,
+.hotel-details h3,
+.flight-details h3 {
+  border-bottom: 1px solid #053D6C;
+  padding-bottom: 5px;
+}
+
+.hotel-details p,
+.flight-details p {
+  margin: 5px 0;
+}
+
+.indexedStep {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #e0e0e0;
+  line-height: 30px;
+  text-align: center;
+  margin: 0 5px;
+}
+
+.indexedStep.accomplished {
+  background-color: #053D6C;
+  color: white;
+}
+
+.image-gallery img {
+  max-width: 100px;
+  max-height: 100px;
+  margin: 5px;
+  object-fit: cover;
+}
+
+.show-more-btn {
+  display: block;
+  margin: 10px auto;
+  padding: 10px 20px;
+  background: linear-gradient(199deg, rgb(108, 146, 202) 33%, rgb(5, 29, 64) 100%);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.date-picker {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.total-price-confirmation {
+  text-align: center;
+}
+
+.total-price-confirmation h2,
+.total-price-confirmation .flight-summary,
+.total-price-confirmation .hotel-summary {
+  margin-bottom: 20px;
+}

@@ -15,6 +15,11 @@ npm install react-image-gallery
 
 npm install axios react-image-gallery
 
+npm install pexels
+
+npm install react-step-progress-bar
+
+npm install react-datepicker
 
 npm start
 ```

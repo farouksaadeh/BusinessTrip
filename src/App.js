@@ -1,16 +1,42 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import axios from 'axios';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 import SearchForm from './components/SearchForm';
 import Results from './components/Results';
-import DetailView from './components/DetailView';
 import Header from './components/Header';
 import ManageUsers from './components/ManageUsers';
 import ManageHotels from './components/ManageHotels';
 import ManageFlights from './components/ManageFlights';
+import HotelDetailView from './components/HotelDetailView';
+import FlightDetailView from './components/FlightDetailView';
+import HotelFlightDetailView from './components/HotelFlightDetailView';
 import ProtectedRoute from './components/ProtectedRoute';
-import SessionTimer from './components/SessionTimer';
+import InactivityPopup from './components/InactivityPopup';
+import Favorites from './components/Favorites';
+
 import './App.css';
+
+const DetailView = () => {
+  const location = useLocation();
+  const query = new URLSearchParams(location.search);
+  const type = query.get('type');
+  const flightId = query.get('flightId');
+  const hotelId = query.get('hotelId');
+
+  switch (type) {
+    case 'hotel':
+      return <HotelDetailView />;
+    case 'flight':
+      return <FlightDetailView />;
+    case 'hotel+flight':
+      if (flightId && hotelId) {
+        return <HotelFlightDetailView flightId={flightId} hotelId={hotelId} />;
+      }
+      return <div>Ungültiger Typ oder fehlende IDs</div>;
+    default:
+      return <div>Ungültiger Typ</div>;
+  }
+};
 
 const App = () => {
   const [results, setResults] = useState({ flights: [], hotels: [] });
@@ -27,7 +53,7 @@ const App = () => {
   const [user, setUser] = useState({ firstName: 'John', lastName: 'Doe' });
   const [rememberMe, setRememberMe] = useState(false);
   const [disableSessionExpiration, setDisableSessionExpiration] = useState(false);
-  const [timeLeft, setTimeLeft] = useState(300); // 5 minutes in seconds
+  const [showInactivityPopup, setShowInactivityPopup] = useState(false);
 
   const handleSearch = (params) => {
     setSearchParams(params);
@@ -77,7 +103,6 @@ const App = () => {
     } else {
       sessionStorage.setItem('user', JSON.stringify(user));
       sessionStorage.setItem('isLoggedIn', 'true');
-      setTimeLeft(300); // Reset the timer for 5 minutes
     }
   };
 
@@ -88,6 +113,7 @@ const App = () => {
     localStorage.removeItem('isLoggedIn');
     sessionStorage.removeItem('user');
     sessionStorage.removeItem('isLoggedIn');
+    setShowInactivityPopup(false);
   }, []);
 
   useEffect(() => {
@@ -100,26 +126,56 @@ const App = () => {
     }
   }, []);
 
-  const setLogoutTimer = () => {
-    setTimeout(handleLogout, 300000); // 5 minutes
-  };
-
   useEffect(() => {
-    if (isLoggedIn && !rememberMe && !disableSessionExpiration) {
-      setLogoutTimer();
-    }
-  }, [isLoggedIn, rememberMe, disableSessionExpiration, handleLogout]);
+    let inactivityTimer;
+    let logoutTimer;
+
+    const resetTimers = () => {
+      clearTimeout(inactivityTimer);
+      clearTimeout(logoutTimer);
+
+      if (isLoggedIn && !disableSessionExpiration) {
+        inactivityTimer = setTimeout(() => {
+          setShowInactivityPopup(true);
+        }, 300000); // 5 minutes
+
+        logoutTimer = setTimeout(() => {
+          handleLogout();
+        }, 360000); // 6 minutes
+      }
+    };
+
+    const handleActivity = () => {
+      if (showInactivityPopup) {
+        setShowInactivityPopup(false);
+      }
+      resetTimers();
+    };
+
+    window.addEventListener('mousemove', handleActivity);
+    window.addEventListener('keydown', handleActivity);
+
+    resetTimers();
+
+    return () => {
+      clearTimeout(inactivityTimer);
+      clearTimeout(logoutTimer);
+      window.removeEventListener('mousemove', handleActivity);
+      window.removeEventListener('keydown', handleActivity);
+    };
+  }, [isLoggedIn, disableSessionExpiration, handleLogout, showInactivityPopup]);
 
   return (
     <div className="app">
       <Router>
         <Header isLoggedIn={isLoggedIn} user={user} onLogin={handleLogin} onLogout={handleLogout} />
-        {isLoggedIn && !rememberMe && !disableSessionExpiration && <SessionTimer initialTime={timeLeft} onTimeout={handleLogout} />}
+        {showInactivityPopup && <InactivityPopup />}
         <div className="content">
           <Routes>
             <Route path="/" element={<SearchForm onSearch={handleSearch} />} />
-            <Route path="/results" element={<Results results={results} searchParams={searchParams} />} />
+            <Route path="/results" element={<Results results={results} searchParams={searchParams} user={user} isLoggedIn={isLoggedIn} />} />
             <Route path="/details" element={<DetailView />} />
+            <Route path="/favorites" element={<Favorites user={user} />} />
             <Route
               path="/manage-users"
               element={

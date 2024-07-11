@@ -1212,7 +1212,7 @@
       "to": "Hong Kong",
       "departure": "2024-11-16T08:00:00Z",
       "arrival": "2024-11-16T18:00:00Z",
-      "price": 450,
+      "price": 509.75,
       "airline": {
         "name": "Cathay Pacific",
         "logo": "https://example.com/cathay-pacific-logo.png"
@@ -1783,42 +1783,6 @@
       "reviews": 2090
     },
     {
-      "id": 100,
-      "from": "Zurich",
-      "to": "Budapest",
-      "departure": "2024-09-100T10:00:00Z",
-      "arrival": "2024-09-100T12:00:00Z",
-      "price": 455,
-      "airline": {
-        "name": "Air France",
-        "logo": "https://example.com/airline-logo.png"
-      },
-      "coordinates": {
-        "latitude": 47.433,
-        "longitude": 19.261
-      },
-      "rating": 4.8,
-      "reviews": 3786
-    },
-    {
-      "id": 101,
-      "from": "Zurich",
-      "to": "Warsaw",
-      "departure": "2024-09-101T10:00:00Z",
-      "arrival": "2024-09-101T12:00:00Z",
-      "price": 522,
-      "airline": {
-        "name": "Lufthansa",
-        "logo": "https://example.com/airline-logo.png"
-      },
-      "coordinates": {
-        "latitude": 52.1657,
-        "longitude": 20.9671
-      },
-      "rating": 4,
-      "reviews": 4073
-    },
-    {
       "id": 102,
       "from": "Zurich",
       "to": "Brussels",
@@ -1849,7 +1813,7 @@
         "longitude": 2.327355
       },
       "rating": 4.2,
-      "reviews": 191
+      "reviews": "191"
     },
     {
       "id": 2,
@@ -1952,7 +1916,7 @@
         "latitude": 1.283963,
         "longitude": 103.860304
       },
-      "rating": 4.1,
+      "rating": 4.8,
       "reviews": 3806
     },
     {
@@ -1992,7 +1956,8 @@
         "longitude": 139.6917
       },
       "rating": 4.3,
-      "reviews": 2796
+      "reviews": 2796,
+      "price": 938
     },
     {
       "id": 13,
@@ -3165,19 +3130,6 @@
       "reviews": 4143
     },
     {
-      "id": 103,
-      "name": "Hotel de Rome",
-      "location": "Berlin",
-      "price_per_night": 394,
-      "image": "https://example.com/hotel-image.jpg",
-      "coordinates": {
-        "latitude": 52.52,
-        "longitude": 13.405
-      },
-      "rating": 3.1,
-      "reviews": 541
-    },
-    {
       "id": 104,
       "name": "Hotel Sacher",
       "location": "Vienna",
@@ -3683,6 +3635,47 @@
       },
       "rating": 3.4,
       "reviews": 3011
+    },
+    {
+      "name": "Hotel XYZ",
+      "location": "Zurich",
+      "description": "A nice hotel in Zurich",
+      "features": [
+        "Free WiFi",
+        "Pool",
+        "Gym"
+      ],
+      "reviews": 100,
+      "rating": 4.5,
+      "price_per_night": 150,
+      "id": 144
+    },
+    {
+      "name": "Hotel XYZ",
+      "location": "Zurich",
+      "description": "A nice hotel in Zurich",
+      "features": [
+        "Free WiFi",
+        "Pool",
+        "Gym"
+      ],
+      "reviews": 100,
+      "rating": 4.5,
+      "price_per_night": 150,
+      "id": 145
+    },
+    {
+      "name": "Shangri-La Hotel",
+      "location": "Paris",
+      "price_per_night": 500,
+      "image": "https://example.com/shangri-la-paris.jpg",
+      "coordinates": {
+        "latitude": 48.8566,
+        "longitude": 2.3522
+      },
+      "rating": 4.9,
+      "reviews": 9315,
+      "id": 146
     }
   ],
   "users": [
@@ -3729,13 +3722,6 @@
       "id": 7
     },
     {
-      "email": "dsg",
-      "password": "dsg",
-      "firstName": "gewg",
-      "lastName": "sdg",
-      "id": 8
-    },
-    {
       "email": "Farouk",
       "password": "Farouk",
       "firstName": "Farouk",
@@ -3750,14 +3736,14 @@
       "id": 10
     },
     {
-      "email": "erger@",
-      "password": "svsfv",
-      "firstName": "dwrg",
-      "lastName": "rger",
+      "email": "PostMan@hotmail.com",
+      "password": "POSTMAN2",
+      "firstName": "Post",
+      "lastName": "Man",
       "id": 12
     },
     {
-      "email": "@",
+      "email": "TEST123@hotmail.com",
       "password": "123",
       "firstName": "John",
       "lastName": "Doe",
@@ -3773,8 +3759,8 @@
     {
       "email": "FS@",
       "password": "FS@",
-      "firstName": "Farouke",
-      "lastName": "Saadeh",
+      "firstName": "FS@",
+      "lastName": "FS@",
       "id": 15,
       "role": "admin"
     },
@@ -3799,6 +3785,119 @@
       "firstName": "AJRI",
       "lastName": "AJRI",
       "id": 18
+    },
+    {
+      "email": "NN@",
+      "password": "NN@",
+      "firstName": "Nemanja",
+      "lastName": "Nemanja",
+      "id": 19
+    },
+    {
+      "firstName": "John",
+      "lastName": "Doe",
+      "email": "john.doe@example.com",
+      "password": "securepassword",
+      "id": 20
+    },
+    {
+      "email": "wegew@",
+      "password": "weg",
+      "firstName": "weg",
+      "lastName": "ewgewg",
+      "id": 21
+    },
+    {
+      "email": "1234@",
+      "password": "1234@",
+      "firstName": "",
+      "lastName": "",
+      "id": 22
+    },
+    {
+      "email": "1234@e",
+      "password": "1234@",
+      "firstName": "1234@",
+      "lastName": "1234@",
+      "id": 23
+    }
+  ],
+  "favorites": [
+    {
+      "userId": 19,
+      "itemId": 1,
+      "itemType": "flight",
+      "name": "Paris",
+      "price": 130,
+      "id": 1
+    },
+    {
+      "userId": 19,
+      "itemId": 3,
+      "itemType": "hotel+flight",
+      "name": "New York",
+      "price": 400,
+      "id": 4
+    },
+    {
+      "userId": 19,
+      "itemId": 3,
+      "itemType": "hotel+flight",
+      "name": "New York",
+      "price": 400,
+      "id": 5
+    },
+    {
+      "userId": 19,
+      "itemId": 3,
+      "itemType": "hotel+flight",
+      "name": "New York",
+      "price": 400,
+      "id": 6
+    },
+    {
+      "userId": 15,
+      "itemId": 8,
+      "itemType": "hotel",
+      "name": "Atlantis The Palm",
+      "price": 1000,
+      "id": 8
+    },
+    {
+      "userId": 19,
+      "itemId": 3,
+      "itemType": "flight",
+      "name": "New York",
+      "price": 400,
+      "id": 9
+    },
+    {
+      "userId": 19,
+      "itemId": 4,
+      "itemType": "hotel",
+      "name": "The Savoy",
+      "price": 550,
+      "id": 14
+    },
+    {
+      "userId": 19,
+      "itemId": 31,
+      "itemType": "hotel",
+      "name": "The Ritz London",
+      "price": 600,
+      "id": 15
+    },
+    {
+      "userId": 19,
+      "itemId": 17,
+      "itemType": "hotel+flight",
+      "id": 16
+    },
+    {
+      "userId": 19,
+      "itemId": 45,
+      "itemType": "hotel+flight",
+      "id": 17
     }
   ]
 }
