@@ -17,12 +17,12 @@ const HotelFlightDetailView = () => {
   const [numHandBaggage, setNumHandBaggage] = useState(1);
   const [numCheckedBaggage, setNumCheckedBaggage] = useState(1);
   const [fare, setFare] = useState('Economy Light');
-  const [roomType, setRoomType] = useState('Standard');
   const [numRooms, setNumRooms] = useState(1);
+  const [roomType, setRoomType] = useState('Standard');
   const [paymentInfo, setPaymentInfo] = useState({
     cardHolder: '',
     cardNumber: '',
-    expiryDate: '',
+    expiryDate: new Date(),
     cvv: ''
   });
   const [confirmation, setConfirmation] = useState(false);
@@ -74,7 +74,7 @@ const HotelFlightDetailView = () => {
         fareMultiplier = 1;
     }
 
-    const totalPrice = (
+    const flightTotalPrice = (
       basePrice +
       numAdults * 50 +
       numChildren * 30 +
@@ -83,7 +83,30 @@ const HotelFlightDetailView = () => {
       numCheckedBaggage * 40
     ) * fareMultiplier;
 
-    return totalPrice.toFixed(2);
+    let roomPrice = hotel.price_per_night;
+    let roomMultiplier = 1;
+    switch (roomType) {
+      case 'Standard':
+        roomMultiplier = 1;
+        break;
+      case 'Suite':
+        roomMultiplier = 2;
+        break;
+      case 'Extra Large':
+        roomMultiplier = 1.5;
+        break;
+      default:
+        roomMultiplier = 1;
+    }
+
+    const hotelTotalPrice = (
+      roomPrice * roomMultiplier * numRooms +
+      numAdults * 50 +
+      numChildren * 30 +
+      numInfants * 10
+    );
+
+    return (flightTotalPrice + hotelTotalPrice).toFixed(2);
   };
 
   const handleNextStep = () => {
@@ -141,11 +164,11 @@ const HotelFlightDetailView = () => {
             percent={(step / 8) * 100}
             filledBackground="linear-gradient(to right, rgb(108, 146, 202), rgb(5, 29, 64))"
           >
-            {[...Array(9)].map((_, i) => (
-              <Step key={i} transition="scale">
+            {[...Array(9).keys()].map((_, index) => (
+              <Step key={index} transition="scale">
                 {({ accomplished }) => (
                   <div className={`indexedStep ${accomplished ? "accomplished" : null}`}>
-                    {i + 1}
+                    {index + 1}
                   </div>
                 )}
               </Step>
@@ -302,6 +325,32 @@ const HotelFlightDetailView = () => {
           )}
 
           {step === 5 && (
+            <div className="hotel-amenities">
+              <h3>Ausstattungen</h3>
+              <ul>
+                <li>Kostenloses WLAN</li>
+                <li>Frühstück inklusive</li>
+                <li>Schwimmbad</li>
+                <li>Fitnessstudio</li>
+                <li>Flughafenshuttle</li>
+                <li>24-Stunden-Rezeption</li>
+                <li>Raucherfreie Zimmer</li>
+                <li>Restaurant</li>
+                <li>Zimmerservice</li>
+                <li>Spa- und Wellnesscenter</li>
+              </ul>
+              <div className="btn-container">
+                <button className="btn-content" onClick={handlePrevStep}>
+                  <span className="btn-title">Zurück</span>
+                </button>
+                <button className="btn-content" onClick={handleNextStep}>
+                  <span className="btn-title">Weiter</span>
+                </button>
+              </div>
+            </div>
+          )}
+
+          {step === 6 && (
             <div className="flight-payment">
               <h2>Überprüfen und Bezahlen</h2>
               <form>
@@ -331,19 +380,19 @@ const HotelFlightDetailView = () => {
                     <input id="cvv" type="password" name="cvv" value={paymentInfo.cvv} onChange={handlePaymentChange} />
                   </div>
                 </div>
-                <div className="btn-container">
-                  <button className="btn-content" onClick={handlePrevStep}>
-                    <span className="btn-title">Zurück</span>
-                  </button>
-                  <button className="btn-content" onClick={handleNextStep}>
-                    <span className="btn-title">Weiter</span>
-                  </button>
-                </div>
               </form>
+              <div className="btn-container">
+                <button className="btn-content" onClick={handlePrevStep}>
+                  <span className="btn-title">Zurück</span>
+                </button>
+                <button className="btn-content" onClick={handleNextStep}>
+                  <span className="btn-title">Weiter</span>
+                </button>
+              </div>
             </div>
           )}
 
-          {step === 6 && (
+          {step === 7 && (
             <div className="hotel-confirmation">
               <h2>Buchungsbestätigung</h2>
               <p>Vielen Dank für Ihre Buchung!</p>
@@ -355,28 +404,30 @@ const HotelFlightDetailView = () => {
                 <p>CVV: ***</p>
                 <p>Ablaufdatum: {paymentInfo.expiryDate.toLocaleDateString()}</p>
               </div>
-              <div className="details">
-                <div className="flight-details">
-                  <h3>Flugdetails</h3>
-                  <p>Ziel: {flight.to}</p>
-                  <p>Abflug: {new Date(flight.departure).toLocaleString()}</p>
-                  <p>Ankunft: {new Date(flight.arrival).toLocaleString()}</p>
-                  <p>Tarif: {fare}</p>
-                  <p>Erwachsene: {numAdults}</p>
-                  <p>Kinder: {numChildren}</p>
-                  <p>Kleinkinder: {numInfants}</p>
-                </div>
-                <div className="hotel-details">
-                  <h3>Hoteldetails</h3>
-                  <p>Hotel: {hotel.name}</p>
-                  <p>Standort: {hotel.location}</p>
-                  <p>Preis pro Nacht: CHF {hotel.price_per_night}</p>
-                  <p>Anzahl der Erwachsenen: {numAdults}</p>
-                  <p>Anzahl der Kinder: {numChildren}</p>
-                  <p>Anzahl der Kleinkinder: {numInfants}</p>
-                  <p>Anzahl der Zimmer: {numRooms}</p>
-                  <p>Zimmertyp: {roomType}</p>
-                </div>
+              <div className="flight-details">
+                <h3>Flugdetails</h3>
+                <p>Ziel: {flight.to}</p>
+                <p>Abflug: {new Date(flight.departure).toLocaleString()}</p>
+                <p>Ankunft: {new Date(flight.arrival).toLocaleString()}</p>
+                <p>Tarif: {fare}</p>
+                <p>Erwachsene: {numAdults}</p>
+                <p>Kinder: {numChildren}</p>
+                <p>Kleinkinder: {numInfants}</p>
+                <p>Handgepäck: {numHandBaggage}</p>
+                <p>Aufgabegepäck: {numCheckedBaggage}</p>
+                <p>Gesamtpreis: €{calculateTotalPrice()}</p>
+              </div>
+              <div className="hotel-details">
+                <h3>Hoteldetails</h3>
+                <p>Hotel: {hotel.name}</p>
+                <p>Standort: {hotel.location}</p>
+                <p>Preis pro Nacht: CHF {hotel.price_per_night}</p>
+                <p>Anzahl der Erwachsenen: {numAdults}</p>
+                <p>Anzahl der Kinder: {numChildren}</p>
+                <p>Anzahl der Kleinkinder: {numInfants}</p>
+                <p>Anzahl der Zimmer: {numRooms}</p>
+                <p>Zimmertyp: {roomType}</p>
+                <p>Gesamtpreis: CHF {calculateTotalPrice()}</p>
               </div>
               <div className="btn-container">
                 <a className="btn-content" href="/">
@@ -387,43 +438,41 @@ const HotelFlightDetailView = () => {
           )}
         </>
       ) : (
-        <div className="confirmation">
+        <div className="hotel-confirmation">
           <h2>Buchungsbestätigung</h2>
           <p>Vielen Dank für Ihre Buchung!</p>
           <p>Ihre Buchungsnummer lautet: <strong>{Math.floor(Math.random() * 1000000)}</strong></p>
           <div className="payment-info">
-            <h3>Zahlungsdetails</h3>
+            <h3>Zahlungsinformationen</h3>
             <p>Karteninhaber: {paymentInfo.cardHolder}</p>
             <p>Kartennummer: {paymentInfo.cardNumber.slice(0, 4)} **** **** ****</p>
             <p>CVV: ***</p>
             <p>Ablaufdatum: {paymentInfo.expiryDate.toLocaleDateString()}</p>
           </div>
-          <div className="details">
-            <div className="flight-details">
-              <h3>Flugdetails</h3>
-              <p>Ziel: {flight.to}</p>
-              <p>Abflug: {new Date(flight.departure).toLocaleString()}</p>
-              <p>Ankunft: {new Date(flight.arrival).toLocaleString()}</p>
-              <p>Tarif: {fare}</p>
-              <p>Erwachsene: {numAdults}</p>
-              <p>Kinder: {numChildren}</p>
-              <p>Kleinkinder: {numInfants}</p>
-              <p>Handgepäck: {numHandBaggage}</p>
-              <p>Aufgabegepäck: {numCheckedBaggage}</p>
-              <p>Gesamtpreis: €{calculateTotalPrice()}</p>
-            </div>
-            <div className="hotel-details">
-              <h3>Hoteldetails</h3>
-              <p>Hotel: {hotel.name}</p>
-              <p>Standort: {hotel.location}</p>
-              <p>Preis pro Nacht: CHF {hotel.price_per_night}</p>
-              <p>Anzahl der Erwachsenen: {numAdults}</p>
-              <p>Anzahl der Kinder: {numChildren}</p>
-              <p>Anzahl der Kleinkinder: {numInfants}</p>
-              <p>Anzahl der Zimmer: {numRooms}</p>
-              <p>Zimmertyp: {roomType}</p>
-              <p>Gesamtpreis: CHF {calculateTotalPrice()}</p>
-            </div>
+          <div className="flight-details">
+            <h3>Flugdetails</h3>
+            <p>Ziel: {flight.to}</p>
+            <p>Abflug: {new Date(flight.departure).toLocaleString()}</p>
+            <p>Ankunft: {new Date(flight.arrival).toLocaleString()}</p>
+            <p>Tarif: {fare}</p>
+            <p>Erwachsene: {numAdults}</p>
+            <p>Kinder: {numChildren}</p>
+            <p>Kleinkinder: {numInfants}</p>
+            <p>Handgepäck: {numHandBaggage}</p>
+            <p>Aufgabegepäck: {numCheckedBaggage}</p>
+            <p>Gesamtpreis: €{calculateTotalPrice()}</p>
+          </div>
+          <div className="hotel-details">
+            <h3>Hoteldetails</h3>
+            <p>Hotel: {hotel.name}</p>
+            <p>Standort: {hotel.location}</p>
+            <p>Preis pro Nacht: CHF {hotel.price_per_night}</p>
+            <p>Anzahl der Erwachsenen: {numAdults}</p>
+            <p>Anzahl der Kinder: {numChildren}</p>
+            <p>Anzahl der Kleinkinder: {numInfants}</p>
+            <p>Anzahl der Zimmer: {numRooms}</p>
+            <p>Zimmertyp: {roomType}</p>
+            <p>Gesamtpreis: CHF {calculateTotalPrice()}</p>
           </div>
           <div className="btn-container">
             <a className="btn-content" href="/">

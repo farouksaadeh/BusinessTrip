@@ -15,7 +15,13 @@
   margin-bottom: 20px;
 }
 
-.flight-tariff-selection, .flight-passenger-info, .flight-baggage-info, .flight-payment, .hotel-room-selection, .payment-info {
+.flight-tariff-selection,
+.flight-passenger-info,
+.flight-baggage-info,
+.hotel-room-selection,
+.flight-payment,
+.image-gallery,
+.hotel-confirmation {
   margin-bottom: 20px;
 }
 
@@ -66,41 +72,6 @@
   justify-content: space-between;
 }
 
-.confirmation {
-  text-align: center;
-}
-
-.payment-info, .details {
-  text-align: left;
-  margin: 0 auto;
-  width: 50%;
-}
-
-.payment-info h3, .flight-details h3, .hotel-details h3 {
-  border-bottom: 1px solid #053D6C;
-  padding-bottom: 5px;
-}
-
-.flight-details p, .hotel-details p {
-  margin: 5px 0;
-}
-
-.indexedStep {
-  display: inline-block;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background-color: #e0e0e0;
-  line-height: 30px;
-  text-align: center;
-  margin: 0 5px;
-}
-
-.indexedStep.accomplished {
-  background-color: #053D6C;
-  color: white;
-}
-
 .image-gallery {
   display: flex;
   flex-wrap: nowrap;
@@ -144,4 +115,71 @@
   background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23053D6C"><path d="M0 0h24v24H0z" fill="none"/><path d="M9 16.17l-4.17-4.17L3.42 13.58 9 19.17l12-12-1.41-1.41z"/></svg>') no-repeat left center;
   padding-left: 30px;
   margin-bottom: 10px;
+}
+
+.indexedStep {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #e0e0e0;
+  line-height: 30px;
+  text-align: center;
+  margin: 0 5px;
+}
+
+.indexedStep.accomplished {
+  background-color: #053D6C;
+  color: white;
+}
+
+.booking-steps {
+  margin-top: 20px;
+}
+
+.step-header {
+  margin-bottom: 20px;
+}
+
+.step-content {
+  margin-bottom: 20px;
+}
+
+.hotel-room-selection .form-group,
+.payment-info .form-group {
+  margin-bottom: 15px;
+}
+
+.payment-info .input-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.date-picker {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.hotel-confirmation {
+  text-align: center;
+}
+
+.hotel-confirmation .hotel-details,
+.hotel-confirmation .payment-info,
+.hotel-confirmation .flight-details {
+  text-align: left;
+  margin: 0 auto;
+  width: 50%;
+}
+
+.hotel-confirmation h3 {
+  border-bottom: 1px solid #053D6C;
+  padding-bottom: 5px;
+}
+
+.hotel-confirmation p {
+  margin: 5px 0;
 }
